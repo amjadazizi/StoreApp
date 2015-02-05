@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.storeapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACTION_SENDTO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="com.storeapp.AppContextProvider"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_shop"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme" >
+        <activity
+            android:name="com.storeapp.Login"
+            android:label="@string/title_activity_login" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.storeapp.Choose_Task"
+            android:label="@string/title_activity_choose_task" >
+        </activity>
+        <activity
+            android:name="com.storeapp.Store_Items"
+            android:label="@string/title_activity_store_items" >
+        </activity>
+        <activity
+            android:name="com.storeapp.Cash_Register"
+            android:label="@string/title_activity_cash_register"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.storeapp.Emp_List"
+            android:label="@string/title_activity_employee_list" >
+        </activity>
+        <activity
+            android:name="com.storeapp.Emp_Details"
+            android:label="@string/title_activity_list_view_opened" >
+        </activity>
+        <activity
+            android:name="com.storeapp.Emp_Info"
+            android:label="@string/title_activity_store__status" >
+        </activity>
+        <activity
+            android:name="com.storeapp.Store_Status"
+            android:label="@string/title_activity_store__status" >
+        </activity>
+        <activity
+            android:name="com.storeapp.Settings"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name="com.storeapp.Message_Details"
+            android:label="@string/title_activity_message__details" >
+        </activity>
+
+        <service android:name="com.storeapp.MaintenanceService" >
+        </service>
+    </application>
+
+</manifest>

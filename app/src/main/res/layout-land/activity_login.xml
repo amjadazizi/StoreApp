@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bckColor" >
+
+    <RelativeLayout
+        android:id="@+id/layoutLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/txtStoreApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/text_storeApp"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <LinearLayout
+            android:id="@+id/LoginBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/liInitials"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edittext_shape"
+                android:hint="@string/hint_initials"
+                android:inputType="textCapCharacters"
+                android:maxLength="4"
+                android:paddingBottom="6dp"
+                android:paddingLeft="6dp"
+                android:paddingTop="6dp"
+                android:textColor="@color/black"
+                android:textStyle="normal" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/liPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edittext_shape"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:paddingBottom="6dp"
+                android:paddingLeft="6dp"
+                android:paddingTop="6dp"
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/liLoginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/selector_button_pressed"
+                android:gravity="center|center_horizontal"
+                android:shadowColor="#250DFF"
+                android:text="@string/text_Login"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <SlidingDrawer
+            android:id="@+id/SlidingDrawer"
+            android:layout_width="wrap_content"
+            android:layout_height="600dp"
+            android:content="@+id/contentLayout"
+            android:handle="@+id/slideButton"
+            android:gravity="center_horizontal"
+
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/slideButton"
+                android:layout_width="102dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/selector_button_pressed"
+                android:text="@string/text_register"
+                android:textColor="@color/black" >
+            </Button>
+
+            <LinearLayout
+                android:id="@+id/contentLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="end"
+                >
+
+                <FrameLayout
+                    android:id="@+id/fragConLay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </FrameLayout>
+            </LinearLayout>
+        </SlidingDrawer>
+    </RelativeLayout>
+
+</ScrollView>

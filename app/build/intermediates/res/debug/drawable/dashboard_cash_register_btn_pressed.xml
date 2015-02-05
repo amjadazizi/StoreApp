@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+        <item android:drawable="@drawable/ic_cash_register_white" android:state_pressed="true"/>
+ <!-- pressed -->
+    <item android:drawable="@drawable/ic_cash_register"/>
+ <!-- Normal -->
+
+</selector>
+<!-- From: file:/C:/Users/Amjad/AndroidstudioProjects/StoreApp2/app/src/main/res/drawable/dashboard_cash_register_btn_pressed.xml -->

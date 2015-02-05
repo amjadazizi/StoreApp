@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bckColor" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/bckColor"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bckColor"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/edittext_shape"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/lvItems"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_shape"
+                    android:divider="@drawable/divider"
+                    android:dividerHeight="1px" />
+
+                <TextView
+                    android:id="@+id/empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/text_cart_is_Empty"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="200dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btnClearAll"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/selector_button_pressed"
+                    android:onClick="ctrlButtons"
+                    android:text="@string/text_cancel"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/btnNewScan"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/selector_button_pressed"
+                    android:onClick="ctrlButtons"
+                    android:text="@string/text_new_Scan"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txtTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="50dp"
+                android:text="@string/text_total"
+                android:textColor="@color/black"
+                android:textColorLink="@color/black"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/ediTxtTotal"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.39"
+                android:background="@drawable/edittext_shape"
+                android:editable="false"
+                android:hint="@string/hint_dkk"
+                android:inputType="none"
+                android:paddingBottom="6dp"
+                android:paddingLeft="6dp"
+                android:paddingTop="6dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutRecieved"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txtRecieved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="71dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/text_received"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/ediTxtrecieved"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.30"
+                android:background="@drawable/edittext_shape"
+                android:ems="10"
+                android:hint="@string/hint_dkk"
+                android:inputType="number"
+                android:paddingBottom="6dp"
+                android:paddingLeft="6dp"
+                android:paddingTop="6dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textStyle="normal" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutItmScanBtns"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/ediTxtNumItems"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.01"
+                android:background="@drawable/edittext_shape"
+                android:ems="100"
+                android:inputType="number"
+                android:paddingBottom="10dp"
+                android:paddingLeft="6dp"
+                android:paddingTop="11dp"
+                android:singleLine="true"
+                android:text="@string/text_1"
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/btnScanItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.02"
+                android:background="@drawable/selector_button_pressed"
+                android:onClick="ctrlButtons"
+                android:singleLine="true"
+                android:text="@string/text_scan_Item"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/btnEksped"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.02"
+                android:background="@drawable/selector_button_pressed"
+                android:onClick="ctrlButtons"
+                android:singleLine="true"
+                android:text="@string/text_expedite"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutAmountBtns"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/btn50"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.15"
+                android:background="@drawable/selector_button_pressed"
+                android:onClick="ctrlButtons"
+                android:text="@string/text_50_kr"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn100"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.15"
+                android:background="@drawable/selector_button_pressed"
+                android:onClick="ctrlButtons"
+                android:singleLine="true"
+                android:text="@string/text_100_kr"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn200"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.15"
+                android:background="@drawable/selector_button_pressed"
+                android:onClick="ctrlButtons"
+                android:singleLine="true"
+                android:text="@string/text_200_kr"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn500"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.15"
+                android:background="@drawable/selector_button_pressed"
+                android:onClick="ctrlButtons"
+                android:singleLine="true"
+                android:text="@string/text_500_kr"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutPaymentBtns"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/btnCCard"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.15"
+                android:background="@drawable/selector_button_pressed"
+                android:onClick="ctrlButtons"
+                android:singleLine="true"
+                android:text="@string/text_c.card"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnCheck"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.15"
+                android:background="@drawable/selector_button_pressed"
+                android:onClick="ctrlButtons"
+                android:singleLine="true"
+                android:text="@string/text_check"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnCash"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.26"
+                android:background="@drawable/selector_button_pressed"
+                android:onClick="ctrlButtons"
+                android:singleLine="true"
+                android:text="@string/text_cash"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView><!-- From: file:/C:/Users/Amjad/AndroidstudioProjects/StoreApp2/app/src/main/res/layout-land/activity_cash_register.xml -->
