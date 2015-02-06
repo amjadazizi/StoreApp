@@ -10,7 +10,7 @@ import android.provider.BaseColumns;
 
 public class CartManager {
 
-    //Changeds
+    //Changeds--added more comments
 
 	public static final String TABLE_NAME = "tbl_cart";
 	public static final String COL_ID = BaseColumns._ID;
