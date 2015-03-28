@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sweet_alert_shape">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="left"
+        android:background="@drawable/sweet_alert_shape">
+
+        <LinearLayout
+        android:id="@+id/addEmployeeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="left"
+        android:background="@color/clouds">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/dialog_custom_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    tools:text="Title"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:visibility="visible"
+                    tools:visibility="visible"/>
+
+
+                    <ProgressBar
+                         android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkEmailExistsProgressBar"
+                        android:gravity="right"/>
+
+
+            </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/dialog_custom_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:textColor="@color/red"
+            tools:text="Content"
+            android:textSize="18sp"
+            android:visibility="visible"
+            tools:visibility="visible"/>
+        
+        <com.storeapp.Activities.ExternalClasses.FloatingEditText
+            android:id="@+id/newUserEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:hint="Email"
+            android:textColor="@color/black"
+        />
+
+        <LinearLayout
+            android:id="@+id/dialog_custom_alongside_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:paddingBottom="16dp"
+            android:paddingTop="10dp">
+
+
+            <Button
+                android:id="@+id/dialog_custom_cancel"
+                android:layout_width="88dp"
+                android:layout_height="36dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="@drawable/button_selector"
+                android:textAllCaps="true"
+                tools:text="Cancel"
+                android:textSize="15sp"
+                android:layout_gravity="right"
+                android:visibility="visible"
+                android:textColor="@color/black"
+                tools:visibility="visible"/>
+            <Button
+                android:id="@+id/dialog_custom_confirm"
+                android:layout_width="88dp"
+                android:layout_height="36dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="@drawable/button_selector"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+
+                tools:text="Accept"
+                android:layout_gravity="right"
+                android:textSize="15sp"
+                android:visibility="visible"
+                tools:visibility="visible"/>
+
+
+
+        </LinearLayout>
+
+       <!-- <LinearLayout
+            android:id="@+id/dialog_custom_stacked_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal"
+
+            android:paddingBottom="16dp"
+            android:paddingTop="24dp"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+            <Button
+                android:id="@+id/dialog_custom_confirm_stacked"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="right|center_vertical"
+                android:padding="8dp"
+                android:background="@drawable/button_selector"
+                android:textAllCaps="true"
+                tools:text="Cancel"
+                android:textSize="14sp"
+                android:visibility="gone"
+                tools:visibility="visible"/>
+
+            <Button
+                android:id="@+id/dialog_custom_cancel_stacked"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="right|center_vertical"
+                android:padding="8dp"
+                android:background="@drawable/button_selector"
+                android:textAllCaps="true"
+                tools:text="OK"
+                android:textSize="14sp"
+                android:visibility="visible"
+                tools:visibility="visible"/>
+
+        </LinearLayout>-->
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

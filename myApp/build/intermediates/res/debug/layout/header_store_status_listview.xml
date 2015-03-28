@@ -1,0 +1,43 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="15dp"
+    android:background="@color/transparent"
+    >
+
+    <LinearLayout
+        android:id="@+id/item_linear_layout"
+        android:layout_height="110dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/transparent"
+        >
+
+        <ImageView
+            android:id="@+id/image_viewa"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/ic_employee_pic_64"
+            android:background="@color/transparent"/>
+
+        <TextView
+            android:id="@+id/title_vieww"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:gravity="left|center_vertical"
+            android:layout_weight="2"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:text="Shop 1"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+
+
+</LinearLayout><!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/layout/header_store_status_listview.xml -->

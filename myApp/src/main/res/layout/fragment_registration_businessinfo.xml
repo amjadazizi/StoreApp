@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="4" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/ic_back"
+            android:id="@+id/btnImgBack"/>
+
+
+        <TextView
+            android:id="@+id/txtHvadHedderDu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/text_business_info"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDescrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/text_your_email_phone_number"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.storeapp.Activities.ExternalClasses.FloatingEditText
+            android:id="@+id/editBusinessName"
+            style="@style/EditTextAppTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:ems="10"
+            android:hint="Business Name"
+            android:textColor="@color/black"
+            />
+        <com.storeapp.Activities.ExternalClasses.FloatingEditText
+            android:id="@+id/editBusinessCvr"
+            style="@style/EditTextAppTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:ems="10"
+            android:hint="Cvr"
+            android:inputType="number"
+            android:textColor="@color/black"
+            />
+        <com.storeapp.Activities.ExternalClasses.FloatingEditText
+            android:id="@+id/editBsuinessEmail"
+            style="@style/EditTextAppTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textWebEmailAddress"
+            android:textColor="@color/black"
+            />
+
+        <com.storeapp.Activities.ExternalClasses.FloatingEditText
+            android:id="@+id/editBusinessPhoneNum"
+            style="@style/EditTextAppTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/text_phone_number"
+            android:inputType="phone"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutLogin"
+    android:background="@color/peter_river"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/imgviewLayut"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:background="@color/clouds"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imgviewStoreApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_shop"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/text_storeApp"
+            android:textColor="@color/white"
+            android:typeface="normal" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/LoginBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+        <com.storeapp.NewDesign.Activities.ExternalClasses.FloatingEditText
+            android:id="@+id/liInitials"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextAppTheme"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="@string/hint_initials"
+            android:inputType="textCapCharacters"
+            android:maxLength="4"
+            android:paddingBottom="6dp"
+            android:paddingLeft="6dp"
+            android:paddingTop="6dp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+        />
+
+        <com.storeapp.NewDesign.Activities.ExternalClasses.FloatingEditText
+            android:id="@+id/liPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            style="@style/EditTextAppTheme"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:paddingBottom="6dp"
+            android:paddingLeft="6dp"
+            android:paddingTop="6dp"
+            android:textColor="@color/black"
+            android:textStyle="normal" />
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/liLoginBtnmm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="#1E88E5"
+                android:text="Button"
+                />
+
+    </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:fab="http://schemas.android.com/tools"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            >
+            <com.getbase.floatingactionbutton.FloatingActionsMenu
+                android:id="@+id/multiple_actions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                fab:fab_addButtonColorNormal="@color/black"
+                fab:fab_addButtonColorPressed="@color/white_pressed"
+                fab:fab_addButtonPlusIconColor="@color/half_black"
+                fab:fab_labelStyle="@style/menu_labels_style"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                app:fab_expandDirection="left"
+                >
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnFloatInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fab:fab_colorNormal="@color/white"
+                    app:fab_icon="@android:drawable/ic_dialog_info"
+                    fab:fab_title="Infomation"
+                    fab:fab_colorPressed="@color/white_pressed"
+                    app:fab_size="mini"/>
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnFloatBusinessRegist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fab:fab_colorNormal="@color/white"
+                    app:fab_icon="@android:drawable/ic_dialog_info"
+                    fab:fab_title="Register Business"
+                    fab:fab_colorPressed="@color/white_pressed"
+                    app:fab_size="normal"/>
+            </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

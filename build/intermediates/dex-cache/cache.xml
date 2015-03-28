@@ -9,11 +9,284 @@
         <dex dex="C:\Users\Amjad\AndroidstudioProjects\StoreApp2\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-761c8bced3346f3d529c29ec74e06232a28018f7.jar" />
     </item>
     <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\exploded-aar\com.getbase\floatingactionbutton\1.8.0\classes.jar"
+        jumboMode="true"
+        revision="19.1.0"
+        sha1="7a055a4323187e6f6a5e63f01b5a59bff71869a5">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\classes-1bc73769e119892723947527f7b86665b99241bf.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v2.0.8\a4900cefaf173fb8b416d2fe911394bac5a5ba4\MPAndroidChart-v2.0.8.jar"
+        jumboMode="true"
+        revision="19.1.0"
+        sha1="0a4900cefaf173fb8b416d2fe911394bac5a5ba4">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\MPAndroidChart-v2.0.8-2e0e1134e55a789cf248b4bb331dade35db7916b.jar" />
+    </item>
+    <item
         jar="C:\Users\Amjad\AndroidstudioProjects\StoreApp2\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\18.0.0\classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="8f11f56e350eacabf2273f646d981356eea0ed77">
         <dex dex="C:\Users\Amjad\AndroidstudioProjects\StoreApp2\app\build\intermediates\pre-dexed\debug\classes-5ddf7cb2f4f863ad356457c8e5338cafd735b857.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="true"
+        revision="19.1.0"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\classes-23e107631accdd5122dcb2793647f69a941a37bc.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\classes-23e107631accdd5122dcb2793647f69a941a37bc.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\exploded-aar\com.getbase\floatingactionbutton\1.8.0\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="7a055a4323187e6f6a5e63f01b5a59bff71869a5">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\classes-1bc73769e119892723947527f7b86665b99241bf.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\libs\ParseCrashReporting-1.8.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ccf9e90414e7bb2cf09f4d7c77c42f70c690e118">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\ParseCrashReporting-1.8.2-f71415d902bd6507eab56a4576ba4174f751510f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\exploded-aar\de.psdev.licensesdialog\licensesdialog\1.7.0\classes.jar"
+        jumboMode="true"
+        revision="19.1.0"
+        sha1="d917cad6e368bb97596899b29327a67283473c17">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\classes-8a03386e22aee573bfb7dc0b34ff61b8aac1e456.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\libs\bolts-android-1.1.4.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\bolts-android-1.1.4-9b343a0d581ec71061156b442df7ff82e1d5b78d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\exploded-aar\de.psdev.licensesdialog\licensesdialog\1.7.0\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="d917cad6e368bb97596899b29327a67283473c17">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\classes-8a03386e22aee573bfb7dc0b34ff61b8aac1e456.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\libs\bolts-android-1.1.4.jar"
+        jumboMode="true"
+        revision="19.1.0"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\bolts-android-1.1.4-9b343a0d581ec71061156b442df7ff82e1d5b78d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\exploded-aar\com.github.navasmdc\MaterialDesign\1.4\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="87405405e403de68f4057757b8a2e8de02bd65d0">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\classes-a5bed12e8b8a256c277f6a1d76a97c1e43d3e9b7.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\exploded-aar\com.github.navasmdc\MaterialDesign\1.4\classes.jar"
+        jumboMode="true"
+        revision="19.1.0"
+        sha1="87405405e403de68f4057757b8a2e8de02bd65d0">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\classes-a5bed12e8b8a256c277f6a1d76a97c1e43d3e9b7.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="true"
+        revision="19.1.0"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-003b17f432b8404c72229a922889a38db5d20ecf.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-f115f2f4e34209f82fabd481ace72c777b766807.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="true"
+        revision="19.1.0"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-f115f2f4e34209f82fabd481ace72c777b766807.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-003b17f432b8404c72229a922889a38db5d20ecf.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\exploded-aar\com.github.dmytrodanylyk.android-process-button\library\1.0.3\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="d4f9afe8a7955c6b8322f63ced894a9e752eb31d">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\classes-d371cc615f3f555065632d63e251568c80b6ff6b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\exploded-aar\com.github.dmytrodanylyk.android-process-button\library\1.0.3\classes.jar"
+        jumboMode="true"
+        revision="19.1.0"
+        sha1="d4f9afe8a7955c6b8322f63ced894a9e752eb31d">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\classes-d371cc615f3f555065632d63e251568c80b6ff6b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\libs\bolts-android-1.1.4-javadoc.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="f5dd6492c539679411fa30818320b737c410158f">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\bolts-android-1.1.4-javadoc-58fa46de0f892eb194aeccb95fcf6d0d3f6c0bd6.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\libs\bolts-android-1.1.4-javadoc.jar"
+        jumboMode="true"
+        revision="19.1.0"
+        sha1="f5dd6492c539679411fa30818320b737c410158f">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\bolts-android-1.1.4-javadoc-58fa46de0f892eb194aeccb95fcf6d0d3f6c0bd6.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\exploded-aar\com.specyci\residemenu\1.6\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="5e309b1df3051abebbfda31d1c80cd19bec617da">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\classes-4fba6d52cb10ecee2c3ff127efdcadf9e1c8e91c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\exploded-aar\com.specyci\residemenu\1.6\classes.jar"
+        jumboMode="true"
+        revision="19.1.0"
+        sha1="5e309b1df3051abebbfda31d1c80cd19bec617da">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\classes-4fba6d52cb10ecee2c3ff127efdcadf9e1c8e91c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\exploded-aar\com.specyci\residemenu\1.6\libs\nineoldandroids-library-2.4.0.jar"
+        jumboMode="true"
+        revision="19.1.0"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\nineoldandroids-library-2.4.0-177796327dd92b0a72c010fac6316b27405e4faf.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\exploded-aar\com.android.support\appcompat-v7\19.0.0\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="eb69b5c2e53e59d82f7439f3217f46f9d98f0c89">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\classes-57ba008f520cd1b3394fa7cbdc7f91acdf417330.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\libs\gson-2.2.4.jar"
+        jumboMode="true"
+        revision="19.1.0"
+        sha1="973e832af433b44c3ed11c426f2f390b29f3f3f8">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\gson-2.2.4-0b9d4d57b506e10184cdcc7c3667d9b3c0465f17.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\libs\gson-2.2.4.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="973e832af433b44c3ed11c426f2f390b29f3f3f8">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\gson-2.2.4-0b9d4d57b506e10184cdcc7c3667d9b3c0465f17.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\exploded-aar\com.android.support\appcompat-v7\19.0.0\classes.jar"
+        jumboMode="true"
+        revision="19.1.0"
+        sha1="eb69b5c2e53e59d82f7439f3217f46f9d98f0c89">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\classes-57ba008f520cd1b3394fa7cbdc7f91acdf417330.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\exploded-aar\com.android.support\appcompat-v7\19.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="eb69b5c2e53e59d82f7439f3217f46f9d98f0c89">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\classes-57ba008f520cd1b3394fa7cbdc7f91acdf417330.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\exploded-aar\com.specyci\residemenu\1.6\libs\nineoldandroids-library-2.4.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\nineoldandroids-library-2.4.0-177796327dd92b0a72c010fac6316b27405e4faf.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\libs\ParseCrashReporting-1.8.2.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="ccf9e90414e7bb2cf09f4d7c77c42f70c690e118">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\ParseCrashReporting-1.8.2-f71415d902bd6507eab56a4576ba4174f751510f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\libs\ParseCrashReporting-1.8.2.jar"
+        jumboMode="true"
+        revision="19.1.0"
+        sha1="ccf9e90414e7bb2cf09f4d7c77c42f70c690e118">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\ParseCrashReporting-1.8.2-f71415d902bd6507eab56a4576ba4174f751510f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\libs\Parse-1.8.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c2cb0bfe37cbefd855b6faa3c9a5be833aba7300">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\Parse-1.8.2-12a912a5322241c5f3fd28670047de9368cb6de3.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\libs\bolts-android-1.1.4-javadoc.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f5dd6492c539679411fa30818320b737c410158f">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\bolts-android-1.1.4-javadoc-58fa46de0f892eb194aeccb95fcf6d0d3f6c0bd6.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\libs\Parse-1.8.2.jar"
+        jumboMode="true"
+        revision="19.1.0"
+        sha1="c2cb0bfe37cbefd855b6faa3c9a5be833aba7300">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\Parse-1.8.2-12a912a5322241c5f3fd28670047de9368cb6de3.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\libs\Parse-1.8.2.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="c2cb0bfe37cbefd855b6faa3c9a5be833aba7300">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\Parse-1.8.2-12a912a5322241c5f3fd28670047de9368cb6de3.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\1.2.2\classes.jar"
+        jumboMode="true"
+        revision="19.1.0"
+        sha1="803c4c913beac8f7980d680c725a40835d1d7c77">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\classes-17c51296e02bf322a87297b73ebd86965a3add8b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.0\5871fb60dc68d67da54a663c3fd636a10a532948\jsr305-3.0.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\jsr305-3.0.0-ca308955b7081d17785e36328e4ada84fc119554.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\1.2.2\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="803c4c913beac8f7980d680c725a40835d1d7c77">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\classes-17c51296e02bf322a87297b73ebd86965a3add8b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amjad\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.0\5871fb60dc68d67da54a663c3fd636a10a532948\jsr305-3.0.0.jar"
+        jumboMode="true"
+        revision="19.1.0"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\build\intermediates\pre-dexed\debug\jsr305-3.0.0-ca308955b7081d17785e36328e4ada84fc119554.jar" />
     </item>
 
 </items>

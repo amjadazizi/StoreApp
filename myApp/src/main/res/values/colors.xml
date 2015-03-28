@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="blue">#ADD8E6</color>
+    <color name="bckColor">#34AADC</color>
+    <color name="sand">  #E5E4E2</color>
+    <color name="transparent">#00000000</color>
+<!--////////////////////3498db/////////////////////    #2196F3
+//-->
+    <color name="turquoise">#1abc9c</color>
+    <color name="emerald">#2ecc71</color>
+
+    <color name="peter_river">#2196F3</color>
+    <color name="amethyst">#9b59b6</color>
+    <color name="wet_asphalt">#34495e</color>
+    <color name="green_sea">#16a085</color>
+    <color name="nephritis">#27ae60</color>
+    <color name="belize_hole">#2980b9</color>
+    <color name="wisteria">#8e44ad</color>
+    <color name="midnight_blue">#2c3e50</color>
+    <color name="sun_flowers">#f1c40f</color>
+    <color name="carrot">#e67e22</color>
+    <color name="alizarin">#e74c3c</color>
+    <color name="clouds">#ecf0f1</color>
+    <color name="concrete">#95a5a6</color>
+    <color name="orange">#f39c12</color>
+    <color name="pumpkin">#d35400</color>
+    <color name="pomegranate">#c0392b</color>
+    <color name="silver">#bdc3c7</color>
+    <color name="asbestos">#7f8c8d</color>
+    <color name="red">#f00</color>
+
+    <color name="custom_divider_color">#3498db</color>
+
+    <color name="floating_edit_text_color">#ffc8c8c8</color>
+  <!--  <color name="floating_edit_text_highlighted_color">#ff3f51b5</color>-->
+    <color name="floating_edit_text_highlighted_color">#3498db</color>
+
+    <color name="floating_edit_text_error_color">#DB4437</color>
+    <dimen name="floating_edit_text_underline_height">1dp</dimen>
+    <dimen name="floating_edit_text_underline_highlighted_height">2dp</dimen>
+
+
+
+    <color name="light_gray">#c2c7cc</color>
+    <color name="dark_gray">#3d454c</color>
+    <color name="dark_gray_pressed">#373e44</color>
+    <color name="darker_gray">#1f2226</color>
+    <color name="LDialogs_dim_lighter_gray">#80E0E0E0</color>
+
+
+
+    <color name="blue_pressed">#ff0099cc</color>
+    <color name="blue_normal">#ff33b5e5</color>
+    <color name="green_complete">#ff99cc00</color>
+    <color name="purple_progress">#ffaa66cc</color>
+    <color name="red_error">#ffff4444</color>
+
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_orange_light">#ffffbb33</color>
+    <color name="holo_red_light">#ffff4444</color>
+
+
+
+    ///////SweetAlert Colors////
+    <color name="float_transparent">#00000000</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="blue_btn_bg_color">#AEDEF4</color>
+    <color name="blue_btn_bg_pressed_color">#96BFD2</color>
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="red_btn_bg_pressed_color">#CD5B55</color>
+    <color name="error_stroke_color">#F27474</color>
+    <color name="success_stroke_color">#A5DC86</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="warning_stroke_color">#F8BB86</color>
+    <color name="text_color">#575757</color>
+    <color name="material_blue_grey_80">#ff37474f</color>
+    <color name="material_blue_grey_90">#ff263238</color>
+    <color name="material_blue_grey_95">#ff21272b</color>
+    <color name="material_deep_teal_20">#ff80cbc4</color>
+    <color name="material_deep_teal_50">#ff009688</color>
+
+</resources>

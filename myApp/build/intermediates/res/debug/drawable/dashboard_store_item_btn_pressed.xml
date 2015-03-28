@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+        <item android:drawable="@drawable/ic_store_items_white" android:state_pressed="true"/>
+ <!-- pressed -->
+    <item android:drawable="@drawable/ic_store_items"/>
+ <!-- Normal -->
+
+</selector>
+<!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/drawable/dashboard_store_item_btn_pressed.xml -->

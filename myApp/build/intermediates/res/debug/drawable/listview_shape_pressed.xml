@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/rounded_edittext.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <gradient
+        android:angle="45"
+        android:centerColor="#848482"
+        android:centerX="35%"
+        android:endColor="#848482"
+        android:startColor="#848482"
+        android:type="linear" />
+
+    <corners
+        android:bottomLeftRadius="7dp"
+        android:bottomRightRadius="7dp"
+        android:topLeftRadius="7dp"
+        android:topRightRadius="7dp" />
+
+    <stroke
+        android:width="1dip"
+        android:color="@color/black" >
+    </stroke>
+
+</shape><!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/drawable/listview_shape_pressed.xml -->

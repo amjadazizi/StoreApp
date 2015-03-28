@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="licensesdialog-1.7.0">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/myApp/build/intermediates/exploded-aar/de.psdev.licensesdialog/licensesdialog/1.7.0/res" />
+      <root url="jar://$PROJECT_DIR$/myApp/build/intermediates/exploded-aar/de.psdev.licensesdialog/licensesdialog/1.7.0/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

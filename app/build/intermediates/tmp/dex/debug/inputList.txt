@@ -1,3 +1,0 @@
-C:\Users\Amjad\AndroidstudioProjects\StoreApp2\app\build\intermediates\classes\debug
-C:\Users\Amjad\AndroidstudioProjects\StoreApp2\app\build\intermediates\pre-dexed\debug\classes-5ddf7cb2f4f863ad356457c8e5338cafd735b857.jar
-C:\Users\Amjad\AndroidstudioProjects\StoreApp2\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-761c8bced3346f3d529c29ec74e06232a28018f7.jar

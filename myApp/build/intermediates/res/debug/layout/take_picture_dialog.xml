@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="left"
+        android:background="@drawable/sweet_alert_shape">
+
+        <LinearLayout
+        android:id="@+id/addEmployeeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="left"
+        android:background="@color/clouds">
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/txtTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:text="Title"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:visibility="visible"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    tools:visibility="visible"/>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/peter_river" />
+
+            </LinearLayout>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <Button
+                    android:gravity="center_vertical"
+                    android:id="@+id/txtTakePicture"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/button_selector"
+                    android:textColor="@color/black"
+                    tools:text="Take Picture"
+                    android:textSize="18sp"
+    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <Button
+                    android:id="@+id/txtChooseFromGallery"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/button_selector"
+                    android:textColor="@color/black"
+                    tools:text="Choose from Gallery"
+                    android:textSize="18sp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+            android:id="@+id/dialog_custom_alongside_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:paddingBottom="16dp"
+            android:paddingTop="10dp">
+
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="88dp"
+                android:layout_height="36dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textAllCaps="true"
+                tools:text="Cancel"
+                android:background="@drawable/button_selector"
+                android:textSize="15sp"
+                android:layout_gravity="right"
+                android:visibility="visible"
+                android:textColor="@color/black"
+                tools:visibility="visible"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </LinearLayout>
+<!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/layout/take_picture_dialog.xml -->

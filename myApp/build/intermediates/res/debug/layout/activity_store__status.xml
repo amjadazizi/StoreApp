@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <!-- Action-bar looking view -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/peter_river"
+        >
+
+        <ImageView
+            android:id="@+id/drawer_indicator"
+            android:layout_width="@dimen/actionbar_dimen"
+            android:layout_height="@dimen/actionbar_dimen"
+            android:scaleType="centerInside"
+            android:background="@drawable/drawer_selector"
+            android:layout_alignParentLeft="true"
+            />
+
+
+        <SearchView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchView"
+            android:layout_gravity="center_vertical"
+            android:layout_alignBottom="@+id/drawer_indicator"
+            android:layout_alignParentRight="true"
+            />
+
+
+    </RelativeLayout>
+
+    <!-- Content -->
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        >
+
+
+        <FrameLayout
+            android:id="@+id/mainContent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/sand" >
+        </FrameLayout>
+
+
+
+        <ListView
+            android:id="@+id/drawerList"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="@color/sand"
+            android:choiceMode="singleChoice"
+            android:divider="@color/transparent"
+            android:dividerHeight="10dp"
+            >
+
+
+        </ListView>
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>
+
+    <!--
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sand"
+    android:gravity="bottom" >
+
+    <FrameLayout
+        android:id="@+id/mainContent"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/bckColor" >
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/drawerList"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@color/sand"
+        android:choiceMode="singleChoice"
+        android:divider="@drawable/divider"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+</android.support.v4.widget.DrawerLayout>
+
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/peter_river">
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:columnWidth="120dp"
+            android:stretchMode="spacingWidthUniform"
+            android:numColumns="auto_fit"
+            />
+    </FrameLayout>
+    -->
+
+
+
+
+
+
+
+
+<!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/layout/activity_store__status.xml -->

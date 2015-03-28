@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="@android:integer/config_longAnimTime"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+    android:propertyName="translationX"
+    android:valueFrom="-1700"
+    android:valueTo="0"
+    android:valueType="floatType" />
+<!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/anim/slide_in_left.xml -->
