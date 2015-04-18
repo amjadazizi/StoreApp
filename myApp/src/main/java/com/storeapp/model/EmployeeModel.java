@@ -1,7 +1,5 @@
 package com.storeapp.model;
 
-import com.storeapp.util.Utils;
-
 /**
  * Created by Amjad on 12-03-2015.
  */
@@ -64,7 +62,7 @@ public class EmployeeModel extends BaseModel {
         this.password = password;
     }
 
-    public boolean isValid(){
+    /*public boolean isValid(){
 
         boolean valid = true;
 
@@ -79,7 +77,7 @@ public class EmployeeModel extends BaseModel {
         return  valid;
 
 
-    }
+    }*/
 
 
 }

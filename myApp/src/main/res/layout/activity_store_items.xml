@@ -14,7 +14,7 @@
     <FrameLayout
         android:id="@+id/lll"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:orientation="horizontal"
         android:background="@color/clouds"
 
@@ -24,22 +24,27 @@
             android:id="@+id/imgItemPic"
             android:scaleType="fitXY"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:src="@drawable/ic_employee_pic_64"
+            android:layout_height="198dp"
+            android:src="@drawable/ic_image_white"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/peter_river"
             />
 
     </FrameLayout>
 
 
+
     <com.getbase.floatingactionbutton.FloatingActionButton
-        android:id="@+id/buttonColorSelector"
+        android:id="@+id/btnAddImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         fab:fab_colorNormal="@color/white"
         fab:fab_addButtonColorNormal="@color/alizarin"
-        app:fab_icon="@android:drawable/ic_dialog_info"
         fab:fab_title="Infomation"
-        fab:fab_colorPressed="@color/white_pressed"
         app:fab_size="normal"
         android:layout_alignParentRight="true"
         android:layout_marginTop="163dp"
@@ -51,10 +56,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/lll"
-        android:layout_marginTop="15dp"
         android:background="@color/transparent"
 
         >
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -105,12 +110,13 @@
                         android:orientation="horizontal"
                         android:layout_weight="1">
 
-                        <ImageButton
+                        <Button
                             android:id="@+id/btnScanItem"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="15dp"
-                            android:background="@drawable/ic_store_items"
+                            android:icon="@drawable/ic_store_items"
+                            android:background="@drawable/selector_button_pressed"
                             />
 
                     </LinearLayout>
@@ -122,7 +128,7 @@
                         android:layout_weight="2"
                         android:layout_marginLeft="51dp">
 
-                        <com.storeapp.Activities.ExternalClasses.FloatingEditText
+                        <com.storeapp.ui.FloatingEditText
                             android:singleLine="true"
 
                             android:id="@+id/editBarcode"
@@ -132,18 +138,18 @@
                             android:hint="Barcode"
                             android:layout_marginRight="10dp"
                             android:layout_weight="1"
-                            style="@style/EditTextAppTheme"
+                            android:textColor="@color/black"
                             />
 
-                        <com.storeapp.Activities.ExternalClasses.FloatingEditText
+                        <com.storeapp.ui.FloatingEditText
                             android:id="@+id/editEan"
                             android:singleLine="true"
+                            android:textColor="@color/black"
 
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
-                            style="@style/EditTextAppTheme"
                             android:hint="Ean-Type"
                             android:layout_weight="2"
                             />
@@ -162,9 +168,10 @@
                 android:layout_weight="1">
 
 
-                <com.storeapp.Activities.ExternalClasses.FloatingEditText
+                <com.storeapp.ui.FloatingEditText
                     android:id="@+id/editDecription"
                     android:singleLine="true"
+                    android:textColor="@color/black"
 
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -173,7 +180,6 @@
                     android:hint="Description"
                     android:layout_marginRight="10dp"
                     android:layout_weight="1"
-                    style="@style/EditTextAppTheme"
                     />
 
 
@@ -191,20 +197,30 @@
 
 
 
-                <com.storeapp.Activities.ExternalClasses.FloatingEditText
+                <com.storeapp.ui.FloatingEditText
                     android:id="@+id/editAmount"
                     android:singleLine="true"
-
-                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="104dp"
                     android:hint="Amount"
                     android:layout_marginRight="10dp"
                     android:layout_weight="1"
-                    style="@style/EditTextAppTheme"
                     />
 
+                <com.storeapp.ui.FloatingEditText
+                    android:id="@+id/editCurAmountNstock"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:hint="Amount In Stock"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    />
 
             </LinearLayout>
 
@@ -246,9 +262,10 @@
                         android:layout_weight="2"
                         android:layout_marginLeft="51dp">
 
-                        <com.storeapp.Activities.ExternalClasses.FloatingEditText
+                        <com.storeapp.ui.FloatingEditText
                             android:id="@+id/editPurchaseprice"
                             android:singleLine="true"
+                            android:textColor="@color/black"
 
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -256,19 +273,19 @@
                             android:hint="Purchaseprice"
                             android:layout_marginRight="10dp"
                             android:layout_weight="1"
-                            style="@style/EditTextAppTheme"
                             />
 
-                        <com.storeapp.Activities.ExternalClasses.FloatingEditText
+                        <com.storeapp.ui.FloatingEditText
                             android:id="@+id/editSellprice"
                             android:singleLine="true"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
-                            style="@style/EditTextAppTheme"
                             android:hint="Sellprice"
                             android:layout_weight="1"
+                            android:textColor="@color/black"
+
                             />
 
                     </LinearLayout>
@@ -285,14 +302,15 @@
                 android:layout_gravity="right"
                 android:layout_weight="1"
                 android:layout_marginLeft="104dp"
+
                 >
 
-                <com.gc.materialdesign.views.ButtonRectangle
+                <Button
                     android:id="@+id/btnSaveItem"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:background="#1E88E5"
+                    android:background="@drawable/selector_button_pressed"
                     android:text="Save Item"
                     />
             </LinearLayout>

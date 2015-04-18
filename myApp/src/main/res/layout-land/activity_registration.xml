@@ -10,7 +10,7 @@
         android:orientation="horizontal"
         >
 
-
+<!--
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -18,13 +18,12 @@
         android:background="@color/peter_river"
         android:orientation="vertical"
         android:layout_weight="1">
-        </LinearLayout>
+        </LinearLayout>-->
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:id="@+id/fragmentsRegistCont"
-        android:background="@color/alizarin"
         android:orientation="vertical"
         android:layout_weight="3">
     </LinearLayout>

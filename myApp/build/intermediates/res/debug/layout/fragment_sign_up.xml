@@ -73,7 +73,7 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="10dp"
                 android:entries="@array/storeTasks"
-                android:background="@color/alizarin">
+                android:background="@color/red">
 
                 </Spinner>
 

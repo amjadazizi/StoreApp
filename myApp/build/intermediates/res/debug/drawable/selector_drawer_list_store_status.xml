@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/peter_river" android:state_pressed="true"/>
+    <!-- //pressed -->
+    <item android:drawable="@color/transparent"/>
+    <!-- //Normal -->
+
+</selector><!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/drawable/selector_drawer_list_store_status.xml -->

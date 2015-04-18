@@ -1,43 +1,56 @@
 package com.storeapp.util;
 
 import android.content.Context;
+import android.widget.Toast;
 
-import com.storeapp.sweetalert.SweetAlertDialog;
+import com.storeapp.AppContextProvider;
+import com.storeapp.ui.sweetalert.SweetAlertDialog;
 
 /**
  * Created by Amjad on 16-03-2015.
  */
 public class SweetAlerts {
 
+    //TODO refactor this class to use method overloading
 
   //  A basic message：
 
-
     public static void showBasicMsg(Context ctx,String msg){
+        if(ctx==null){
+            Toast.makeText(AppContextProvider.getContext(), msg, Toast.LENGTH_LONG).show();
+            return;
+        }
+
          new SweetAlertDialog(ctx)
                 .setTitleText(msg)
                 .show();
-
     }
 
 
 
 
  //   A title with a text under：
-
-
     public static  void showBasicMsgWithTtile(Context ctx, String title ,String msg){
+
+        if(ctx==null){
+            Toast.makeText(AppContextProvider.getContext(), msg, Toast.LENGTH_LONG).show();
+            return;
+        }
+
         new SweetAlertDialog(ctx)
                 .setTitleText(title)
                 .setContentText(msg)
                 .show();
     }
 
-
  //   A error message：
 
     public static  void showErrorMsg(Context ctx, String msg){
 
+        if(ctx==null){
+            Toast.makeText(AppContextProvider.getContext(), msg, Toast.LENGTH_LONG).show();
+            return;
+        }
 
         new SweetAlertDialog(ctx, SweetAlertDialog.ERROR_TYPE)
                 .setTitleText("Error")
@@ -45,12 +58,15 @@ public class SweetAlerts {
                 .show();
     }
 
-
-
-
  //   A warning message：
 
     public static  void showBasicMsg(Context ctx, String title, String content, String msg){
+
+        if(ctx==null){
+            Toast.makeText(AppContextProvider.getContext(), msg, Toast.LENGTH_LONG).show();
+            return;
+        }
+
         new SweetAlertDialog(ctx, SweetAlertDialog.WARNING_TYPE)
                 .setTitleText(title)
                 .setContentText(content)
@@ -64,15 +80,18 @@ public class SweetAlerts {
  //   A success message：
 
     public static  void showSuccessMsg(Context ctx, String msg){
+
+        if(ctx==null){
+            Toast.makeText(AppContextProvider.getContext(), msg, Toast.LENGTH_LONG).show();
+            return;
+        }
+
         new SweetAlertDialog(ctx, SweetAlertDialog.SUCCESS_TYPE)
                 .setTitleText("Good job!")
                 .setContentText(msg)
                 .show();
 
     }
-
-
-
 
     //  A message with a custom icon：
 

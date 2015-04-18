@@ -11,28 +11,39 @@
         android:layout_height="wrap_content"
         android:id="@+id/layout_top">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:background="#2ea3fe"/>
 
-        <FrameLayout
+        <RelativeLayout
             android:id="@+id/topBar"
-            android:layout_width="fill_parent"
-            android:layout_height="60dp"
-            android:background="@color/peter_river">
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/peter_river"
+            android:gravity="center_vertical"
+            >
 
-            <Button
+            <ImageButton
                 android:id="@+id/title_bar_left_menu"
-                android:layout_width="60dp"
-                android:layout_height="match_parent"
-                android:background="@drawable/ic_sms_32"
-                android:layout_gravity="left|center_vertical"
-                android:layout_marginLeft="10dp"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_main_menu"
+                android:layout_gravity="left|center"
+                android:background="@drawable/selector_action_bar_items"
+                android:layout_marginLeft="5dp"
+                />
 
-        </FrameLayout>
+
+            <ImageButton
+                android:id="@+id/btnEditProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:background="@drawable/ic_pen_white"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                />
 
 
+        </RelativeLayout>
 
     </LinearLayout>
 
@@ -40,7 +51,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:id="@+id/main_fragment">
+        android:id="@+id/main_fragment"
+        android:background="@color/white">
     </FrameLayout>
 
 </LinearLayout>

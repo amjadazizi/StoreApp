@@ -18,6 +18,8 @@ android {
         jumboMode true
     }
 
+
+
     buildTypes {
         release {
             minifyEnabled false
@@ -46,7 +48,6 @@ dependencies {
     //ALicensDialog
     compile('de.psdev.licensesdialog:licensesdialog:1.7.0')
 
-
     /*Reside Menu*/
     compile 'com.specyci:residemenu:1.6+'
 
@@ -54,13 +55,17 @@ dependencies {
     compile 'com.github.dmytrodanylyk.android-process-button:library:1.0.3'
 
     //Cirlur ImageView
-    compile 'de.hdodenhof:circleimageview:1.2.2'
+  //  compile 'de.hdodenhof:circleimageview:1.2.2'
 
     //Charts
     compile 'com.github.PhilJay:MPAndroidChart:v2.0.8'
 
 
+    // Picasso
+    compile 'com.squareup.picasso:picasso:2.5.2'
 
+    //AutoFit Textview
+    //compile 'me.grantland:autofittextview:0.2.+'
 
 
 

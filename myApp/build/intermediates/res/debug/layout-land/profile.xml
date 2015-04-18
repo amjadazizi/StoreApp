@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:background="@color/clouds">
+    android:background="@color/white">
 
 
     <RelativeLayout
         android:id="@+id/topBar"
         android:layout_width="fill_parent"
         android:layout_height="50dp"
-        android:background="@color/bckColor"
+        android:background="@color/transparent"
         android:orientation="horizontal"
         >
 
@@ -20,7 +20,7 @@
             android:id="@+id/btn_menu"
             android:layout_width="50dp"
             android:layout_height="match_parent"
-            android:background="@drawable/ic_call_32"
+            android:background="@drawable/ic_arrow_left"
             android:layout_gravity="left|center_vertical"
             android:layout_marginLeft="5dp"
             android:layout_alignParentLeft="true"
@@ -46,7 +46,7 @@
         android:layout_below="@id/topBar"
         android:layout_width="240dp"
         android:layout_height="match_parent"
-        android:background="@color/alizarin"
+        android:background="@color/white"
         android:orientation="vertical"
 
         >
@@ -70,10 +70,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         fab:fab_colorNormal="@color/white"
-        fab:fab_addButtonColorNormal="@color/alizarin"
-        app:fab_icon="@android:drawable/ic_dialog_info"
         fab:fab_title="Infomation"
-        fab:fab_colorPressed="@color/white_pressed"
         app:fab_size="normal"
         android:layout_marginTop="50dp"
         android:layout_marginLeft="203dp"
@@ -157,7 +154,7 @@
                         />
 
 
-                    <com.storeapp.Activities.ExternalClasses.FloatingEditText
+                    <com.storeapp.ui.FloatingEditText
                        android:id="@+id/editProEmail"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -167,7 +164,6 @@
                         android:layout_weight="5"
                         android:editable="false"
                         android:hint="Email"
-                        style="@style/EditTextAppTheme"
                         android:paddingLeft="10dp"
                         />
 
@@ -194,11 +190,11 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="25dp"
                 android:layout_weight="1"
-                android:background="@drawable/ic_action"
+                android:background="@drawable/ic_call_grey"
                 />
 
 
-            <com.storeapp.Activities.ExternalClasses.FloatingEditText
+            <com.storeapp.ui.FloatingEditText
                 android:id="@+id/editProPhoneNumber"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -208,7 +204,6 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="5"
-                style="@style/EditTextAppTheme"
                 />
 
 
@@ -279,8 +274,8 @@
                 />
 
 
-            <com.storeapp.Activities.ExternalClasses.FloatingEditText
-                android:id="@+id/editProCurrentPassword"
+            <com.storeapp.ui.FloatingEditText
+                android:id="@+id/editProNewPassword"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_centerVertical="true"
@@ -289,7 +284,6 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="5"
-                style="@style/EditTextAppTheme"
                 />
 
 
@@ -330,7 +324,7 @@
                 />
 
 
-            <com.storeapp.Activities.ExternalClasses.FloatingEditText
+            <com.storeapp.ui.FloatingEditText
                 android:id="@+id/editProRepeatPassword"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -339,9 +333,8 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="5"
-                style="@style/EditTextAppTheme"
                 />
-      <!--      <com.storeapp.Activities.ExternalClasses.FloatingEditText
+      <!--      <com.storeapp.ui.FloatingEditText
 
                 android:id="@+id/editProRepeatPassword"
                 android:layout_width="0dp"

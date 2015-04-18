@@ -2,75 +2,12 @@
 <resources>
     <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/values/arrays.xml -->
     <eat-comment/>
-    <string-array name="BusinessSideMenu">
-        <item>"Shop Info"</item>
-        <item>"Log In info"</item>
-    </string-array>
-    <string-array name="EmployeeSideMenu">
-        <item>"Personal info"</item>
-        <item>"Contact Info"</item>
-        <item>"Username"</item>
-
-    </string-array>
-    <string-array name="GridViewExample">
-        <item>"Personal info"</item>
-        <item>"Contact Info"</item>
-        <item>"Username"</item>
-        <item>"Personal info"</item>
-        <item>"Contact Info"</item>
-        <item>"Username"</item>
-        <item>"Personal info"</item>
-        <item>"Contact Info"</item>
-        <item>"Username"</item>
-        <item>"Personal info"</item>
-
-
-    </string-array>
-    <string-array name="entries_delete_messages_time_array">
-        <item>@string/text_1_day_old</item>
-        <item>@string/text_1_week_old</item>
-        <item>@string/text_1_month_old</item>
-        <item>@string/text_1_year_old</item>
-    </string-array>
-    <string-array name="entries_languages_array">
-        <item>English</item>
-        <item>Dansk</item>
-        <item>Français</item>
-        <item>Deutsch</item>
-    </string-array>
-    <string-array name="entries_show_message_time_array">
-        <item>@string/text_1_hour_old</item>
-        <item>@string/text_1_day_old</item>
-        <item>@string/text_1_week_old</item>
-        <item>@string/text_1_year_old</item>
-        <item>@string/text_all_old</item>
-    </string-array>
     <string-array name="storeTasks">
         <item>@string/text_items_in_stock</item>
         <item>@string/text_sold_items</item>
         <item>@string/text_top_10_items</item>
-        <item>@string/text_expired_items</item>
-        <item>@string/text_items_to_order</item>
         <item>@string/text_profit_status</item>
-    </string-array>
-    <string-array name="values_delete_messages_time_array">
-        <item>@string/value_delete_messages_1_day_old</item>
-        <item>@string/value_delete_messages_1_week_old</item>
-        <item>@string/value_delete_messages_1_month_old</item>
-        <item>@string/value_delete_messages_1_year_old</item>
-    </string-array>
-    <string-array name="values_languages_array">
-        <item>@string/value_language_english</item>
-        <item>@string/value_language_danish</item>
-        <item>@string/value_language_french</item>
-        <item>@string/value_language_german</item>
-    </string-array>
-    <string-array name="values_show_message_time_array">
-        <item>@string/value_show_messages_1_hour_old</item>
-        <item>@string/value_show_messages_1_day_old</item>
-        <item>@string/value_show_messages_1_week_old</item>
-        <item>@string/value_show_messages_1_year_old</item>
-        <item>@string/value_show_messages_all</item>
+        <item>@string/text_home</item>
     </string-array>
     <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/res/values/values.xml -->
     <eat-comment/>
@@ -143,41 +80,25 @@
     <bool name="abc_config_allowActionMenuItemTextWithIcon">false</bool>
     <bool name="abc_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
     <bool name="abc_split_action_bar_is_narrow">true</bool>
-    <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/values/bool.xml -->
-    <eat-comment/>
-    <bool name="pref_key_enable_application_sounds_default">true</bool>
-    <bool name="pref_key_should_delete_old_messages_default">false</bool>
-    <bool name="pref_key_show_initials_default">true</bool>
-    <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/values/colors.xml -->
-    <eat-comment/>
-    <color name="LDialogs_dim_lighter_gray">#80E0E0E0</color>
-    <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/res/values/values.xml -->
-    <eat-comment/>
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
     <color name="abc_search_url_text_selected">@android:color/black</color>
     <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/values/colors.xml -->
     <eat-comment/>
-    <color name="alizarin">#e74c3c</color>
-    <color name="amethyst">#9b59b6</color>
-    <color name="asbestos">#7f8c8d</color>
     <color name="bckColor">#34AADC</color>
-    <color name="belize_hole">#2980b9</color>
     <color name="black">#000</color>
     <color name="blue">#ADD8E6</color>
     <color name="blue_btn_bg_color">#AEDEF4</color>
     <color name="blue_btn_bg_pressed_color">#96BFD2</color>
     <color name="blue_normal">#ff33b5e5</color>
     <color name="blue_pressed">#ff0099cc</color>
+    <color name="button_normal">  #1E88E5</color>
+    <color name="button_pressed">  #1565C0</color>
     <color name="button_text_color">#FFFFFF</color>
-    <color name="carrot">#e67e22</color>
     <color name="clouds">#ecf0f1</color>
-    <color name="concrete">#95a5a6</color>
     <color name="custom_divider_color">#3498db</color>
-    <color name="dark_gray">#3d454c</color>
+    <color name="dark_gray">#757575</color>
     <color name="dark_gray_pressed">#373e44</color>
-    <color name="darker_gray">#1f2226</color>
-    <color name="emerald">#2ecc71</color>
     <color name="error_stroke_color">#F27474</color>
     <color name="float_transparent">#00000000</color>
     <color name="floating_edit_text_color">#ffc8c8c8</color>
@@ -188,35 +109,37 @@
     <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/build/intermediates/exploded-aar/com.github.navasmdc/MaterialDesign/1.4/res/values/values.xml -->
     <eat-comment/>
     <color name="green">#00FF00</color>
-    <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/values/colors.xml -->
+    <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/build/intermediates/exploded-aar/com.github.dmytrodanylyk.android-process-button/library/1.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="green_complete">#ff99cc00</color>
-    <color name="green_sea">#16a085</color>
+    <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="grey">  #C5CAE9</color>
+    <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/build/intermediates/exploded-aar/com.github.dmytrodanylyk.android-process-button/library/1.0.3/res/values/values.xml -->
+    <eat-comment/>
     <color name="holo_blue_bright">#ff00ddff</color>
     <color name="holo_green_light">#ff99cc00</color>
     <color name="holo_orange_light">#ffffbb33</color>
     <color name="holo_red_light">#ffff4444</color>
+    <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/values/colors.xml -->
+    <eat-comment/>
     <color name="light_gray">#c2c7cc</color>
-    <color name="material_blue_grey_80">#ff37474f</color>
-    <color name="material_blue_grey_90">#ff263238</color>
-    <color name="material_blue_grey_95">#ff21272b</color>
-    <color name="material_deep_teal_20">#ff80cbc4</color>
-    <color name="material_deep_teal_50">#ff009688</color>
-    <color name="midnight_blue">#2c3e50</color>
-    <color name="nephritis">#27ae60</color>
-    <color name="orange">#f39c12</color>
     <color name="peter_river">#2196F3</color>
-    <color name="pomegranate">#c0392b</color>
-    <color name="pumpkin">#d35400</color>
+    <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/build/intermediates/exploded-aar/com.github.dmytrodanylyk.android-process-button/library/1.0.3/res/values/values.xml -->
+    <eat-comment/>
     <color name="purple_progress">#ffaa66cc</color>
+    <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/values/colors.xml -->
+    <eat-comment/>
     <color name="red">#f00</color>
     <color name="red_btn_bg_color">#DD6B55</color>
     <color name="red_btn_bg_pressed_color">#CD5B55</color>
+    <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/build/intermediates/exploded-aar/com.github.dmytrodanylyk.android-process-button/library/1.0.3/res/values/values.xml -->
+    <eat-comment/>
     <color name="red_error">#ffff4444</color>
+    <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/values/colors.xml -->
+    <eat-comment/>
     <color name="sand">  #E5E4E2</color>
-    <color name="silver">#bdc3c7</color>
     <color name="success_stroke_color">#A5DC86</color>
-    <color name="sun_flowers">#f1c40f</color>
     <color name="sweet_dialog_bg_color">#FFFFFF</color>
     <color name="text_color">#575757</color>
     <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/build/intermediates/exploded-aar/com.github.navasmdc/MaterialDesign/1.4/res/values/values.xml -->
@@ -226,11 +149,8 @@
     <eat-comment/>
     <color name="trans_success_stroke_color">#33A5DC86</color>
     <color name="transparent">#00000000</color>
-    <color name="turquoise">#1abc9c</color>
     <color name="warning_stroke_color">#F8BB86</color>
-    <color name="wet_asphalt">#34495e</color>
     <color name="white">#fff</color>
-    <color name="wisteria">#8e44ad</color>
     <declare-styleable name="ActionBar"><attr name="navigationMode"><enum name="normal" value="0"/><enum name="listMode" value="1"/><enum name="tabMode" value="2"/></attr><attr name="displayOptions"><flag name="useLogo" value="0x1"/><flag name="showHome" value="0x2"/><flag name="homeAsUp" value="0x4"/><flag name="showTitle" value="0x8"/><flag name="showCustom" value="0x10"/><flag name="disableHome" value="0x20"/></attr><attr name="title"/><attr format="string" name="subtitle"/><attr format="reference" name="titleTextStyle"/><attr format="reference" name="subtitleTextStyle"/><attr format="reference" name="icon"/><attr format="reference" name="logo"/><attr format="reference" name="divider"/><attr format="reference" name="background"/><attr format="reference|color" name="backgroundStacked"/><attr format="reference|color" name="backgroundSplit"/><attr format="reference" name="customNavigationLayout"/><attr name="height"/><attr format="reference" name="homeLayout"/><attr format="reference" name="progressBarStyle"/><attr format="reference" name="indeterminateProgressStyle"/><attr format="dimension" name="progressBarPadding"/><attr format="dimension" name="itemPadding"/></declare-styleable>
     <declare-styleable name="ActionBarLayout"><attr name="android:layout_gravity"/></declare-styleable>
     <declare-styleable name="ActionBarWindow"><attr format="boolean" name="windowActionBar"/><attr format="boolean" name="windowActionBarOverlay"/><attr format="boolean" name="windowSplitActionBar"/></declare-styleable>
@@ -239,7 +159,6 @@
     <declare-styleable name="ActionMode"><attr name="titleTextStyle"/><attr name="subtitleTextStyle"/><attr name="background"/><attr name="backgroundSplit"/><attr name="height"/></declare-styleable>
     <declare-styleable name="ActivityChooserView"><attr format="string" name="initialActivityCount"/><attr format="reference" name="expandActivityOverflowButtonDrawable"/></declare-styleable>
     <declare-styleable name="AddFloatingActionButton"><attr format="color" name="fab_plusIconColor"/></declare-styleable>
-    <declare-styleable name="CircleImageView"><attr format="dimension" name="border_width"/><attr format="color" name="border_color"/></declare-styleable>
     <declare-styleable name="CompatTextView"><attr format="reference|boolean" name="textAllCaps"/></declare-styleable>
     <declare-styleable name="CustomAttributes"><attr format="color|reference" name="rippleColor"/><attr format="float" name="rippleSpeed"/><attr format="boolean" name="showNumberIndicator"/><attr format="integer" name="max"/><attr format="integer" name="min"/><attr format="integer" name="value"/><attr format="integer" name="progress"/><attr format="dimension" name="ringWidth"/><attr format="boolean" name="check"/><attr format="dimension" name="checkBoxSize"/><attr format="dimension" name="thumbSize"/><attr format="integer" name="iconDrawable"/><attr format="dimension" name="iconSize"/><attr format="boolean" name="animate"/><attr format="float" name="rippleBorderRadius"/><attr format="boolean" name="clickAfterRipple"/></declare-styleable>
     <declare-styleable name="FlatButton"><attr format="color" name="pb_colorPressed"/><attr format="color" name="pb_colorNormal"/><attr format="dimension" name="pb_cornerRadius"/></declare-styleable>
@@ -279,13 +198,7 @@
     <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="actionbar_dimen">56dp</dimen>
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_horizontal_margin1">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin11">16dp</dimen>
     <dimen name="alert_width">290dp</dimen>
-    <dimen name="color_height">48dp</dimen>
-    <dimen name="color_width">48dp</dimen>
     <dimen name="common_circle_width">3dp</dimen>
     <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/build/intermediates/exploded-aar/com.github.dmytrodanylyk.android-process-button/library/1.0.3/res/values/values.xml -->
     <eat-comment/>
@@ -312,10 +225,7 @@
     <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="progress_circle_radius">34dp</dimen>
-    <dimen name="text_size_large">18sp</dimen>
-    <dimen name="text_size_medium">18sp</dimen>
     <dimen name="text_size_small">15sp</dimen>
-    <dimen name="text_size_xlarge">18sp</dimen>
     <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/res/values/values.xml -->
     <eat-comment/>
     <item name="action_bar_activity_content" type="id"/>
@@ -371,9 +281,12 @@
     <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/values/strings_errors.xml -->
     <eat-comment/>
     <string name="error_email_empty">Email is Required</string>
-    <string name="error_email_inbvalid">Email is Invalid</string>
+    <string name="error_email_invalid">Email is Invalid</string>
+    <string name="error_last_name_empty">Last name is Required</string>
     <string name="error_name_empty">Name is Required</string>
+    <string name="error_passwords_empty">Passwords is Required</string>
     <string name="error_passwords_mismatch">Passwords Dosnt Match</string>
+    <string name="error_phone_number_empty">Phoneumber is Required</string>
     <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -426,6 +339,7 @@
     <string name="pref_key_show_initials">pref_show_initials</string>
     <string name="pref_key_sort_messages">pref_sort_messages</string>
     <string name="search_for_employee">Enter The Name.</string>
+    <string name="tab">\u0009</string>
     <string name="text_1">1</string>
     <string name="text_100_kr">100 Kr</string>
     <string name="text_1_day_old">1 Day Old</string>
@@ -472,6 +386,7 @@
     <string name="text_expired_items">Expired Items</string>
     <string name="text_from">From:</string>
     <string name="text_headline">Headline:</string>
+    <string name="text_home">Home</string>
     <string name="text_initials">Initials:</string>
     <string name="text_item_already_scanned">"Item Already Scanned!"</string>
     <string name="text_item_already_updated">Item Already Updated!</string>
@@ -510,9 +425,9 @@
     <string name="text_this_password_will">This password will be your access code to log in with to this application.</string>
     <string name="text_to_pay_back">Pay back:</string>
     <string name="text_top_10_items">Top 10 Items</string>
-    <string name="text_total">"Total: "</string>
+    <string name="text_total">"Total"</string>
     <string name="text_under_construction">Under Construction</string>
-    <string name="text_want_log_out">Want To Log Out?</string>
+    <string name="text_want_log_out">Want to log out?</string>
     <string name="text_whats_your_name">What Is Your name?</string>
     <string name="text_whats_your_phone_email">What Is Your Email and Phone Number?</string>
     <string name="text_when_you_enter">When you enter your name, it is easier for your colleagues to recognize you.</string>
@@ -561,22 +476,13 @@
     <style name="DashboardButton">
         <item name="android:layout_gravity">center_vertical</item>
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:drawablePadding">2dp</item>
         <item name="android:textSize">@dimen/text_size_small</item>
         <item name="android:textStyle">bold</item>
         <item name="android:background">@null</item>
-    </style>
-    <style name="EditTextAppTheme" parent="android:Widget.EditText">
-        <item name="android:background">@drawable/apptheme_edit_text_holo_light</item>
         <item name="android:textColor">@color/black</item>
-    </style>
-    <style name="LDialogs_Dark" parent="android:Theme.Holo">
-
-    </style>
-    <style name="LDialogs_Light" parent="android:Theme.Holo.Light">
-        <!-- Customize your theme here. -->
     </style>
     <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/res/values/values.xml -->
     <eat-comment/>
@@ -1139,8 +1045,10 @@
         <item name="android:paddingRight">21dp</item>
         <item name="android:textColor">@color/button_text_color</item>
     </style>
-    <style name="fragment_text">
-        <item name="android:textColor">#ffacacac</item>
-        <item name="android:textSize">25sp</item>
+    <style name="employee_list_card_style">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+
     </style>
 </resources>

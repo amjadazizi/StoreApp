@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/container"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:layout_marginRight="10dp"
     android:layout_marginLeft="10dp"
     android:layout_marginTop="10dp"
-    android:layout_marginBottom="10dp"
-    android:background="@drawable/sweet_alert_shape">
+    android:background="@drawable/layout_shape_round_corners"
+
+    >
 
     <LinearLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
         android:layout_weight="5"
         android:orientation="horizontal" >
 
@@ -26,51 +27,52 @@
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:gravity="center"
-            android:layout_weight="1.5">
+            android:layout_marginRight="5dp"
+            android:layout_weight="1.3">
 
-
-<!--            <ImageView
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:scaleType="centerInside"
-                android:src="@drawable/ic_employee_pic_64"/>
-                -->
-
-            <de.hdodenhof.circleimageview.CircleImageView
+            <!--<de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/profile_image"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
                 android:src="@drawable/ic_call_32"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 app:border_width="2dp"
-                app:border_color="@color/peter_river"/>
+                app:border_color="@color/peter_river"/>-->
 
-
-            <View
-                android:layout_width="4dp"
+           <!-- <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
                 android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
                 android:layout_marginBottom="5dp"
-                android:layout_alignParentBottom="true"
-                android:background="@color/peter_river"/>
+                />-->
 
+            <com.storeapp.MainMenu.EmployeeList.CustomImageView
+                android:id="@+id/profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
 
-           <!-- <de.hdodenhof.circleimageview.CircleImageView
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/image_view"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                app:border_width="5dp"
-                android:layout_gravity="center_vertical|center_horizontal"
-                android:src="@drawable/emp_list_imageview_shape"
-                app:border_color="#FF000000"/>-->
+                />
+
 
         </LinearLayout>
+<!--        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"/>-->
+
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_weight="1">
 
@@ -86,46 +88,42 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="10dp"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Name" />
+                    android:layout_marginBottom="5dp"
+                    style="@style/employee_list_card_style"
+                    android:text="Name"
+                    />
                 <TextView
                     android:id="@+id/lastName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="10dp"
-
-                    android:fontFamily="sans-serif-light"
-                    android:text="Last Name" />
+                    android:layout_marginBottom="5dp"
+                    android:text="Last Name"
+                    style="@style/employee_list_card_style"
+                    />
                 <TextView
                     android:id="@+id/Email"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="10dp"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Email" />
+                    android:layout_marginBottom="5dp"
+                    android:text="Email"
+                    style="@style/employee_list_card_style"
+                    />
                 <TextView
                     android:id="@+id/phoneNumber"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:textStyle="bold"
                     android:layout_marginBottom="10dp"
                     android:gravity="center_vertical"
-                    android:fontFamily="sans-serif-light"
+                    style="@style/employee_list_card_style"
                     android:text="PhoneNumber" />
                 <View
                     android:layout_width="match_parent"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
                     android:layout_height="2dp"
                     android:layout_alignParentBottom="true"
-                    android:background="@color/peter_river"/>
+                    android:background="@color/white"/>
 
 
 
@@ -137,7 +135,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-                android:layout_marginBottom="10dp">
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="3dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -150,8 +149,7 @@
                     android:id="@+id/btnCall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@color/transparent"
-                    android:src="@drawable/ic_call_32"/>
+                    android:background="@drawable/selector_call_employee_list"/>
 
 
 
@@ -168,7 +166,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@color/transparent"
-                        android:src="@drawable/ic_sms_32"/>
+                        android:src="@drawable/selector_sms_employee_list"/>
 
                 </LinearLayout>
                 <LinearLayout
@@ -183,7 +181,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@color/transparent"
-                        android:src="@drawable/ic_email_32"
+                        android:src="@drawable/selector_email_employee_list"
                        />
 
                 </LinearLayout>

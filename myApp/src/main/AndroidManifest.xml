@@ -6,7 +6,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="11"
+        android:minSdkVersion="16"
         android:targetSdkVersion="19" />
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
@@ -18,6 +18,7 @@
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <supports-screens
         android:anyDensity="true"
@@ -34,27 +35,19 @@
         android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="18" />
 
-    <!--
- <android:uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
-    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <android:uses-permission
-        android:name="android.permission.READ_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
-    -->
+
     <application
-        android:name=".Activities.AppContextProvider"
+        android:name=".AppContextProvider"
         android:allowBackup="true"
-        android:icon="@drawable/ic_call_32"
+        android:icon="@drawable/ic_storeapp_blue"
         android:label="@string/app_name"
         tools:replace="android:icon" >
         <activity
-            android:name=".Activities.RegistrationActivityFragCont"
+            android:name=".Login_Registration.RegistrationActivity"
             android:label="@string/title_activity_login" >
         </activity>
         <activity
-            android:name=".Activities.MainMenu.Login"
+            android:name=".Login_Registration.Login"
             android:label="@string/title_activity_login" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -63,34 +56,65 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activities.MainMenu.Choose_Task"
+            android:name=".MainMenu.LeftMenu.Choose_Task"
             android:label="@string/title_activity_choose_task" >
         </activity>
         <activity
-            android:name=".Activities.EmployeeList.Emp_List"
+            android:name=".MainMenu.EmployeeList.Emp_List"
             android:label="@string/title_activity_employee_list" >
         </activity>
         <activity
-            android:name=".Activities.StoreStatus.Store_Status"
+            android:name=".MainMenu.StoreStatus.Store_Status"
             android:label="@string/title_activity_store__status" >
         </activity>
         <activity
-            android:name=".Activities.StoreStatus.Store_Items"
+            android:name=".MainMenu.Store_Items"
             android:label="@string/title_activity_store_items" >
         </activity>
         <activity
-            android:name=".Activities.StoreStatus.StoreStatusDialogActivity"
+            android:name=".StoreStatus.StoreStatusDialogActivity"
             android:label="@string/title_activity_store_status_dialog"
             android:theme="@android:style/Theme.Holo.Dialog" >
         </activity>
         <activity
-            android:name=".util.Picture"
+            android:name=".util.PictureDialog"
             android:theme="@style/custom_theme" >
         </activity>
+
         <activity
-            android:name=".storestatusfragments.BarChartActivityExample"
-            android:label="@string/title_activity_bar_chart_activity_example" >
+            android:name=".MainMenu.CashRegister.Cash_Register"
+            android:label="@string/title_activity_cash_register" >
+
+        </activity>
+        <activity
+            android:name=".MainMenu.CashRegister.ScanItemAmountDialog"
+            android:theme="@style/custom_theme" >
+
+        </activity>
+        <activity
+            android:name=".MainMenu.CashRegister.PaymentDialog"
+            android:theme="@style/custom_theme" >
+
+        </activity>
+
+        <activity
+            android:name=".MainMenu.AddNewEmployeeDialog"
+            android:theme="@style/custom_theme" >
+
+        </activity>
+
+        <activity
+            android:name=".MainMenu.CashRegister.LogoutDialog"
+            android:theme="@style/custom_theme" >
+
+        </activity>
+        <activity
+            android:name=".MainMenu.CashRegister.ReceiptActivity"
+            android:label="@string/title_activity_cash_register" >
+
         </activity>
     </application>
+
+
 
 </manifest>

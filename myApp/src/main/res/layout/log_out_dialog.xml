@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="left"
+        android:background="@drawable/layout_shape_round_corners">
+
+        <LinearLayout
+        android:id="@+id/addEmployeeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="left"
+        android:background="@color/clouds">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                    <TextView
+                        android:id="@+id/txtWantToLogOut"
+                        android:paddingLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/button_selector"
+                        android:textColor="@color/black"
+                        android:text="@string/text_want_log_out"
+                        android:textSize="18sp"
+                        />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:id="@+id/txtInfoPayback"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/button_selector"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+            android:id="@+id/dialog_custom_alongside_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:paddingBottom="16dp"
+            android:paddingTop="10dp">
+
+
+            <Button
+                android:id="@+id/btnPaymentCancel"
+                android:layout_width="88dp"
+                android:layout_height="36dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textAllCaps="true"
+                tools:text="Cancel"
+                android:background="@drawable/button_selector"
+                android:textSize="15sp"
+                android:layout_gravity="right"
+                android:visibility="visible"
+                android:textColor="@color/black"
+                tools:visibility="visible"/>
+
+                <Button
+                    android:id="@+id/btnLogOut"
+                    android:layout_width="88dp"
+                    android:layout_height="36dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textAllCaps="true"
+                    tools:text="@string/text_log_out_2"
+                    android:background="@drawable/button_selector"
+                    android:textSize="15sp"
+                    android:layout_gravity="right"
+                    android:visibility="visible"
+                    android:textColor="@color/black"
+                    tools:visibility="visible"/>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+ </LinearLayout>
+

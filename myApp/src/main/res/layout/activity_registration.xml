@@ -7,19 +7,18 @@
     android:orientation="vertical"
     >
 
-    <LinearLayout
+  <!--  <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:id="@+id/fragmentRegistSideMenuLand"
         android:background="@color/transparent"
         android:orientation="horizontal"
         android:layout_weight="0">
-    </LinearLayout>
+    </LinearLayout>-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/fragmentsRegistCont"
-        android:background="@color/alizarin"
         android:orientation="vertical"
         android:layout_weight="1"
              >
@@ -37,6 +36,7 @@
         android:layout_height="wrap_content"
         app:fab_icon="@drawable/ic_arrow_right"
         app:fab_size="normal"
+
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="15dp"
 

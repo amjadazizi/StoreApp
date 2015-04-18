@@ -60,17 +60,12 @@ public class BusinessModel extends  BaseModel {
         boolean valid = true;
 
         valid= valid ? (Utils.isNullOrEmpty(name) ? false: valid) : valid;
-        valid= valid ? (Utils.isEmailValid(cvr) ? false: valid) : valid;
-        valid= valid ? (Utils.isNullOrEmpty(email) ? false: valid) : valid;
+        //valid= valid ? (Utils.isEmailFormatValid(email) ? false: valid) : valid;
+        valid= valid ? (Utils.isNullOrEmpty(cvr) ? false: valid) : valid;
         valid= valid ? (Utils.isNullOrEmpty(phoneNumber) ? false: valid) : valid;
 
         return  valid;
 
     }
 
-
-   // @Override
-   // public static String getSharedPrefsKey() {
-    //    return "businessModelPrefsKey";
-    //}
 }

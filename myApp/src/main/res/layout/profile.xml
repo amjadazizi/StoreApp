@@ -5,51 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/clouds">
+    android:background="@color/white">
 
     <RelativeLayout
         android:id="@+id/lll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/transparent"
-        android:orientation="vertical" >
+        android:background="@color/blue"
+        android:orientation="vertical"
+        >
 
         <ImageView
             android:id="@+id/imgProfile"
             android:layout_width="match_parent"
             android:layout_height="220dp"
             android:scaleType="fitXY"
-            android:src="@drawable/ic_cash_register" />
+            android:src="@drawable/ic_profile_white" />
 
 
-        <Button
-            android:id="@+id/btn_menu"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/ic_call_32"
-            android:layout_gravity="left|center_vertical"
-            android:layout_marginRight="100dp"
-            />
-
-
-        <Button
-            android:id="@+id/btn_edit"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:background="@android:drawable/ic_menu_call"
-            android:layout_gravity="left|center_vertical"
-            android:layout_alignParentRight="true"
-
-            />
     </RelativeLayout>
 
     <com.getbase.floatingactionbutton.FloatingActionButton
         android:id="@+id/btnTakePicture"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        fab:fab_colorNormal="@color/white"
-        fab:fab_addButtonColorNormal="@color/alizarin"
-        app:fab_icon="@android:drawable/ic_dialog_info"
         fab:fab_title="Infomation"
         fab:fab_colorPressed="@color/white_pressed"
         app:fab_size="normal"
@@ -128,10 +107,10 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="15dp"
                     android:layout_weight="1"
-                    android:background="@android:drawable/ic_menu_add" />
+                    android:background="@drawable/ic_email_grey" />
 
 
-                <com.storeapp.Activities.ExternalClasses.FloatingEditText
+                <com.storeapp.ui.FloatingEditText
                     android:id="@+id/editProEmail"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -141,7 +120,7 @@
                     android:layout_weight="5"
                     android:hint="Email"
                     android:editable="false"
-                    style="@style/EditTextAppTheme"
+                    android:textColor="@color/black"
 
                     />
 
@@ -163,10 +142,10 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/ic_action" />
+                    android:background="@drawable/ic_call_grey" />
 
 
-                <com.storeapp.Activities.ExternalClasses.FloatingEditText
+                <com.storeapp.ui.FloatingEditText
                     android:id="@+id/editProPhoneNumber"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -176,7 +155,9 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="5"
-                    style="@style/EditTextAppTheme" />
+                    android:textColor="@color/black"
+
+                    />
 
 
             </LinearLayout>
@@ -224,38 +205,6 @@
 
             </LinearLayout>
 
-     <!--       <LinearLayout
-                android:id="@+id/itemButtons"
-                android:layout_width="fill_parent"
-                android:layout_height="match_parent"
-                android:clickable="true"
-                android:layout_weight="1"
-                android:layout_marginTop="-5dp">
-
-
-                <ImageView
-                    android:id="@+id/imgviewPassword"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="15dp"
-                    android:layout_weight="1"
-                    android:background="@android:drawable/ic_menu_call" />
-
-
-                <com.storeapp.Activities.ExternalClasses.FloatingEditText
-                    android:id="@+id/editProCurrentPassword"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_centerVertical="true"
-                    android:hint="Current Password"
-                    android:inputType="textEmailAddress"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="5"
-                    style="@style/EditTextAppTheme" />
-
-
-            </LinearLayout>-->
 
             <LinearLayout
                 android:id="@+id/itemButtons"
@@ -272,10 +221,10 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="15dp"
                     android:layout_weight="1"
-                    android:background="@android:drawable/ic_menu_call" />
+                     />
 
 
-                <com.storeapp.Activities.ExternalClasses.FloatingEditText
+                <com.storeapp.ui.FloatingEditText
                     android:id="@+id/editProNewPassword"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -284,7 +233,9 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="5"
-                    style="@style/EditTextAppTheme" />
+                    android:textColor="@color/black"
+                    android:inputType="textPassword"
+                    />
 
 
             </LinearLayout>
@@ -304,10 +255,10 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="15dp"
                     android:layout_weight="1"
-                    android:background="@android:drawable/ic_menu_call" />
+                     />
 
 
-                <com.storeapp.Activities.ExternalClasses.FloatingEditText
+                <com.storeapp.ui.FloatingEditText
 
                     android:id="@+id/editProRepeatPassword"
                     android:layout_width="0dp"
@@ -317,7 +268,9 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="5"
-                    style="@style/EditTextAppTheme" />
+                    android:textColor="@color/black"
+                    android:inputType="textPassword"
+                     />
 
 
             </LinearLayout>

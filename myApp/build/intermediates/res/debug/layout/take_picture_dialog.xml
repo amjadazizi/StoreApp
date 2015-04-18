@@ -5,7 +5,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="left"
-        android:background="@drawable/sweet_alert_shape">
+        android:background="@drawable/layout_shape_round_corners">
 
         <LinearLayout
         android:id="@+id/addEmployeeLayout"

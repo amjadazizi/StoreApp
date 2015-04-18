@@ -7,7 +7,7 @@
     <com.storeapp.ui.DashboardLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="@color/clouds" >
+        android:background="@color/white" >
 
         <Button
             android:id="@+id/ctCashRegBtn"
@@ -41,90 +41,10 @@
             android:drawableTop="@drawable/dashborad_employee_btn_pressed"
             android:text="@string/title_activity_employee_list" />
 
- <!--       <Button
-            android:id="@+id/btnEmpInfo"
-            style="@style/DashboardButton"
-            android:layout_width="match_parent"
-            android:layout_height="110dp"
-            android:drawableTop="@drawable/dashborad_employee_info_btn_pressed"
-            android:text="@string/title_activity_emp__info" />-->
 
-<!--
-        <Button
-            android:id="@+id/ctLogOut"
-            style="@style/DashboardButton"
-            android:layout_width="match_parent"
-            android:layout_height="110dp"
-            android:drawableTop="@drawable/dashborad_log_out_btn_pressed"
-            android:text="@string/text_log_out_2" />
--->
 
     </com.storeapp.ui.DashboardLayout>
-  <!--  <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_above="@+id/ignored_view"
-        android:layout_alignParentTop="true"
-        android:gravity="center"
-        android:orientation="vertical" >
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="60dp"
-            android:layout_height="120dp"
-            android:layout_gravity="center"
-            android:scaleType="fitCenter"
-            android:src="@drawable/gesture" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:clickable="false"
-            android:padding="5dp"
-            android:text=" 1. Swipe right/left to open menu"
-            android:textColor="#ffacacac"
-            android:textSize="17sp" />
-
-        <Button
-            android:id="@+id/btn_open_menu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="4dp"
-            android:background="@drawable/button_selector"
-            android:padding="12dp"
-            android:text="2. Click me to open menu"
-            android:textColor="@android:color/white"
-            android:textSize="17sp" />
-    </LinearLayout>
-
-    <FrameLayout
-        android:id="@+id/ignored_view"
-        android:layout_width="fill_parent"
-        android:layout_height="120dp"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="bottom"
-        android:orientation="vertical"
-        android:padding="10dp" >
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="fitXY"
-            android:src="@drawable/frame" />
-
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:padding="5dp"
-            android:text="This is an ignored view，you can’t use gesture to operate menu here."
-            android:textColor="#9a9a9a"
-            android:textSize="17sp" />
-    </FrameLayout>-->
-
-</RelativeLayout><!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/layout/home.xml -->
+</RelativeLayout>
+<!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/layout/home.xml -->

@@ -13,6 +13,7 @@
         android:layout_weight="1"
         android:background="@color/white"
         android:orientation="vertical"
+        android:layout_marginTop="20dp"
 >
 
 
@@ -20,22 +21,21 @@
             android:id="@+id/txtHvadHedderDu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
             android:layout_weight="1"
-            android:gravity="center_horizontal"
             android:text="@string/text_whats_your_phone_email"
             android:textColor="@color/black"
             android:textSize="25dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/txtDescrip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-
             android:layout_marginRight="20dp"
-            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:layout_weight="1"
             android:text="@string/text_your_email_phone_number"
             android:textColor="@color/black" />
     </LinearLayout>
@@ -49,9 +49,8 @@
         android:orientation="horizontal"
         android:weightSum="2">
 
-        <com.storeapp.Activities.ExternalClasses.FloatingEditText
+        <com.storeapp.ui.FloatingEditText
             android:id="@+id/editEmail"
-            style="@style/EditTextAppTheme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
@@ -59,12 +58,14 @@
             android:layout_weight="1"
             android:inputType="textWebEmailAddress"
             android:textColor="@color/black"
-        />
+            android:layout_gravity="center"
+            android:text="KAKAKAK@hotmail.com"
 
-        <com.storeapp.Activities.ExternalClasses.FloatingEditText
+            />
+
+        <com.storeapp.ui.FloatingEditText
 
             android:id="@+id/editPhoneNum"
-            style="@style/EditTextAppTheme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
@@ -73,7 +74,11 @@
             android:hint="@string/text_phone_number"
             android:inputType="number"
             android:textColor="@color/black"
-        />
+            android:layout_gravity="center"
+            android:text="72332838"
+
+
+            />
     </LinearLayout>
 
 

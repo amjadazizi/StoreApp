@@ -26,22 +26,19 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="fitXY"
-            android:src="@drawable/ic_employee_pic_64"
+            android:src="@drawable/ic_image_white"
             />
 
     </FrameLayout>
 
 
     <com.getbase.floatingactionbutton.FloatingActionButton
-        android:id="@+id/buttonColorSelector"
+        android:id="@+id/btnAddImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         fab:fab_colorNormal="@color/white"
-        fab:fab_addButtonColorNormal="@color/alizarin"
-        app:fab_icon="@android:drawable/ic_dialog_info"
         fab:fab_title="Infomation"
         android:layout_marginLeft="202dp"
-        fab:fab_colorPressed="@color/white_pressed"
         android:layout_alignParentBottom="true"
         app:fab_size="normal"
 
@@ -106,13 +103,13 @@
                         android:orientation="horizontal"
                         android:layout_weight="1">
 
-                        <ImageButton
+                        <Button
                             android:id="@+id/btnScanItem"
-
-                            android:layout_width="wrap_content"
+                            android:background="@drawable/selector_button_pressed"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="15dp"
-                            android:background="@drawable/ic_store_items"
+                            android:icon="@drawable/ic_store_items"
                             />
 
                     </LinearLayout>
@@ -124,9 +121,10 @@
                         android:layout_weight="2"
                         android:layout_marginLeft="51dp">
 
-                        <com.storeapp.Activities.ExternalClasses.FloatingEditText
+                        <com.storeapp.ui.FloatingEditText
                             android:id="@+id/editBarcode"
                             android:singleLine="true"
+                            android:textColor="@color/black"
 
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -134,18 +132,17 @@
                             android:hint="Barcode"
                             android:layout_marginRight="10dp"
                             android:layout_weight="1"
-                            style="@style/EditTextAppTheme"
                             />
 
-                        <com.storeapp.Activities.ExternalClasses.FloatingEditText
+                        <com.storeapp.ui.FloatingEditText
                             android:id="@+id/editEan"
                             android:singleLine="true"
+                            android:textColor="@color/black"
 
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
-                            style="@style/EditTextAppTheme"
                             android:hint="Ean-Type"
                             android:layout_weight="2"
                             />
@@ -164,7 +161,7 @@
                 android:layout_weight="1">
 
 
-                <com.storeapp.Activities.ExternalClasses.FloatingEditText
+                <com.storeapp.ui.FloatingEditText
                     android:id="@+id/editDecription"
                     android:singleLine="true"
                     android:layout_width="match_parent"
@@ -174,7 +171,8 @@
                     android:hint="Description"
                     android:layout_marginRight="10dp"
                     android:layout_weight="1"
-                    style="@style/EditTextAppTheme"
+                    android:textColor="@color/black"
+
                     />
 
 
@@ -192,7 +190,7 @@
 
 
 
-                <com.storeapp.Activities.ExternalClasses.FloatingEditText
+                <com.storeapp.ui.FloatingEditText
                     android:id="@+id/editAmount"
                     android:singleLine="true"
                     android:layout_width="match_parent"
@@ -202,7 +200,8 @@
                     android:hint="Amount"
                     android:layout_marginRight="10dp"
                     android:layout_weight="1"
-                    style="@style/EditTextAppTheme"
+                    android:textColor="@color/black"
+
                     />
 
 
@@ -246,7 +245,7 @@
                         android:layout_weight="2"
                         android:layout_marginLeft="51dp">
 
-                        <com.storeapp.Activities.ExternalClasses.FloatingEditText
+                        <com.storeapp.ui.FloatingEditText
                             android:id="@+id/editPurchaseprice"
                             android:singleLine="true"
                             android:layout_width="match_parent"
@@ -255,19 +254,21 @@
                             android:hint="Purchaseprice"
                             android:layout_marginRight="10dp"
                             android:layout_weight="1"
-                            style="@style/EditTextAppTheme"
+                            android:textColor="@color/black"
+
                             />
 
-                        <com.storeapp.Activities.ExternalClasses.FloatingEditText
+                        <com.storeapp.ui.FloatingEditText
                             android:id="@+id/editPurchaseprice"
                             android:singleLine="true"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
-                            style="@style/EditTextAppTheme"
                             android:hint="Ean-Type"
                             android:layout_weight="1"
+                            android:textColor="@color/black"
+
                             />
 
                     </LinearLayout>
@@ -286,12 +287,12 @@
                 android:layout_marginLeft="104dp"
                 >
 
-                <com.gc.materialdesign.views.ButtonRectangle
+                <Button
                     android:id="@+id/btnSaveItem"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:background="#1E88E5"
+                    android:background="@drawable/selector_button_pressed"
                     android:text="Save Item"
                     />
             </LinearLayout>

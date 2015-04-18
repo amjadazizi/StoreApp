@@ -13,16 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="vertical"
+        android:layout_marginTop="20dp"
 >
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginBottom="15dp"
-            android:background="@drawable/ic_back"
-            android:id="@+id/btnImgBack"/>
-
 
         <TextView
             android:id="@+id/txtHvadHedderDu"
@@ -44,7 +36,9 @@
             android:layout_marginRight="20dp"
             android:gravity="center_horizontal"
             android:text="@string/text_your_email_phone_number"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -52,11 +46,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_weight="2"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:gravity="center"
+        >
 
-        <com.storeapp.Activities.ExternalClasses.FloatingEditText
+        <com.storeapp.ui.FloatingEditText
             android:id="@+id/editEmail"
-            style="@style/EditTextAppTheme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
@@ -67,9 +62,8 @@
             android:textColor="@color/black"
         />
 
-        <com.storeapp.Activities.ExternalClasses.FloatingEditText
+        <com.storeapp.ui.FloatingEditText
             android:id="@+id/editPhoneNum"
-            style="@style/EditTextAppTheme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"

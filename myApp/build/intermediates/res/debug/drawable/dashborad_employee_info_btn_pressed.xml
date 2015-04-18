@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android" >
-        <item android:drawable="@drawable/ic_employee_info_white" android:state_pressed="true"/>
- <!-- pressed -->
-    <item android:drawable="@drawable/ic_employee_info"/>
- <!-- Normal -->
-
-</selector>
-<!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/drawable/dashborad_employee_info_btn_pressed.xml -->

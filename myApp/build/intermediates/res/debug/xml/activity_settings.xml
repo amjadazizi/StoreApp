@@ -3,7 +3,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content" >
 
-    <PreferenceCategory android:title="Settings For StoreApp" >
+ <!--   <PreferenceCategory android:title="Settings For StoreApp" >
         <CheckBoxPreference
             android:defaultValue="@bool/pref_key_show_initials_default"
             android:key="@string/pref_key_show_initials"
@@ -55,6 +55,6 @@
             android:summary="@string/text_change_language_summary"
             android:title="@string/text_change_language" >
         </ListPreference>
-    </PreferenceCategory>
+    </PreferenceCategory>-->
 
 </PreferenceScreen><!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/xml/activity_settings.xml -->

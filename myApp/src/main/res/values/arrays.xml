@@ -5,64 +5,53 @@
         <item>@string/text_items_in_stock</item>
         <item>@string/text_sold_items</item>
         <item>@string/text_top_10_items</item>
-        <item>@string/text_expired_items</item>
-        <item>@string/text_items_to_order</item>
         <item>@string/text_profit_status</item>
+        <item>@string/text_home</item>
     </string-array>
-    <string-array name="entries_show_message_time_array">
+
+   <!-- <string-array name="entries_show_message_time_array">
         <item>@string/text_1_hour_old</item>
         <item>@string/text_1_day_old</item>
         <item>@string/text_1_week_old</item>
         <item>@string/text_1_year_old</item>
         <item>@string/text_all_old</item>
     </string-array>
-    <string-array name="values_show_message_time_array">
+    -->
+    <!--<string-array name="values_show_message_time_array">
         <item>@string/value_show_messages_1_hour_old</item>
         <item>@string/value_show_messages_1_day_old</item>
         <item>@string/value_show_messages_1_week_old</item>
         <item>@string/value_show_messages_1_year_old</item>
         <item>@string/value_show_messages_all</item>
-    </string-array>
-    <string-array name="entries_delete_messages_time_array">
+    </string-array>-->
+<!--    <string-array name="entries_delete_messages_time_array">
         <item>@string/text_1_day_old</item>
         <item>@string/text_1_week_old</item>
         <item>@string/text_1_month_old</item>
         <item>@string/text_1_year_old</item>
-    </string-array>
-    <string-array name="values_delete_messages_time_array">
+    </string-array>-->
+<!--    <string-array name="values_delete_messages_time_array">
         <item>@string/value_delete_messages_1_day_old</item>
         <item>@string/value_delete_messages_1_week_old</item>
         <item>@string/value_delete_messages_1_month_old</item>
         <item>@string/value_delete_messages_1_year_old</item>
-    </string-array>
-    <string-array name="entries_languages_array">
+    </string-array>-->
+ <!--   <string-array name="entries_languages_array">
         <item>English</item>
         <item>Dansk</item>
         <item>Français</item>
         <item>Deutsch</item>
-    </string-array>
-    <string-array name="values_languages_array">
+    </string-array>-->
+<!--    <string-array name="values_languages_array">
         <item>@string/value_language_english</item>
         <item>@string/value_language_danish</item>
         <item>@string/value_language_french</item>
         <item>@string/value_language_german</item>
-    </string-array>
+    </string-array>-->
 
 
-    <string-array name="BusinessSideMenu">
-        <item>"Shop Info"</item>
-        <item>"Log In info"</item>
-    </string-array>
 
-    <string-array name="EmployeeSideMenu">
-        <item>"Personal info"</item>
-        <item>"Contact Info"</item>
-        <item>"Username"</item>
-
-    </string-array>
-
-
-    <string-array name="GridViewExample">
+  <!--  <string-array name="GridViewExample">
         <item>"Personal info"</item>
         <item>"Contact Info"</item>
         <item>"Username"</item>
@@ -75,5 +64,5 @@
         <item>"Personal info"</item>
 
 
-    </string-array>
+    </string-array>-->
 </resources>

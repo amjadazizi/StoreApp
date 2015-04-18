@@ -7,38 +7,41 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/storeLooAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/clouds"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imgviewStoreApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_storeapp_blue"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/text_storeApp"
+            android:textColor="@color/white"
+            android:typeface="normal"
+            android:layout_gravity="center_horizontal"/>
+
+
+    </LinearLayout>
+
     <LinearLayout
         android:id="@+id/LoginBox"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerVertical="true"
-        android:layout_weight="1"
         android:gravity="center"
         android:orientation="vertical"
+        android:visibility="gone"
+
         >
-
-        <LinearLayout
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:orientation="vertical"
-                   android:layout_weight="1.5"
-            android:background="@color/clouds"
-            android:gravity="center">
-
-            <ImageView
-                android:id="@+id/imgviewStoreApp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/ic_shop"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:text="@string/text_storeApp"
-                android:textColor="@color/white"
-                android:typeface="normal"
-                android:layout_gravity="center_horizontal"/>
-
-
-               </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -50,14 +53,13 @@
 
 
 
-            <com.storeapp.Activities.ExternalClasses.FloatingEditText
+            <com.storeapp.ui.FloatingEditText
                 android:id="@+id/liInitials"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="14dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                style="@style/EditTextAppTheme"
                 android:hint="Email"
                 android:text="test@test.com"
                 android:inputType="textEmailAddress"
@@ -68,14 +70,13 @@
                 android:textStyle="normal"
             />
 
-            <com.storeapp.Activities.ExternalClasses.FloatingEditText
+            <com.storeapp.ui.FloatingEditText
                 android:id="@+id/liPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="14dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                style="@style/EditTextAppTheme"
                 android:hint="@string/hint_password"
                 android:inputType="textPassword"
                 android:paddingBottom="6dp"
@@ -94,12 +95,16 @@
                 android:text="Login In"
                 android:textColor="@android:color/white"
                 android:textSize="18sp"
-                custom:pb_colorComplete="@color/green_complete"
-                custom:pb_colorNormal="@color/blue_normal"
-                custom:pb_colorPressed="@color/blue_pressed"
+                custom:pb_colorNormal="@color/button_normal"
+                custom:pb_colorPressed="@color/button_pressed"
                 custom:pb_colorProgress="@color/purple_progress"
-                custom:pb_textComplete="Success"
                 custom:pb_textProgress="Loading.." />
+
+            <!-- custom:pb_colorComplete="@color/green_complete"-->
+<!--
+            custom:pb_textComplete="Success"
+-->
+
 
             <TextView
                 android:id="@+id/txtForgotPassword"
@@ -149,11 +154,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentRight="true"
-                fab:fab_addButtonColorNormal="@color/alizarin"
-                fab:fab_addButtonColorPressed="@color/white_pressed"
-                fab:fab_addButtonPlusIconColor="@color/half_black"
-                fab:fab_labelStyle="@style/menu_labels_style"
                 android:layout_marginRight="16dp"
+                app:fab_addButtonColorNormal="@color/button_normal"
+                app:fab_addButtonColorPressed="@color/button_pressed"
+
                 android:layout_marginBottom="8dp"
                 app:fab_expandDirection="left"
                 >
@@ -164,10 +168,8 @@
                     android:layout_height="wrap_content"
                     fab:fab_colorNormal="@color/white"
                     fab:fab_addButtonColorNormal="@color/alizarin"
-
-                    app:fab_icon="@android:drawable/ic_dialog_info"
+                    app:fab_icon="@drawable/ic_info_white"
                     fab:fab_title="Infomation"
-                    fab:fab_colorPressed="@color/white_pressed"
                     app:fab_size="mini"/>
 
                 <com.getbase.floatingactionbutton.FloatingActionButton
@@ -175,11 +177,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     fab:fab_colorNormal="@color/white"
-                    app:fab_icon="@android:drawable/ic_dialog_info"
                     fab:fab_title="Register Business"
-                    fab:fab_colorPressed="@color/white_pressed"
+                    app:fab_size="normal"
+                    />
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnFloatEmployeeRegis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fab:fab_colorNormal="@color/white"
+                    fab:fab_title="Register Business"
                     app:fab_size="normal"/>
+
             </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
 
 
         </LinearLayout>
