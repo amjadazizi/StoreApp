@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ExpandView_library/ExpandView_library.iml" filepath="$PROJECT_DIR$/ExpandView_library/ExpandView_library.iml" />
       <module fileurl="file://$PROJECT_DIR$/StoreApp.iml" filepath="$PROJECT_DIR$/StoreApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/StoreApp2.iml" filepath="$PROJECT_DIR$/StoreApp2.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/myApp/myApp.iml" filepath="$PROJECT_DIR$/myApp/myApp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mylibrary/mylibrary.iml" filepath="$PROJECT_DIR$/mylibrary/mylibrary.iml" />
     </modules>
   </component>
 </project>

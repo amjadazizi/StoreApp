@@ -1,1 +1,1 @@
-include ':myApp', ':library', ':mylibrary', ':ExpandView_library'
+include ':myApp', ':library'

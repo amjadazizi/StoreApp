@@ -9,10 +9,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/ExpandView_library" />
             <option value="$PROJECT_DIR$/library" />
             <option value="$PROJECT_DIR$/myApp" />
-            <option value="$PROJECT_DIR$/mylibrary" />
           </set>
         </option>
       </GradleProjectSettings>
