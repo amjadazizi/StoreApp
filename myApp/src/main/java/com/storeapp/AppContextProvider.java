@@ -15,8 +15,6 @@ public class AppContextProvider extends Application {
 
 		ctx = getApplicationContext();
 
-		//Prefs.changeUserLanguageToCurrent();
-
         ParseInitializer.initialize(ctx);
     }
 

@@ -162,8 +162,6 @@ public class Store_Status extends Activity implements
             }
         });
 
-
-
     }
 
     @Override

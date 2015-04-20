@@ -89,17 +89,11 @@ public class Store_Items extends Activity implements OnColorSelectedListener {
             @Override
 
             public void onClick(View v) {
-
-
                 Intent intent = new Intent(Store_Items.this, PictureDialog.class);
                 startActivityForResult(intent, PictureDialog.REQUEST_TAKE_PICTURE);
-
-
             }
 
         });
-
-
 
         editBarcode = (FloatingEditText) findViewById(R.id.editBarcode);
         editEan = (FloatingEditText) findViewById(R.id.editEan);
@@ -148,8 +142,6 @@ public class Store_Items extends Activity implements OnColorSelectedListener {
                 if(inventoryItem==null){
                     inventoryItem = new InventoryItem();
                 }
-
-                    String message = null;
 
                     if (!Utils.isNullOrEmpty(barcode) &&
                             !Utils.isNullOrEmpty(description) &&
@@ -343,8 +335,6 @@ public class Store_Items extends Activity implements OnColorSelectedListener {
                     }
 
                     break;
-
-
             }
         }
     }

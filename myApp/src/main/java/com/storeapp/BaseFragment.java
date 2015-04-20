@@ -8,7 +8,6 @@ public abstract class BaseFragment extends Fragment {
         public void validated(boolean validated);
     }
 
-
     public abstract BaseFragment getNextFragment();
     public abstract void validate();
 

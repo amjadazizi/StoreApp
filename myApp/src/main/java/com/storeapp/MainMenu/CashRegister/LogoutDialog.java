@@ -18,7 +18,7 @@ public class LogoutDialog extends Activity {
 
     Button btnLogOut, btnLogOutCancel;
     TextView txtWantToLogOut;
-    public static final String ACTION_PAYMENT_DONE = "com.storeapp.payment.done.intent.action";
+  //  public static final String ACTION_PAYMENT_DONE = "com.storeapp.payment.done.intent.action";
 
 
 

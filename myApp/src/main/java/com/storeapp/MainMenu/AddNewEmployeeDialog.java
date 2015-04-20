@@ -65,7 +65,6 @@ public class AddNewEmployeeDialog extends Activity {
                     return;
                 }
 
-
                 checkEmailPb.setVisibility(View.VISIBLE);
                 ParseQuery<NewUser> query = NewUser.getQuery();
                 query.whereEqualTo("email", email);
@@ -74,7 +73,6 @@ public class AddNewEmployeeDialog extends Activity {
                     public void done(List<NewUser> newUsers, ParseException e) {
 
                         checkEmailPb.setVisibility(View.INVISIBLE);
-
 
                         if(e==null)
                         {
@@ -104,8 +102,6 @@ public class AddNewEmployeeDialog extends Activity {
                                         message.setTextColor(msgColor);
                                     }
                                 });
-
-
                             }
                         }
                         else{
@@ -117,9 +113,6 @@ public class AddNewEmployeeDialog extends Activity {
                             message.setVisibility(View.VISIBLE);
                             message.setTextColor(msgColor);
                         }
-
-
-
                     }
                 });
 

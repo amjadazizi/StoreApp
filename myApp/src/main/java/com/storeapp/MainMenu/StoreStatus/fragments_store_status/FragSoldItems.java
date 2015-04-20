@@ -22,7 +22,6 @@ import com.storeapp.R;
 import com.storeapp.parse.InventoryItem;
 import com.storeapp.util.Prefs;
 
-import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -31,7 +30,6 @@ import java.util.List;
 public class FragSoldItems extends Fragment {
     private View view;
     GridView soldItemsGridview;
-    HashMap<String, ParseFile> imageMap = new HashMap<String, ParseFile>();
     Picasso picasso;
 
 
@@ -50,14 +48,9 @@ public class FragSoldItems extends Fragment {
                 .getLargeMemoryClass();
         int cacheSizeInBytes = (1024 * 1024 * largeMemoryInMegaBytes) / 4;
 
-
         Picasso.Builder pb = new Picasso.Builder(getActivity());
         picasso = pb.memoryCache(new LruCache(cacheSizeInBytes)).build();
         picasso.setIndicatorsEnabled(true);
-
-
-
-
         loadSoldItems();
         return view;
     }
@@ -74,18 +67,12 @@ public class FragSoldItems extends Fragment {
                     if (list != null && list.size() > 0) {
                         SoldItemsAdapter soldItemsAdapter = new SoldItemsAdapter(getActivity(), list);
                         soldItemsGridview.setAdapter(soldItemsAdapter);
-
-
                     }
                 }
             }
         });
 
     }
-
-
-
-
 
     public class SoldItemsAdapter extends BaseAdapter {
 
@@ -149,7 +136,7 @@ public class FragSoldItems extends Fragment {
             itemImage.setImageResource(R.drawable.ic_cash_register_white);
             ParseFile pf = soldItem.getItemImg();
             if(pf!=null){
-                picasso.load(pf.getUrl()).resize(140, 140).placeholder(R.drawable.ic_image_white).into(itemImage);
+                picasso.load(pf.getUrl()).placeholder(R.drawable.ic_image_white).into(itemImage);
             }
 
             return view;

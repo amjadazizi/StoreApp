@@ -76,7 +76,6 @@ public class RegistrationFragContactInfo2 extends BaseFragment {
     int msgResId = 0;
     String email;
     String phoneNumber;
-    //String message = null;
     NewUser newUser = null;
 
     @Override
@@ -106,7 +105,6 @@ public class RegistrationFragContactInfo2 extends BaseFragment {
     private class VerifyUserEmailTask extends AsyncTask<String, Void, NewUser> {
         private int taskType;
         private String email;
-        // private ProgressDialog pd;
 
 
         public VerifyUserEmailTask(Context context, int taskType, String email) {

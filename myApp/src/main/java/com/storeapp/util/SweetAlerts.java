@@ -11,7 +11,6 @@ import com.storeapp.ui.sweetalert.SweetAlertDialog;
  */
 public class SweetAlerts {
 
-    //TODO refactor this class to use method overloading
 
   //  A basic message：
 

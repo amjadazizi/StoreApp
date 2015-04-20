@@ -62,19 +62,7 @@ public class Login extends BaseActivity implements ProgressGenerator.OnCompleteL
 
 
     final Notice LICENSES_DIALOG_NOTICE = new Notice("StoreApp ", "DET_HER_SKAL_VÆRE_EM_URL",
-            "BESKRIV DIN LICENSEAFTALE! DET ER EN BARE EN TEST SOM LIGENU ER TOM GRUNDET MANGLENDE LICENSES " +
-                    "BESKRIV DIN LICENSEAFTALE! DET ER EN BARE EN TEST SOM LIGENU ER TOM GRUNDET MANGLENDE LICENSES BESKRIV " +
-                    "DIN LICENSEAFTALE! DET ER EN BARE EN TEST SOM LIGENU ER TOM GRUNDET MANGLENDE LICENSES BESKRIV DIN " +
-                    "LICENSEAFTALE! DET ER EN BARE EN TEST SOM LIGENU ER TOM GRUNDET MANGLENDE LICENSES BESKRIV DIN LICENSEAFTALE! DET ER EN BARE EN TEST SOM LIGENU ER TOM GRUNDET MANGLENDE LICENSES \" +\n" +
-                    "                    \"BESKRIV DIN LICENSEAFTALE! DET ER EN BARE EN TEST SOM LIGENU ER TOM GRUNDET MANGLENDE LICENSES BESKRIV \" +\n" +
-                    "                    \"DIN LICENSEAFTALE! DET ER EN BARE EN TEST SOM LIGENU ER TOM GRUNDET MANGLENDE LICENSES BESKRIV DIN \" +\n" +
-                    "                    \"LICENSEAFTALE! DET ER EN BARE EN TEST SOM LIGENU ER TOM GRUNDET MANGLENDE LICENSES BESKRIV DIN LICENSEAFTALE! DET ER EN BARE EN TEST SOM LIGENU ER TOM GRUNDET MANGLENDE LICENSES \" +\n" +
-                    "                    \"BESKRIV DIN LICENSEAFTALE! DET ER EN BARE EN TEST SOM LIGENU ER TOM GRUNDET MANGLENDE LICENSES BESKRIV \" +\n" +
-                    "                    \"DIN LICENSEAFTALE! DET ER EN BARE EN TEST SOM LIGENU ER TOM GRUNDET MANGLENDE LICENSES BESKRIV DIN \" +\n" +
-                    "                    \"LICENSEAFTALE! DET ER EN BARE EN TEST SOM LIGENU ER TOM GRUNDET MANGLENDE LICENSES BESKRIV DIN LICENSEAFTALE! DET ER EN BARE EN TEST SOM LIGENU ER TOM GRUNDET MANGLENDE LICENSES \" +\n" +
-                    "                    \"BESKRIV DIN LICENSEAFTALE! DET ER EN BARE EN TEST SOM LIGENU ER TOM GRUNDET MANGLENDE LICENSES BESKRIV \" +\n" +
-                    "                    \"DIN LICENSEAFTALE! DET ER EN BARE EN TEST SOM LIGENU ER TOM GRUNDET MANGLENDE LICENSES BESKRIV DIN \" +\n" +
-                    "                    \"LICENSEAFTALE! DET ER EN BARE EN TEST SOM LIGENU ER TOM GRUNDET MANGLENDE LICENSES", null);
+            "BESKRIV EN LICENSEAFTALE! BESKRIV EN LICENSEAFTALE! BESKRIV EN LICENSEAFTALE! BESKRIV EN LICENSEAFTALE!", null);
 
 
     @Override
@@ -106,7 +94,7 @@ public class Login extends BaseActivity implements ProgressGenerator.OnCompleteL
         }
 
         // get fragment count after the first one is added
-        currentFragIndex = getFragmentManager().getBackStackEntryCount();
+     /*   currentFragIndex = getFragmentManager().getBackStackEntryCount();
         if (savedInstanceState != null) {
             animationDone = savedInstanceState.getBoolean(KEY_ANIMATE_LOGO);
             isSlidDraerOpen = savedInstanceState
@@ -114,16 +102,12 @@ public class Login extends BaseActivity implements ProgressGenerator.OnCompleteL
             currentFragIndex = savedInstanceState
                     .getInt(KEY_CURRENT_FRAGMENT_INDEX);
 
-        }
+        }*/
         final LinearLayout loginBox = (LinearLayout) findViewById(R.id.LoginBox);
         //loginBox.setVisibility(View.VISIBLE);
 
         liInitials = (EditText) findViewById(R.id.liInitials);
         liPassword = (EditText) findViewById(R.id.liPassword);
-
-
-
-
 
 
      /*   if(extras != null && extras.getBoolean(EXTRAS_ENDLESS_MODE)) {
@@ -229,16 +213,10 @@ public class Login extends BaseActivity implements ProgressGenerator.OnCompleteL
                 storeLooAnimation.setVisibility(View.GONE);
 
                 loginBox.setVisibility(View.VISIBLE);
-                //slideButton.setVisibility(View.VISIBLE);
                 Animation animFade = AnimationUtils.loadAnimation(Login.this,
                         R.anim.fade);
                 loginBox.startAnimation(animFade);
-
                 animationDone = true;
-
-				/*if (isSlidDraerOpen) {
-					slidingDrawer.animateOpen();
-				}*/
             }
 
         });
@@ -362,13 +340,7 @@ public class Login extends BaseActivity implements ProgressGenerator.OnCompleteL
             getFragmentManager().popBackStack();
 
         } else if (getFragmentManager().getBackStackEntryCount() <= 0) {
-            //if (slidingDrawer.isOpened()) {
-            //	slidingDrawer.animateClose();
-
-            //} else {
             super.onBackPressed();
-            //}
-
         }
     }
 
@@ -387,8 +359,6 @@ public class Login extends BaseActivity implements ProgressGenerator.OnCompleteL
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-        //isSlidDraerOpen = savedInstanceState
-        //		.getBoolean(KEY_SLIDING_DRAWER_OPEN);
         animationDone = savedInstanceState.getBoolean(KEY_ANIMATE_LOGO);
         currentFragIndex = savedInstanceState
                 .getInt(KEY_CURRENT_FRAGMENT_INDEX);

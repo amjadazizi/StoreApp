@@ -13,7 +13,6 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageButton;
 import android.widget.ListView;
-import android.widget.SearchView;
 import android.widget.TextView;
 
 import com.parse.DeleteCallback;
@@ -33,30 +32,20 @@ import java.util.List;
 
 public class Emp_List extends Activity {
 
-    public static final String EXTRA_EMPLOYEE_ID = "extra_employee_id";
-
     private ListView empoyeeList;
-    private SearchView searchView;
     Picasso picasso;
-    private int lvFirstVisibleChildViewIndex;
-    private int lvFirstVisibleChildViewTop;
-    ImageButton btn, btnbackArrowEmpList;
-
-    private static final String LV_CURRENT_POSITION = "lv_current_position";
-    private static final String Y_CURRENT_POSITION = "y_current_position";
+    private List<User> users;
+    ImageButton btnbackArrowEmpList;
     private static final String PARSE_CACHE_BUSINESS_USERS_LABLE = "parse_cache_business_users_lable";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if (savedInstanceState != null) {
-            readSate(savedInstanceState);
-
-        }
 
         setContentView(R.layout.activity_emp_list);
         getActionBar().hide();
+
         int largeMemoryInMegaBytes = ((ActivityManager)
                 this.getSystemService(Context.ACTIVITY_SERVICE))
                 .getLargeMemoryClass();
@@ -119,8 +108,6 @@ public class Emp_List extends Activity {
 
     }
 
-    private List<User> users;
-
     private void fetchBusinessUsers() {
 
         ParseQuery<User> query = ParseQuery.getQuery(User.class);
@@ -146,27 +133,15 @@ public class Emp_List extends Activity {
     }
 
     private void refreshUsers() {
-
         EmployeeAdapter adapter = new EmployeeAdapter(this, users);
-
         empoyeeList.setAdapter(adapter);
 
-        empoyeeList.setSelectionFromTop(lvFirstVisibleChildViewIndex,
-                lvFirstVisibleChildViewTop);
-
     }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-
-        prepareSaveStateData();
-    }
 
     @Override
     protected void onResume() {
         super.onResume();
-
         fetchBusinessUsers();
     }
 
@@ -306,39 +281,7 @@ public class Emp_List extends Activity {
 
     }
 
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
 
-        prepareSaveStateData();
-        saveState(outState);
-    }
-
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-        readSate(savedInstanceState);
-
-    }
-
-    private void prepareSaveStateData() {
-        lvFirstVisibleChildViewIndex = empoyeeList.getFirstVisiblePosition();
-        View v = empoyeeList.getChildAt(0);
-        lvFirstVisibleChildViewTop = (v == null ? 0 : v.getTop());
-    }
-
-    private void saveState(Bundle outState) {
-
-        outState.putInt(LV_CURRENT_POSITION, lvFirstVisibleChildViewIndex);
-        outState.putInt(Y_CURRENT_POSITION, lvFirstVisibleChildViewTop);
-    }
-
-    private void readSate(Bundle savedInstanceState) {
-        lvFirstVisibleChildViewIndex = savedInstanceState
-                .getInt(LV_CURRENT_POSITION);
-        lvFirstVisibleChildViewTop = savedInstanceState
-                .getInt(Y_CURRENT_POSITION);
-    }
 
 }
 

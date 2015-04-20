@@ -96,9 +96,7 @@ public class FragProfitStatus extends Fragment {
                 list.add(new LineChartItem(generateDataLine(), getActivity()));
             } else if(i % 3 == 1) {
                list.add(new BarChartItem(generateDataBar( ), getActivity()));
-            } /*else if(i % 3 == 2) {
-             //   list.add(new PieChartItem(generateDataPie(i + 1), getActivity()));
-            }*/
+            }
         }
 
         ListView lv = (ListView) view.findViewById(R.id.listView1);
@@ -215,11 +213,8 @@ public class FragProfitStatus extends Fragment {
     private  void saleOfToday(){
 
         ParseQuery<TodaysTurnover> todaysTurnQuery = TodaysTurnover.getQuery(Prefs.getBusinessCvr());
-       // todaysTurnQuery.whereEqualTo(TodaysTurnover.TODAYS_TURNOVER_DATE, Utils.getCurrentDate());
-
         todaysTurnQuery.whereGreaterThanOrEqualTo (TodaysTurnover.TODAYS_TURNOVER_DATE , pdc.getFromDate() );
         todaysTurnQuery.whereLessThanOrEqualTo (TodaysTurnover.TODAYS_TURNOVER_DATE , pdc.getToDate() );
-
         todaysTurnQuery.findInBackground(new FindCallback<TodaysTurnover>() {
             @Override
             public void done(List<TodaysTurnover> todaysTurnovers, ParseException e) {
@@ -238,7 +233,6 @@ public class FragProfitStatus extends Fragment {
                         txtCreditCardAmount.setText("0");
                         txttotalSaleAmount.setText("0");
                         txtDateOfTheday.setText(Utils.getCurrentDate()+"");
-
                     }
 
                 }else {
@@ -247,14 +241,9 @@ public class FragProfitStatus extends Fragment {
                     txtCreditCardAmount.setText("No Data Found");
                     txttotalSaleAmount.setText("No Data Found");
                     txtDateOfTheday.setText(Utils.getCurrentDate()+"");
-
                 }
             }
         });
-
-
-
-
 
     }
 
@@ -268,12 +257,9 @@ public class FragProfitStatus extends Fragment {
 
                 if (e == null) {
                     if (list != null && list.size() > 0) {
-
                         monthsCount = Math.min(list.size(), 12);
-
                         monthValues = new Hashtable<Integer, Double>();
                         List<Integer> monthsList = new ArrayList<Integer>();
-
                         Calendar cal = Calendar.getInstance();
 
                         for (int i = 0; i < monthsCount; i++) {
@@ -308,7 +294,6 @@ public class FragProfitStatus extends Fragment {
 
         ArrayList<String> dm = new ArrayList<String>();
 
-
         for(int i = 0; i<daysCount; i++){
             dm.add(todaysTurnoverList.get(i).getDayOfMonth()+"");
 
@@ -317,7 +302,6 @@ public class FragProfitStatus extends Fragment {
         return dm;
 
     }
-
 
 
     private void getSaleOfLast30Days(){

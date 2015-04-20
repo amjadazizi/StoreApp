@@ -173,8 +173,6 @@ private void updateUserInfo(){
     }
 
 
-    String message = null;
-
     if (!Utils.isNullOrEmpty(email) &&
             !Utils.isNullOrEmpty(phoneNumber))
 
@@ -269,7 +267,7 @@ private void updateUserInfo(){
         cropIntent.setDataAndType(sourceUri, "image/*");
         cropIntent.putExtra("crop", "true");
         cropIntent.putExtra("aspectX", 2);
-        cropIntent.putExtra("aspectY", 1);
+        cropIntent.putExtra("aspectY", 2);
         cropIntent.putExtra("outputX", 200);
         cropIntent.putExtra("outputY", 160);
         cropIntent.putExtra("return-data", true);

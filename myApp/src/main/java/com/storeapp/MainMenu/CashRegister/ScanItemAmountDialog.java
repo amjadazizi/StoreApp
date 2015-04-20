@@ -53,6 +53,9 @@ public class ScanItemAmountDialog extends Activity {
             @Override
             public void onClick(View view) {
                 currentItemAmount = Integer.parseInt(editCashDiaAmount.getText().toString());
+                if(currentItemAmount<1){
+                    return;
+                }
                 currentItemAmount--;
                 editCashDiaAmount.setText(currentItemAmount+"");
             }

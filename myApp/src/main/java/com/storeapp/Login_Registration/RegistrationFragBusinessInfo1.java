@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.ImageButton;
 
 import com.parse.FindCallback;
 import com.parse.ParseException;
@@ -23,7 +22,6 @@ import java.util.List;
 
 public class RegistrationFragBusinessInfo1 extends BaseFragment {
     private View view;
-    private ImageButton btnImgContinue;
     private EditText editBsuinessEmail, editBusinessPhoneNum, editBusinessCvr, editBusinessName;
     SweetAlertDialog pDialog;
 
@@ -34,7 +32,6 @@ public class RegistrationFragBusinessInfo1 extends BaseFragment {
 
     }
 
-
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
@@ -42,13 +39,13 @@ public class RegistrationFragBusinessInfo1 extends BaseFragment {
                 false);
 
         editBsuinessEmail = (EditText) view.findViewById(R.id.editBsuinessEmail);
-        editBsuinessEmail.setText("jajaja@hahah.xom");
+        editBsuinessEmail.setText("test1@test1.xom");
         editBusinessPhoneNum = (EditText) view.findViewById(R.id.editBusinessPhoneNum);
-        editBusinessPhoneNum.setText("7337378");
+        editBusinessPhoneNum.setText("0045282728");
         editBusinessCvr = (EditText) view.findViewById(R.id.editBusinessCvr);
-        editBusinessCvr.setText("828289");
+        editBusinessCvr.setText("34987161");
         editBusinessName = (EditText) view.findViewById(R.id.editBusinessName);
-        editBusinessName.setText("ajjaja");
+        editBusinessName.setText("E-Test");
 
         return view;
 

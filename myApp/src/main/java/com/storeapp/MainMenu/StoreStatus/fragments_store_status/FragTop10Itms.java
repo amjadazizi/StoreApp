@@ -149,18 +149,10 @@ private void draw(ArrayList<BarEntry> yValues){
         Context ctx;
         List<SoldItem> top10ItemsList;
 
-
-
-
-
-
         public TopItemsAdapter(Context ctx, List<SoldItem> top10ItemsList){
             this.ctx=ctx;
             this.top10ItemsList = top10ItemsList;
-
-
         }
-
 
         @Override
         public int getCount() {
@@ -198,7 +190,6 @@ private void draw(ArrayList<BarEntry> yValues){
                 holder.itemDescription = itemName;
                 holder.itemPicture = itemImage;
 
-
                 view.setTag(holder);
             } else {
                 ViewHolder holder = (ViewHolder) view.getTag();
@@ -208,7 +199,7 @@ private void draw(ArrayList<BarEntry> yValues){
 
 
             SoldItem items = top10ItemsList.get(position);
-           itemName.setText(items.getInventoryItem().getBarcode());
+            itemName.setText(items.getInventoryItem().getBarcode());
 
             itemImage.setImageResource(R.drawable.ic_cash_register_white);
             ParseFile pf = items.getInventoryItem().getItemImg();
@@ -224,8 +215,6 @@ private void draw(ArrayList<BarEntry> yValues){
 
         public TextView itemDescription;
         public CustomImageView itemPicture;
-
-
     }
 
 }

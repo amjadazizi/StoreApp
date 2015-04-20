@@ -29,12 +29,12 @@ public class PictureDialog extends Activity {
     private Uri imageUri;
     public static final String EXTRA_IMAGE_URI = "extra_image_file_name";
 
-    public interface OnPictureTakenListener {
+ /*   public interface OnPictureTakenListener {
       //  public void pictureTaken(Bitmap bitmap);
     }
 
     private OnPictureTakenListener pictureTakenListener;
-
+*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,9 +90,9 @@ public class PictureDialog extends Activity {
 
     }
 
-    public void setPictureTakenListener(OnPictureTakenListener pictureTakenListener) {
+   /* public void setPictureTakenListener(OnPictureTakenListener pictureTakenListener) {
         this.pictureTakenListener = pictureTakenListener;
-    }
+    }*/
 
     @Override
 

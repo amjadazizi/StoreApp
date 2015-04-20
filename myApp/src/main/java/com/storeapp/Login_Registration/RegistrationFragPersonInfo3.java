@@ -104,5 +104,4 @@ public class RegistrationFragPersonInfo3 extends BaseFragment {
         }
     }
 
-
 }

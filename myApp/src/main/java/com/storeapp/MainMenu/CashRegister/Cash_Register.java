@@ -1,10 +1,8 @@
 package com.storeapp.MainMenu.CashRegister;
 
 import android.app.Activity;
-import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -23,34 +21,24 @@ import android.widget.TextView;
 import com.github.mikephil.charting.utils.ColorTemplate;
 import com.storeapp.Db.CartItemsManager;
 import com.storeapp.Db.DbManager;
-import com.storeapp.ui.FloatingEditText;
 import com.storeapp.R;
 import com.storeapp.model.CartItem;
+import com.storeapp.ui.FloatingEditText;
 import com.storeapp.ui.sweetalert.SweetAlertDialog;
 import com.storeapp.util.ParseNumber;
 import com.storeapp.util.SweetAlerts;
 import com.storeapp.util.Utils;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 public class Cash_Register extends Activity {
 
-    ArrayList<String> itemsArray = new ArrayList<String>();
-
-    private double totalValue;
-    private double recievedValue;
-    private String amountItems;
-
-    private LinearLayout layoutItmScanBtns, layoutRecieved, layoutPaymentBtns,
-            layoutAmountBtns;
+ private LinearLayout layoutItmScanBtns;
     private ListView itemsListView;
     ImageButton btnCancelExp, btnbackArrow;
-    private TextView txtTotal;
     private static FloatingEditText ediTxtTotal, ediTxtrecieved;
     Random rn = new Random();
-    int itemScannedAmount;
     public static final String TOTAL_TO_PAY_AMOUNT = "totaltopayamount";
     public static final String RECEIVED_AMOUNT = "receivedamouny";
     CartItemsManager cartItemsManager = DbManager.getDbManager().getCartItemsManager();
@@ -227,6 +215,7 @@ public class Cash_Register extends Activity {
         ediTxtrecieved.setText("0");
     }
 
+/*
 
     @Override
     protected void onDestroy() {
@@ -234,6 +223,7 @@ public class Cash_Register extends Activity {
         unregisterReceiver(broadcastReceiver);
     }
 
+*/
 
 
     @Override
@@ -251,14 +241,14 @@ public class Cash_Register extends Activity {
     }
 
 
-    private  BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
+  /*  private  BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
             clearFields();
             loadItems();
 
         }
-    };
+    };*/
 
 
 
@@ -281,11 +271,8 @@ public class Cash_Register extends Activity {
             for (CartItem item : itemsInCartList) {
 
                 currentTotal += item.getAmount() * item.getSellPrice();
-
             }
-
         }
-
         ediTxtTotal.setText(currentTotal+"");
     }
 
@@ -293,8 +280,8 @@ public class Cash_Register extends Activity {
     protected void onResume() {
         super.onResume();
         loadItems();
-        IntentFilter intentFilter = new IntentFilter(PaymentDialog.ACTION_PAYMENT_DONE);
-        registerReceiver(broadcastReceiver, intentFilter);
+        /*IntentFilter intentFilter = new IntentFilter(PaymentDialog.ACTION_PAYMENT_DONE);
+        registerReceiver(broadcastReceiver, intentFilter);*/
     }
 
 
@@ -368,7 +355,6 @@ public class Cash_Register extends Activity {
 
             txtPrice.setText(Double.toString(price * count));
             int colorItem = rn.nextInt(ColorTemplate.JOYFUL_COLORS.length - 1 + 1) + 0;
-
             convertView.setBackgroundColor(ColorTemplate.VORDIPLOM_COLORS[colorItem]);
             return convertView;
         }

@@ -70,12 +70,7 @@ public class Utils {
 				Toast.LENGTH_SHORT).show();
 	}
 
-	/*public static Date getReadableDate(long dateMs) {
 
-		Date date = new Date(dateMs);
-		return date;
-	}
-*/
     public  static boolean isEmailFormatValid(CharSequence email) {
         if (isNullOrEmpty(email.toString())) {
             return false;
