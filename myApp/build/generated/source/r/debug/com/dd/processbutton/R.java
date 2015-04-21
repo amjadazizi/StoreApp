@@ -42,15 +42,15 @@ public final class R {
 	}
 	public static final class string {
 		public static final int define_processbutton = 0x7f0d0012;
-		public static final int library_processbutton_author = 0x7f0d0027;
-		public static final int library_processbutton_authorWebsite = 0x7f0d0028;
-		public static final int library_processbutton_isOpenSource = 0x7f0d0029;
-		public static final int library_processbutton_libraryDescription = 0x7f0d002a;
-		public static final int library_processbutton_libraryName = 0x7f0d002b;
-		public static final int library_processbutton_libraryVersion = 0x7f0d002c;
-		public static final int library_processbutton_libraryWebsite = 0x7f0d002d;
-		public static final int library_processbutton_licenseId = 0x7f0d002e;
-		public static final int library_processbutton_repositoryLink = 0x7f0d002f;
+		public static final int library_processbutton_author = 0x7f0d0028;
+		public static final int library_processbutton_authorWebsite = 0x7f0d0029;
+		public static final int library_processbutton_isOpenSource = 0x7f0d002a;
+		public static final int library_processbutton_libraryDescription = 0x7f0d002b;
+		public static final int library_processbutton_libraryName = 0x7f0d002c;
+		public static final int library_processbutton_libraryVersion = 0x7f0d002d;
+		public static final int library_processbutton_libraryWebsite = 0x7f0d002e;
+		public static final int library_processbutton_licenseId = 0x7f0d002f;
+		public static final int library_processbutton_repositoryLink = 0x7f0d0030;
 	}
 	public static final class styleable {
 		public static final int[] FlatButton = { 0x7f010067, 0x7f010068, 0x7f010069 };

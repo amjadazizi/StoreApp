@@ -6,7 +6,6 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -41,24 +40,14 @@ import java.util.List;
 
 public class Store_Items extends Activity implements OnColorSelectedListener {
 
-
-    int backgroundColor = Color.parseColor("#1E88E5");
     FloatingActionButton btnAddImage;
-
-    private static final int ACTIVITY_PHOTOS = 0;
-    private static final String PACKAGE = "spine";
-
-    private int photo_count = 0;
-    boolean hasPhotos = false;
     Bitmap bitmap;
-    String[] paths;
     String imageFilePath;
     Uri imageUri;
     ImageView imgItemPic;
     Button btnScanItem;
     String scanBarcode;
     String scanEanType;
-    boolean itemExist;
     FloatingEditText editBarcode, editEan, editDecription, editAmount,editCurAmountNstock, editPurchaseprice, editSellprice;
     Picasso picasso;
     boolean itemImageExists = false;
@@ -158,27 +147,36 @@ public class Store_Items extends Activity implements OnColorSelectedListener {
                         inventoryItem.setPurchasePrice(Double.parseDouble(purchasePrice));
                         inventoryItem.setSellPrice(Double.parseDouble(sellPrice));
 
-                        // Convert it to byte
-                        ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                        //Compress image to lower quality scale 1 - 100
-                        bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
-                        byte[] imageBytes = stream.toByteArray();
+                        if(bitmap!=null){
 
-                        String imageContentType = getImageContentType(imageUri);
+                            // Convert it to byte
+                            ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                            //Compress image to lower quality scale 1 - 100
 
-                        // Create the ParseFile
-                        String imageName = editBarcode.getText().toString() + "." + imageContentType;
+                            bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
+                            byte[] imageBytes = stream.toByteArray();
+
+                            String imageContentType = getImageContentType(imageUri);
+
+                            // Create the ParseFile
+                            String imageName = editBarcode.getText().toString() + "." + imageContentType;
+
+
                         ParseFile file = new ParseFile(imageName, imageBytes, imageContentType);
+
                         // Upload the image into Parse Cloud
                         file.saveInBackground();
 
                         inventoryItem.setItemImg(file);
+
+                        }
 
                         inventoryItem.saveInBackground(new SaveCallback() {
                             @Override
                             public void done(ParseException e) {
                                 if (e == null) {
 
+                                    resetEditTexts();
                                     SweetAlerts.showSuccessMsg(Store_Items.this, " Success! Item Saved");
 
                                 } else {
@@ -215,6 +213,7 @@ public class Store_Items extends Activity implements OnColorSelectedListener {
         editEan.getText().clear();
         editDecription.getText().clear();
         editAmount.getText().clear();
+        editCurAmountNstock.getText().clear();
         editPurchaseprice.getText().clear();
         editSellprice.getText().clear();
     }
@@ -238,7 +237,7 @@ public class Store_Items extends Activity implements OnColorSelectedListener {
                         String description = inventoryItem.getDescription();
                         double purchasePrice = inventoryItem.getPurchasePrice();
                         double sellPrice = inventoryItem.getSellPrice();
-                        ParseFile imageFile = inventoryItem.getItemImg();
+                        //ParseFile imageFile = inventoryItem.getItemImg();
 
                         editDecription.setText(description);
                         editPurchaseprice.setText(Double.toString(purchasePrice));
@@ -290,7 +289,7 @@ public class Store_Items extends Activity implements OnColorSelectedListener {
         cropIntent.setDataAndType(sourceUri, "image/*");
         cropIntent.putExtra("crop", "true");
         cropIntent.putExtra("aspectX", 2);
-        cropIntent.putExtra("aspectY", 1);
+        cropIntent.putExtra("aspectY", 2);
         cropIntent.putExtra("outputX", 200);
         cropIntent.putExtra("outputY", 160);
         cropIntent.putExtra("return-data", true);

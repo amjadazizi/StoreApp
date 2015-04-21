@@ -57,7 +57,7 @@ public class CartItemsManager {
         try {
 
             values.clear();
-            values.put(COL_PARSE_INVENTORY_ITEM_ID, cartItem.getParseIventoryItemId());
+            values.put(COL_PARSE_INVENTORY_ITEM_ID, cartItem.getParseInventoryItemId());
             values.put(COL_BARCODE, cartItem.getBarcode());
             values.put(COL_DESCRIPTION, cartItem.getDescription());
             values.put(COL_AMOUNT, cartItem.getAmount());
@@ -234,7 +234,7 @@ public class CartItemsManager {
 
             while (cursor.moveToNext()) {
                 CartItem cartItem = new CartItem();
-                cartItem.setParseIventoryItemId(cursor.getString(colParseInventoryItemIdIndex));
+                cartItem.setParseInventoryItemId(cursor.getString(colParseInventoryItemIdIndex));
                 cartItem.setBarcode(cursor.getString(colBarcodeIndex));
                 cartItem.setDescription(cursor.getString(colDescriptionIndex));
                 cartItem.setAmount(cursor.getInt(colAmountIndex));

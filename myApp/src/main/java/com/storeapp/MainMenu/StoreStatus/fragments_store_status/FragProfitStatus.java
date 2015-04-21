@@ -89,15 +89,8 @@ public class FragProfitStatus extends Fragment {
     private void draw(){
         ArrayList<ChartItem> list = new ArrayList<ChartItem>();
 
-
-        for (int i = 0; i < 3; i++) {
-
-            if(i % 3 == 0) {
-                list.add(new LineChartItem(generateDataLine(), getActivity()));
-            } else if(i % 3 == 1) {
+               list.add(new LineChartItem(generateDataLine(), getActivity()));
                list.add(new BarChartItem(generateDataBar( ), getActivity()));
-            }
-        }
 
         ListView lv = (ListView) view.findViewById(R.id.listView1);
 

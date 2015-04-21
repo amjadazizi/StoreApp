@@ -1,7 +1,5 @@
 apply plugin: 'com.android.application'
 
-
-
 android {
     compileSdkVersion 16
     buildToolsVersion '19.1.0'
@@ -32,7 +30,6 @@ repositories {
     maven { url "https://jitpack.io" }
 }
 dependencies {
-   /* compile 'com.parse.bolts:bolts-android:1.+'*/
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:19.0.0+'
     compile 'com.android.support:support-v4:19.0.0+'
@@ -54,8 +51,6 @@ dependencies {
     // Android Process Button
     compile 'com.github.dmytrodanylyk.android-process-button:library:1.0.3'
 
-    //Cirlur ImageView
-  //  compile 'de.hdodenhof:circleimageview:1.2.2'
 
     //Charts
     compile 'com.github.PhilJay:MPAndroidChart:v2.0.8'
@@ -63,9 +58,6 @@ dependencies {
 
     // Picasso
     compile 'com.squareup.picasso:picasso:2.5.2'
-
-    //AutoFit Textview
-    //compile 'me.grantland:autofittextview:0.2.+'
 
 
 

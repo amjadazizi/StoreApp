@@ -29,12 +29,6 @@ public class PictureDialog extends Activity {
     private Uri imageUri;
     public static final String EXTRA_IMAGE_URI = "extra_image_file_name";
 
- /*   public interface OnPictureTakenListener {
-      //  public void pictureTaken(Bitmap bitmap);
-    }
-
-    private OnPictureTakenListener pictureTakenListener;
-*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,21 +50,19 @@ public class PictureDialog extends Activity {
         txtTakePicture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 //Take Photo
                 Calendar cal = Calendar.getInstance();
 
+               // String a = Environment.getExternalStorageDirectory().toString();
+              //  Utils.showToastLong(a);
                 File imgaeFile = new File(Environment.getExternalStorageDirectory(), cal.getTimeInMillis() + ".jpg");
                 imageUri = Uri.fromFile(imgaeFile);
 
                 Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                 intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
                 startActivityForResult(intent, REQUEST_TAKE_PICTURE);
-
-
             }
         });
-
 
         txtChooseFromGallery.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -87,19 +79,12 @@ public class PictureDialog extends Activity {
                 finish();
             }
         });
-
     }
 
-   /* public void setPictureTakenListener(OnPictureTakenListener pictureTakenListener) {
-        this.pictureTakenListener = pictureTakenListener;
-    }*/
-
     @Override
-
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
         super.onActivityResult(requestCode, resultCode, data);
-
         if (resultCode == RESULT_OK) {
             Intent intent = new Intent();
             switch (requestCode) {
@@ -114,7 +99,6 @@ public class PictureDialog extends Activity {
                     finish();
                     return;
             }
-
             setResult(RESULT_OK, intent);
             finish();
 

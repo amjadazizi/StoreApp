@@ -62,22 +62,6 @@ public class EmployeeModel extends BaseModel {
         this.password = password;
     }
 
-    /*public boolean isValid(){
-
-        boolean valid = true;
-
-        valid = valid ? (Utils.isNullOrEmpty(firstName) ? false: valid) : valid;
-        valid = valid ? (Utils.isNullOrEmpty(lastName) ? false: valid) : valid;
-        valid = valid ? (Utils.isNullOrEmpty(email) ? false: valid) : valid;
-        valid = valid ? (Utils.isNullOrEmpty(phoneNumber) ? false: valid) : valid;
-        valid = valid ? (Utils.isNullOrEmpty(password) ? false: valid) : valid;
-
-
-
-        return  valid;
-
-
-    }*/
 
 
 }

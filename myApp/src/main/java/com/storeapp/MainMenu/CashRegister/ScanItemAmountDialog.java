@@ -132,7 +132,7 @@ public class ScanItemAmountDialog extends Activity {
                                 InventoryItem ii = inventoryItems.get(0);
 
                                 CartItem cartItem = new CartItem();
-                                cartItem.setParseIventoryItemId(ii.getObjectId());
+                                cartItem.setParseInventoryItemId(ii.getObjectId());
                                 cartItem.setBarcode(ii.getBarcode());
                                 cartItem.setDescription(ii.getDescription());
                                 cartItem.setAmount(itemScannedAmount);

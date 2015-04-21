@@ -8,7 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.ImageButton;
 
 import com.parse.ParseQuery;
 import com.storeapp.BaseFragment;
@@ -25,9 +24,7 @@ import java.util.List;
 
 public class RegistrationFragContactInfo2 extends BaseFragment {
     private View view;
-    private ImageButton btnImgContinue;
     private EditText editEmail, editPhoneNum;
-    private long btnLastClickTime = 0;
     EmployeeModel employeeModel;
     SweetAlertDialog pDialog;
 
@@ -40,32 +37,12 @@ public class RegistrationFragContactInfo2 extends BaseFragment {
 
         view = inflater.inflate(R.layout.fragment_registration_contactinfo, container, false);
 
-
         editEmail = (EditText) view.findViewById(R.id.editEmail);
         editPhoneNum = (EditText) view.findViewById(R.id.editPhoneNum);
 
         return view;
 
     }
-
-
-/*    private void verifyRegistrationEmail(String email){
-        ParseQuery<NewUser> query = new ParseQuery(NewUser.class);
-        query.whereEqualTo("email", email);
-        query.findInBackground(new FindCallback<NewUser>() {
-            @Override
-            public void done(List<NewUser> newUsers, ParseException e) {
-                if(e==null){
-                    if(newUsers.size()>0){
-
-                    }
-                }
-            }
-        });
-
-
-
-    }*/
 
 
     @Override
@@ -160,7 +137,7 @@ public class RegistrationFragContactInfo2 extends BaseFragment {
                 Prefs.setBusinessCvr(newUser.getCvr());
                 notifyValidated(true);
             } else {
-                msgResId = R.string.error_passwords_mismatch;
+                msgResId = R.string.error_email_unregistered;
                 Utils.showToastLong(Utils.getString(msgResId));
             }
 

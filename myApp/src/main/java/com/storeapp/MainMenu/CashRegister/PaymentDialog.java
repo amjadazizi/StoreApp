@@ -179,11 +179,11 @@ public class PaymentDialog extends Activity {
 
         List<InventoryItem> inventoryItems = new ArrayList<InventoryItem>(itemsInCartList.size());
         for (CartItem item : itemsInCartList) {
-            InventoryItem ii = InventoryItem.createWithoutData(InventoryItem.class, item.getParseIventoryItemId());
+            InventoryItem ii = InventoryItem.createWithoutData(InventoryItem.class, item.getParseInventoryItemId());
             inventoryItems.add(ii);
 
             //Save which cart item corresponds to which inventory item
-            hashMap.put(item.getParseIventoryItemId(), item);
+            hashMap.put(item.getParseInventoryItemId(), item);
         }
 
         ParseQuery<SoldItem> siQuery = SoldItem.getQuery(Prefs.getBusinessCvr());
@@ -212,7 +212,7 @@ public class PaymentDialog extends Activity {
                     List<SoldItem> newSoldItems = new ArrayList<SoldItem>();
                     for (CartItem cartItem : itemsInCartList) {
 
-                        InventoryItem ii = InventoryItem.createWithoutData(InventoryItem.class, cartItem.getParseIventoryItemId());
+                        InventoryItem ii = InventoryItem.createWithoutData(InventoryItem.class, cartItem.getParseInventoryItemId());
                         //Decrement inventory item amount
                         ii.increment(InventoryItem.COL_AMOUNT, -cartItem.getAmount());
 

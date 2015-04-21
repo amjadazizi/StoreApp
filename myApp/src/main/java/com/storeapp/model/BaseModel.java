@@ -14,7 +14,7 @@ public abstract class BaseModel {
     public void saveInSharedPrefs(){
        SharedPreferences prefs = Prefs.getPrefs();
         SharedPreferences.Editor prefsEditor = prefs.edit();
-        Gson gson = new Gson();
+        Gson gson = new Gson(); // convert object to string (Json Representation)
         String json = gson.toJson(this);
         prefsEditor.putString(this.getClass().getSimpleName(), json);
         prefsEditor.commit();

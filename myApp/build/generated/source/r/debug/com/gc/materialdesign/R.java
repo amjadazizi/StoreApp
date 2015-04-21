@@ -81,9 +81,9 @@ public final class R {
 	public static final class layout {
 		public static final int color_selector = 0x7f030027;
 		public static final int dialog = 0x7f030028;
-		public static final int number_indicator_spinner = 0x7f03003d;
-		public static final int progress_dialog = 0x7f03003f;
-		public static final int snackbar = 0x7f030045;
+		public static final int number_indicator_spinner = 0x7f03003c;
+		public static final int progress_dialog = 0x7f03003e;
+		public static final int snackbar = 0x7f030044;
 	}
 	public static final class styleable {
 		public static final int[] CustomAttributes = { 0x7f010057, 0x7f010058, 0x7f010059, 0x7f01005a, 0x7f01005b, 0x7f01005c, 0x7f01005d, 0x7f01005e, 0x7f01005f, 0x7f010060, 0x7f010061, 0x7f010062, 0x7f010063, 0x7f010064, 0x7f010065, 0x7f010066 };

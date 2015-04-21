@@ -138,7 +138,6 @@
                             android:id="@+id/editEan"
                             android:singleLine="true"
                             android:textColor="@color/black"
-
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_centerVertical="true"
@@ -201,6 +200,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_weight="1"
                     android:textColor="@color/black"
+                    android:inputType="number"
 
                     />
 
@@ -255,7 +255,7 @@
                             android:layout_marginRight="10dp"
                             android:layout_weight="1"
                             android:textColor="@color/black"
-
+                            android:inputType="number"
                             />
 
                         <com.storeapp.ui.FloatingEditText
@@ -268,7 +268,7 @@
                             android:hint="Ean-Type"
                             android:layout_weight="1"
                             android:textColor="@color/black"
-
+                            android:inputType="number"
                             />
 
                     </LinearLayout>

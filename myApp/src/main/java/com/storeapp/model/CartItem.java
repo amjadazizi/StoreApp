@@ -6,7 +6,7 @@ package com.storeapp.model;
 public class CartItem {
 
     private int id;
-    private String parseIventoryItemId;
+    private String parseInventoryItemId;
     private String barcode;
     private String description;
     private int amount;
@@ -20,12 +20,12 @@ public class CartItem {
         this.id = id;
     }
 
-    public String getParseIventoryItemId(){
-        return parseIventoryItemId;
+    public String getParseInventoryItemId(){
+        return parseInventoryItemId;
     }
 
-    public void  setParseIventoryItemId(String parseIventoryItemId){
-        this.parseIventoryItemId = parseIventoryItemId;
+    public void setParseInventoryItemId(String parseInventoryItemId){
+        this.parseInventoryItemId = parseInventoryItemId;
     }
 
     public String getBarcode() {

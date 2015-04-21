@@ -10,6 +10,8 @@
 
     <string name="error_passwords_empty">Passwords is Required</string>
     <string name="error_passwords_mismatch">Passwords Dosnt Match</string>
+    <string name="error_email_unregistered">Email Is not Registered!</string>
+
 
 
 

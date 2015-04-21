@@ -78,6 +78,8 @@ public class RegistrationActivity extends BaseActivity implements BaseFragment.O
         });
     }
 
+    
+
     @Override
     public void validated(boolean validated) {
 
@@ -99,8 +101,6 @@ public class RegistrationActivity extends BaseActivity implements BaseFragment.O
             }
         }
     }
-
-
 
 
 
