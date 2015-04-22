@@ -50,7 +50,7 @@ public class Store_Status extends Activity implements
     private DrawerLayout drawer;
     private ActionBarDrawerToggle drawerListner;
     private StoreStatusAdapter storeStatusAdapter;
-    static int listPosiCounter= -1;
+   // static int listPosiCounter= -1;
     FragmentManager fragmentManager = getFragmentManager();
     TextView textViewTitle = null;
     TextView txtTitleStoreStatus,txtShopName, txtShopCvrNumber, txtShopPhonenumber, txtShopEmalAdd ;
@@ -219,7 +219,7 @@ public class Store_Status extends Activity implements
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position,
                             long id) {
-        listPosiCounter = position;
+        //listPosiCounter = position;
 
              Fragment fragment = null;
 
@@ -228,14 +228,14 @@ public class Store_Status extends Activity implements
         switch (position) {
 
             case 1:
-                listPosiCounter = position;
+           //     listPosiCounter = position;
                 selectItem(position);
                 fragment = new FragItmsNStock();
                 title = getResources().getString(R.string.text_items_in_stock);
 
                 break;
             case 2:
-                listPosiCounter = position;
+          //      listPosiCounter = position;
 
                 selectItem(position);
                 fragment = new FragSoldItems();
@@ -246,7 +246,7 @@ public class Store_Status extends Activity implements
 
 
             case 3:
-                listPosiCounter = position;
+            //    listPosiCounter = position;
 
                 selectItem(position);
                 fragment = new FragTop10Itms();
@@ -256,7 +256,7 @@ public class Store_Status extends Activity implements
 
             case 4:
                 selectItem(position);
-                listPosiCounter = position;
+           //     listPosiCounter = position;
                 fragment = new FragProfitStatus();
                 title = getResources().getString(R.string.text_profit_status);
 
