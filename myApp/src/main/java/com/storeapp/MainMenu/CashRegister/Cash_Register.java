@@ -115,7 +115,7 @@ public class Cash_Register extends Activity {
         ediTxtrecieved = (FloatingEditText) findViewById(R.id.ediTxtrecieved);
         ediTxtrecieved.setText("0");
 
-        layoutItmScanBtns = (LinearLayout) findViewById(R.id.layoutItmScanBtns);
+       // layoutItmScanBtns = (LinearLayout) findViewById(R.id.layoutItmScanBtns);
 
         btnbackArrow = (ImageButton) findViewById(R.id.btnbackArrow);
         btnbackArrow.setOnClickListener(new View.OnClickListener() {
@@ -215,16 +215,6 @@ public class Cash_Register extends Activity {
         ediTxtrecieved.setText("0");
     }
 
-/*
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        unregisterReceiver(broadcastReceiver);
-    }
-
-*/
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem menuItem) {
@@ -239,17 +229,6 @@ public class Cash_Register extends Activity {
 
         return (super.onOptionsItemSelected(menuItem));
     }
-
-
-  /*  private  BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            clearFields();
-            loadItems();
-
-        }
-    };*/
-
 
 
     @Override
@@ -280,8 +259,7 @@ public class Cash_Register extends Activity {
     protected void onResume() {
         super.onResume();
         loadItems();
-        /*IntentFilter intentFilter = new IntentFilter(PaymentDialog.ACTION_PAYMENT_DONE);
-        registerReceiver(broadcastReceiver, intentFilter);*/
+
     }
 
 

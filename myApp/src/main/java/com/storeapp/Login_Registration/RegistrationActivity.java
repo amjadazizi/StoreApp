@@ -29,6 +29,7 @@ import java.util.List;
 
 
 public class RegistrationActivity extends BaseActivity implements BaseFragment.OnValidateFragmentListener {
+    FloatingActionButton btnImgContinue;
 
 
     @Override
@@ -54,12 +55,11 @@ public class RegistrationActivity extends BaseActivity implements BaseFragment.O
             startFragment = new RegistrationFragContactInfo2();
         }
         startFragment.setValidateFragmentListener(this);
-
         transaction.add(R.id.fragmentsRegistCont, startFragment, null);
         //transaction.addToBackStack(null);
         transaction.commit();
 
-        FloatingActionButton btnImgContinue = (FloatingActionButton) findViewById(R.id.btnImgContinue);
+         btnImgContinue = (FloatingActionButton) findViewById(R.id.btnImgContinue);
         btnImgContinue.setColorNormalResId(R.color.button_normal);
         btnImgContinue.setColorPressedResId(R.color.button_pressed);
         btnImgContinue.setIcon(R.drawable.ic_arrow_right);
@@ -93,6 +93,7 @@ public class RegistrationActivity extends BaseActivity implements BaseFragment.O
             if (nextFragment != null) {
                 nextFragment.setValidateFragmentListener(this);
                 FragmentTransaction ft = getFragmentManager().beginTransaction();
+                ft.setCustomAnimations(R.anim.slide_in_from_right, R.anim.slide_out_to_left, R.anim.slide_out_to_right,R.anim.slide_in_from_left);
                 ft.replace(R.id.fragmentsRegistCont, nextFragment, null);
                 ft.addToBackStack(null);
                 ft.commit();
@@ -101,6 +102,9 @@ public class RegistrationActivity extends BaseActivity implements BaseFragment.O
             }
         }
     }
+
+
+
 
 
 

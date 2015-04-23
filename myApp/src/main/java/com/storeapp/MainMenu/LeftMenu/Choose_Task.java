@@ -15,7 +15,6 @@ import com.storeapp.Login_Registration.Login;
 import com.storeapp.MainMenu.AddNewEmployeeDialog;
 import com.storeapp.MainMenu.CashRegister.LogoutDialog;
 import com.storeapp.R;
-import com.storeapp.ui.FloatingEditText;
 import com.storeapp.util.Prefs;
 
 public class Choose_Task extends FragmentActivity {
@@ -28,7 +27,6 @@ public class Choose_Task extends FragmentActivity {
     private ResideMenuItem itemLogOut;
     private ResideMenuItem itemSettings;
     private ResideMenuItem itemAddNewEmployee;
-    FloatingEditText newUserEmail;
     ImageButton btnEditProfilePen;
     boolean isProfileEidtable=false;
     ProfileFragment profileFragment = new ProfileFragment();
@@ -130,7 +128,7 @@ public class Choose_Task extends FragmentActivity {
             }
         });
 
-        itemSettings.setOnTouchListener(new View.OnTouchListener() {
+        /*itemSettings.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
@@ -147,7 +145,7 @@ public class Choose_Task extends FragmentActivity {
 
                 return true;
             }
-        });
+        });*/
 
         itemLogOut.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -182,13 +180,13 @@ public class Choose_Task extends FragmentActivity {
         itemHome     = new ResideMenuItem(this, R.drawable.ic_home_white,"Home");
         itemProfile  = new ResideMenuItem(this, R.drawable.ic_profile_white,  "Profile");
         itemAddNewEmployee = new ResideMenuItem(this, R.drawable.ic_add_employee_white, "Add New Employee");
-        itemSettings = new ResideMenuItem(this, R.drawable.ic_setting_white, "Settings");
+       // itemSettings = new ResideMenuItem(this, R.drawable.ic_setting_white, "Settings");
         itemLogOut = new ResideMenuItem(this, R.drawable.ic_log_out_white, "Log Out");
 
         resideMenu.addMenuItem(itemHome, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(itemProfile, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(itemAddNewEmployee, ResideMenu.DIRECTION_LEFT);
-        resideMenu.addMenuItem(itemSettings, ResideMenu.DIRECTION_LEFT);
+//        resideMenu.addMenuItem(itemSettings, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(itemLogOut, ResideMenu.DIRECTION_LEFT);
 
 

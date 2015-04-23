@@ -8,11 +8,10 @@ import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.Animation.AnimationListener;
 import android.view.animation.AnimationUtils;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.SlidingDrawer;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.dd.processbutton.iml.ActionProcessButton;
@@ -45,18 +44,14 @@ public class Login extends BaseActivity implements ProgressGenerator.OnCompleteL
     private static final String KEY_SLIDING_DRAWER_OPEN = "sliding_drawer_open";
     private static final String KEY_CURRENT_FRAGMENT_INDEX = "current_fragment_index";
 
-    private Button slideButton;
-    private SlidingDrawer slidingDrawer;
     private ImageView imgviewStoreApp;
-    private TextView txtSignUp;
     private Animation animTranslate;
+
     private EditText liInitials, liPassword;
 
     private boolean animationDone = false;
     private boolean isSlidDraerOpen = false;
     private int currentFragIndex;
-    public static final String EXTRA_TASK = "ekstra_task";
-
     public static final int TASK_BUSINESS = 1;
     public static final int TASK_EMPLOYEE = 2;
 
@@ -81,51 +76,9 @@ public class Login extends BaseActivity implements ProgressGenerator.OnCompleteL
             finish();
         }
 
-
-        if (savedInstanceState == null) {
-            //	FragmentTransaction transaction = getFragmentManager()
-            //			.beginTransaction();
-            //Fragment fragment = new RegistrationFragPersonInfo();
-            //  Fragment fragment = new RegistrationBusinessInfo();
-
-            //transaction.add(R.id.fragConLay, fragment);
-            // transaction.addToBackStack(null);
-            //transaction.commit();
-        }
-
-        // get fragment count after the first one is added
-     /*   currentFragIndex = getFragmentManager().getBackStackEntryCount();
-        if (savedInstanceState != null) {
-            animationDone = savedInstanceState.getBoolean(KEY_ANIMATE_LOGO);
-            isSlidDraerOpen = savedInstanceState
-                    .getBoolean(KEY_SLIDING_DRAWER_OPEN);
-            currentFragIndex = savedInstanceState
-                    .getInt(KEY_CURRENT_FRAGMENT_INDEX);
-
-        }*/
         final LinearLayout loginBox = (LinearLayout) findViewById(R.id.LoginBox);
-        //loginBox.setVisibility(View.VISIBLE);
-
         liInitials = (EditText) findViewById(R.id.liInitials);
         liPassword = (EditText) findViewById(R.id.liPassword);
-
-
-     /*   if(extras != null && extras.getBoolean(EXTRAS_ENDLESS_MODE)) {
-            liLoginBtn.setMode(ActionProcessButton.Mode.ENDLESS);
-
-        }
-        } else {
-            btnSignIn.setMode(ActionProcessButton.Mode.PROGRESS);
-        }
-        btnSignIn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                progressGenerator.start(btnSignIn);
-                btnSignIn.setEnabled(false);
-                editEmail.setEnabled(false);
-                editPassword.setEnabled(false);
-            }*/
-
 
 
         TextView txtForgotPassword = (TextView) findViewById(R.id.txtForgotPassword);
@@ -166,25 +119,25 @@ public class Login extends BaseActivity implements ProgressGenerator.OnCompleteL
 
                         if (e == null) {
                             if (parseUser != null) {
-
-
-
                                 String cvr = parseUser.getString(User.COL_BUSINESS_CVR);
-
                                 Prefs.setBusinessCvr(cvr);
-
                                 Prefs.setUserLoggedIn(true);
-
                                 Prefs.setLogedInUser(liInitials.getText().toString());
-
-
                                 checkIfAdmin();
+                               progressGenerator.stop();
+
                             } else {
+                                progressGenerator.stop();
+
                                 SweetAlerts.showErrorMsg(Login.this, "Wrong Credentials!");
                                 return;
 
                             }
                         } else {
+                            liLoginBtn.setBackgroundColor(getResources().getColor(R.color.button_normal));
+                            progressGenerator.stop();
+                            SweetAlerts.showErrorMsg(Login.this, "Try Again!!");
+                            return;
                         }
 
                     }
@@ -209,8 +162,8 @@ public class Login extends BaseActivity implements ProgressGenerator.OnCompleteL
 
             @Override
             public void onAnimationEnd(Animation arg0) {
-                LinearLayout storeLooAnimation = (LinearLayout) findViewById(R.id.storeLooAnimation);
-                storeLooAnimation.setVisibility(View.GONE);
+                RelativeLayout storeLooAnimation = (RelativeLayout) findViewById(R.id.storeLooAnimation);
+                //storeLooAnimation.setVisibility(View.GONE);
 
                 loginBox.setVisibility(View.VISIBLE);
                 Animation animFade = AnimationUtils.loadAnimation(Login.this,
@@ -234,7 +187,7 @@ public class Login extends BaseActivity implements ProgressGenerator.OnCompleteL
         final FloatingActionButton btnFloatEmployeeRegis = (FloatingActionButton) findViewById(R.id.btnFloatEmployeeRegis);
         btnFloatEmployeeRegis.setColorNormalResId(R.color.button_normal);
         btnFloatEmployeeRegis.setColorPressedResId(R.color.button_pressed);
-        btnFloatEmployeeRegis.setIcon(R.drawable.ic_add_employee_white);
+        btnFloatEmployeeRegis.setIcon(R.drawable.ic_add_employee_white2);
 
         btnFloatEmployeeRegis.setOnClickListener(new OnClickListener() {
             @Override
@@ -255,7 +208,7 @@ public class Login extends BaseActivity implements ProgressGenerator.OnCompleteL
         final FloatingActionButton regiterBusiness = (FloatingActionButton) findViewById(R.id.btnFloatBusinessRegist);
         regiterBusiness.setColorNormalResId(R.color.button_normal);
         regiterBusiness.setColorPressedResId(R.color.button_pressed);
-        regiterBusiness.setIcon(R.drawable.ic_arrow_right);
+        regiterBusiness.setIcon(R.drawable.ic_add_business);
 
 
         regiterBusiness.setOnClickListener(new OnClickListener() {

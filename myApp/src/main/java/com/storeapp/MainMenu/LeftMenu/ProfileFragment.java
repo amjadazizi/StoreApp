@@ -69,7 +69,7 @@ public class ProfileFragment extends Fragment {
         editProNewPassword = (EditText) view.findViewById(R.id.editProNewPassword);
         editProRepeatPassword = (EditText) view.findViewById(R.id.editProRepeatPassword);
         txtProPersonName = (TextView) view.findViewById(R.id.txtProPersonName);
-        btn_edit = (Button) view.findViewById(R.id.btn_edit);
+        //btn_edit = (Button) view.findViewById(R.id.btn_edit);
         setViewsEditableFalse();
 
         int largeMemoryInMegaBytes = ((ActivityManager)

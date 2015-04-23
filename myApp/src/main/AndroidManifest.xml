@@ -44,11 +44,13 @@
         tools:replace="android:icon" >
         <activity
             android:name=".Login_Registration.RegistrationActivity"
-            android:label="@string/title_activity_login" >
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".Login_Registration.Login"
-            android:label="@string/title_activity_login" >
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -57,19 +59,23 @@
         </activity>
         <activity
             android:name=".MainMenu.LeftMenu.Choose_Task"
-            android:label="@string/title_activity_choose_task" >
+            android:label="@string/title_activity_choose_task"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".MainMenu.EmployeeList.Emp_List"
-            android:label="@string/title_activity_employee_list" >
+            android:label="@string/title_activity_employee_list"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".MainMenu.StoreStatus.Store_Status"
-            android:label="@string/title_activity_store__status" >
+            android:label="@string/title_activity_store__status"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".MainMenu.Store_Items"
-            android:label="@string/title_activity_store_items" >
+            android:label="@string/title_activity_store_items"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".StoreStatus.StoreStatusDialogActivity"
@@ -83,7 +89,8 @@
 
         <activity
             android:name=".MainMenu.CashRegister.Cash_Register"
-            android:label="@string/title_activity_cash_register" >
+            android:label="@string/title_activity_cash_register"
+            android:screenOrientation="portrait">
 
         </activity>
         <activity
@@ -110,7 +117,8 @@
         </activity>
         <activity
             android:name=".MainMenu.CashRegister.ReceiptActivity"
-            android:label="@string/title_activity_cash_register" >
+            android:label="@string/title_activity_cash_register"
+            android:screenOrientation="portrait">
 
         </activity>
     </application>

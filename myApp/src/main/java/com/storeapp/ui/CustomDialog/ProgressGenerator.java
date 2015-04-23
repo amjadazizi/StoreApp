@@ -3,13 +3,15 @@ package com.storeapp.ui.CustomDialog;
 /**
  * Created by Amjad on 16-03-2015.
  */
-import com.dd.processbutton.ProcessButton;
-
 import android.os.Handler;
+
+import com.dd.processbutton.ProcessButton;
 
 import java.util.Random;
 
 public class ProgressGenerator {
+
+    boolean progressRunnning;
 
     public interface OnCompleteListener {
 
@@ -23,12 +25,24 @@ public class ProgressGenerator {
         mListener = listener;
     }
 
+    public void stop(){
+        progressRunnning = false;
+    }
+
     public void start(final ProcessButton button) {
+        progressRunnning = true;
         final Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
+
             @Override
             public void run() {
-                mProgress += 10;
+
+                if(!progressRunnning){
+                    mListener.onComplete();
+                    return;
+                }
+
+                mProgress += 1;
                 button.setProgress(mProgress);
                 if (mProgress < 100) {
                     handler.postDelayed(this, generateDelay());
@@ -38,6 +52,8 @@ public class ProgressGenerator {
             }
         }, generateDelay());
     }
+
+
 
     private Random random = new Random();
 

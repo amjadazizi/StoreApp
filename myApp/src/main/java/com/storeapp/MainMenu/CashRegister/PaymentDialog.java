@@ -72,7 +72,7 @@ public class PaymentDialog extends Activity {
             @Override
             public void onClick(View view) {
                 registerCashPayment(totalToPayAmount);
-                endExpedition("Cash");
+                endExpedition();
 
             }
         });
@@ -84,7 +84,7 @@ public class PaymentDialog extends Activity {
             public void onClick(View view) {
 
                 registerCreditPayemnt(totalToPayAmount);
-                endExpedition("Credit Card");
+                endExpedition();
 
             }
         });
@@ -154,11 +154,10 @@ public class PaymentDialog extends Activity {
 
                 }
                 TodaysTurnover.saveAllInBackground(todaysTurnovers);
-                DbManager.getDbManager().getCartItemsManager().clearCart();
 
-                Intent intent = new Intent(ACTION_PAYMENT_DONE);
-                sendBroadcast(intent);
-
+                Intent intent = new Intent(PaymentDialog.this, ReceiptActivity.class);
+                intent.putExtra(PAYMENT_METHOD,paymentMethod );
+                startActivity(intent);
                 finish();
 
 
@@ -168,7 +167,7 @@ public class PaymentDialog extends Activity {
     }
 
 
-    private void endExpedition(String paymentMethod) {
+    private void endExpedition() {
 
         final List<CartItem> itemsInCartList = cartItemsManager.getAllItemsInCart();
         if (itemsInCartList.size() <= 0) {
