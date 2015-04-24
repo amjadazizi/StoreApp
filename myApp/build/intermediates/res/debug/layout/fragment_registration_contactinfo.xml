@@ -24,9 +24,8 @@
             android:layout_weight="1"
             android:gravity="center_horizontal"
             android:text="@string/text_whats_your_phone_email"
-            android:textColor="@color/black"
-            android:textSize="25sp"
-            android:textStyle="bold" />
+            style="@style/RegistrationFragHeader"
+            />
 
         <TextView
             android:id="@+id/txtDescrip"
@@ -36,7 +35,7 @@
             android:layout_marginRight="20dp"
             android:gravity="center_horizontal"
             android:text="@string/text_your_email_phone_number"
-            android:textColor="@color/black"
+            style="@style/RegistrationExplainText"
             android:layout_weight="1"
             />
     </LinearLayout>
@@ -59,7 +58,7 @@
             android:ems="10"
             android:hint="@string/text_email"
             android:inputType="textWebEmailAddress"
-            android:textColor="@color/black"
+            style="@style/EditTextStyle"
         />
 
         <com.storeapp.ui.FloatingEditText
@@ -72,7 +71,7 @@
             android:ems="10"
             android:hint="@string/text_phone_number"
             android:inputType="number"
-            android:textColor="@color/black"
+            style="@style/EditTextStyle"
         />
     </LinearLayout>
 

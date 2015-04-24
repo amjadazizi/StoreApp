@@ -60,7 +60,7 @@ public class ProfileFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.profile, container, false);
+        view = inflater.inflate(R.layout.employee_profile, container, false);
         btnTakePicture = (FloatingActionButton)   view.findViewById(R.id.btnTakePicture);
         btnTakePicture.setVisibility(View.GONE);
         imgProfile  = (ImageView)   view.findViewById(R.id.imgProfile);

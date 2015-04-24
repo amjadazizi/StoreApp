@@ -2,7 +2,7 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android" >
         <item android:drawable="@drawable/ic_statistic_white" android:state_pressed="true"/>
  <!-- pressed -->
-    <item android:drawable="@drawable/ic_statistic"/>
+    <item android:drawable="@drawable/ic_status_48"/>
  <!-- Normal -->
 
 </selector>

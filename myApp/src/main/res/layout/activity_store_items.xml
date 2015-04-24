@@ -104,55 +104,55 @@
                     android:orientation="horizontal">
 
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_weight="1">
 
-                        <Button
-                            android:id="@+id/btnScanItem"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="15dp"
-                            android:icon="@drawable/ic_store_items"
-                            android:background="@drawable/selector_button_pressed"
-                            />
-
-                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal"
-                        android:layout_weight="2"
-                        android:layout_marginLeft="51dp">
 
-                        <com.storeapp.ui.FloatingEditText
-                            android:singleLine="true"
+                       >
 
-                            android:id="@+id/editBarcode"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_centerVertical="true"
-                            android:hint="Barcode"
-                            android:layout_marginRight="10dp"
-                            android:layout_weight="1"
-                            android:textColor="@color/black"
-                            />
 
-                        <com.storeapp.ui.FloatingEditText
-                            android:id="@+id/editEan"
-                            android:singleLine="true"
-                            android:textColor="@color/black"
 
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_centerVertical="true"
-                            android:layout_marginRight="10dp"
-                            android:hint="Ean-Type"
-                            android:layout_weight="2"
-                            />
+                            <com.storeapp.ui.FloatingEditText
+                                android:singleLine="true"
+                                android:id="@+id/editBarcode"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:hint="Barcode"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1.2"
+                                style="@style/EditTextStyle"
+                                />
+
+                            <com.storeapp.ui.FloatingEditText
+                                android:id="@+id/editEan"
+                                android:singleLine="true"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:hint="Ean-Type"
+                                android:layout_weight="0.8"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginLeft="10dp"
+                                style="@style/EditTextStyle"
+
+                                />
+
+                            <Button
+                                android:id="@+id/btnScanItem"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.5"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:background="@drawable/selector_button_pressed"
+                                android:layout_marginRight="10dp"
+                                style="@style/ButtonStyle"
+                                android:text="Scan"
+                                />
+
 
                     </LinearLayout>
 
@@ -171,14 +171,13 @@
                 <com.storeapp.ui.FloatingEditText
                     android:id="@+id/editDecription"
                     android:singleLine="true"
-                    android:textColor="@color/black"
-
+                    style="@style/EditTextStyle"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="104dp"
-                    android:hint="Description"
                     android:layout_marginRight="10dp"
+                    android:hint="Description"
+                    android:layout_marginLeft="10dp"
                     android:layout_weight="1"
                     />
 
@@ -200,27 +199,27 @@
                 <com.storeapp.ui.FloatingEditText
                     android:id="@+id/editAmount"
                     android:singleLine="true"
-                    android:textColor="@color/black"
+                    style="@style/EditTextStyle"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="104dp"
                     android:hint="Amount"
                     android:inputType="number"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
                     android:layout_weight="1"
                     />
 
                 <com.storeapp.ui.FloatingEditText
                     android:id="@+id/editCurAmountNstock"
                     android:singleLine="true"
-                    android:textColor="@color/black"
+                    style="@style/EditTextStyle"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_centerVertical="true"
                     android:hint="Amount In Stock"
                     android:layout_marginRight="10dp"
                     android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
                     android:inputType="none"
                     />
 
@@ -241,53 +240,40 @@
                     android:orientation="horizontal">
 
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_weight="1">
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="15dp"
-                            android:background="@drawable/ic_store_items"
-                            android:visibility="invisible"
-                            />
-
-                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal"
                         android:layout_weight="2"
-                        android:layout_marginLeft="51dp">
+                       >
 
                         <com.storeapp.ui.FloatingEditText
                             android:id="@+id/editPurchaseprice"
                             android:singleLine="true"
-                            android:textColor="@color/black"
+                            style="@style/EditTextStyle"
                             android:inputType="number"
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_centerVertical="true"
                             android:hint="Purchaseprice"
-                            android:layout_marginRight="10dp"
                             android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
                             />
 
                         <com.storeapp.ui.FloatingEditText
                             android:id="@+id/editSellprice"
                             android:singleLine="true"
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_centerVertical="true"
-                            android:layout_marginRight="10dp"
                             android:hint="Sellprice"
                             android:layout_weight="1"
-                            android:textColor="@color/black"
+                            style="@style/EditTextStyle"
                             android:inputType="number"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+
                             />
 
                     </LinearLayout>
@@ -303,17 +289,19 @@
                 android:layout_height="55dp"
                 android:layout_gravity="right"
                 android:layout_weight="1"
-                android:layout_marginLeft="104dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
 
                 >
 
                 <Button
                     android:id="@+id/btnSaveItem"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="45dp"
                     android:layout_centerInParent="true"
                     android:background="@drawable/selector_button_pressed"
                     android:text="Save Item"
+                    style="@style/ButtonStyle"
                     />
             </LinearLayout>
         </LinearLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/lll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_profile_white" />
+
+
+    </RelativeLayout>
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnTakePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_title="Infomation"
+        fab:fab_colorPressed="@color/white_pressed"
+        app:fab_size="normal"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="363dp"
+        android:padding="14dp" />
+
+    <RelativeLayout
+        android:id="@+id/kaka"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lll"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/itemButtons"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1" />
+
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txtProPersonName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Person Name Profile"
+                        style="@style/RegistrationExplainText"
+                        android:layout_marginBottom="10dp" />
+
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="4dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/peter_river" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/itemButtons"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:layout_marginTop="-5dp">
+
+
+                <ImageView
+                    android:id="@+id/imgviewEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    />
+
+
+                <com.storeapp.ui.FloatingEditText
+                    android:id="@+id/editProEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="5"
+                    android:hint="Email"
+                    android:editable="false"
+                    style="@style/EditTextStyle"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/itemButtons"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:layout_marginTop="-5dp">
+
+
+                <ImageView
+                    android:id="@+id/imgviewPhoneNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                   />
+
+
+                <com.storeapp.ui.FloatingEditText
+                    android:id="@+id/editProPhoneNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:hint="Phone"
+                    android:inputType="number"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="5"
+                    style="@style/EditTextStyle"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/itemButtons"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1" />
+
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Change Password"
+                        style="@style/RegistrationExplainText"
+                        android:layout_marginBottom="10dp" />
+
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="4dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/peter_river" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/itemButtons"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:layout_marginTop="-5dp">
+
+
+                <ImageView
+                    android:id="@+id/imgviewNewPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                     />
+
+
+                <com.storeapp.ui.FloatingEditText
+                    android:id="@+id/editProNewPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:hint="New Password"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="5"
+                    style="@style/EditTextStyle"
+                    android:inputType="textPassword"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/itemButtons"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:layout_marginTop="-5dp">
+
+
+                <ImageView
+                    android:id="@+id/imgviewRepPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                     />
+
+
+                <com.storeapp.ui.FloatingEditText
+
+                    android:id="@+id/editProRepeatPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:hint="Repeat Password"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="5"
+                    style="@style/EditTextStyle"
+                    android:inputType="textPassword"
+                     />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+<!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/layout-xlarge/employee_profile.xml -->

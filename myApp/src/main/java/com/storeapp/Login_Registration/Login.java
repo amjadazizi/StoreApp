@@ -9,7 +9,6 @@ import android.view.animation.Animation;
 import android.view.animation.Animation.AnimationListener;
 import android.view.animation.AnimationUtils;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -44,7 +43,7 @@ public class Login extends BaseActivity implements ProgressGenerator.OnCompleteL
     private static final String KEY_SLIDING_DRAWER_OPEN = "sliding_drawer_open";
     private static final String KEY_CURRENT_FRAGMENT_INDEX = "current_fragment_index";
 
-    private ImageView imgviewStoreApp;
+    private TextView imgviewStoreApp;
     private Animation animTranslate;
 
     private EditText liInitials, liPassword;
@@ -146,7 +145,7 @@ public class Login extends BaseActivity implements ProgressGenerator.OnCompleteL
         });
 
 
-        imgviewStoreApp = (ImageView) findViewById(R.id.imgviewStoreApp);
+        imgviewStoreApp = (TextView) findViewById(R.id.imgviewStoreApp);
         animTranslate = AnimationUtils.loadAnimation(Login.this,
                R.anim.translate); // Add Translate Animation
         animTranslate.setAnimationListener(new AnimationListener() {

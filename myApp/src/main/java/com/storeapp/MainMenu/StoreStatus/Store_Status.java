@@ -317,7 +317,7 @@ public class Store_Status extends Activity implements
 
         int[] listIcons = { R.drawable.ic_items_in_stock,
                 R.drawable.ic_items_sold, R.drawable.ic_top_10_items,
-                           R.drawable.ic_statistic, R.drawable.ic_home_grey };
+                           R.drawable.ic_status_48, R.drawable.ic_home_black };
 
         public StoreStatusAdapter(Context context) {
             this.context = context;

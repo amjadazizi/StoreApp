@@ -197,7 +197,7 @@
     <dimen name="abc_search_view_text_min_width">160dip</dimen>
     <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/values/dimens.xml -->
     <eat-comment/>
-    <dimen name="actionbar_dimen">56dp</dimen>
+    <dimen name="actionbar_dimen">76dp</dimen>
     <dimen name="alert_width">290dp</dimen>
     <dimen name="common_circle_width">3dp</dimen>
     <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/build/intermediates/exploded-aar/com.github.dmytrodanylyk.android-process-button/library/1.0.3/res/values/values.xml -->
@@ -474,6 +474,11 @@
     <string name="value_show_messages_all">0</string>
     <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/values/styles.xml -->
     <eat-comment/>
+    <style name="ButtonStyle">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
     <style name="DashboardButton">
         <item name="android:layout_gravity">center_vertical</item>
         <item name="android:layout_width">match_parent</item>
@@ -484,6 +489,32 @@
         <item name="android:textStyle">bold</item>
         <item name="android:background">@null</item>
         <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="EditTextStyle">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+    <style name="RegistrationExplainText">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+
+    </style>
+    <style name="RegistrationFragHeader">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:layout_marginTop">20dp</item>
+
+    </style>
+    <style name="StoreLogoStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/text_storeApp</item>
+        <item name="android:textColor">@color/button_normal</item>
+        <item name="android:textSize">45sp</item>
+        <item name="android:textStyle">bold</item>
     </style>
     <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/res/values/values.xml -->
     <eat-comment/>
@@ -1048,7 +1079,6 @@
     </style>
     <style name="employee_list_card_style">
         <item name="android:textColor">@color/white</item>
-        <item name="android:textSize">20sp</item>
         <item name="android:textStyle">normal</item>
 
     </style>

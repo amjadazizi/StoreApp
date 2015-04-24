@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/peter_river"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/drawer_indicator"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerInside"
+            android:background="@drawable/selector_back_arrow_employee_list"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+
+            />
+
+        <TextView
+            android:id="@+id/txtTitleStoreStatus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Title"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="65dp"
+            android:gravity="center_vertical"
+            android:textSize="24dp"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:layout_toRightOf="@id/drawer_indicator"/>
+
+    </RelativeLayout>
+
+
+    <!-- Content -->
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        >
+
+
+        <FrameLayout
+            android:id="@+id/mainContent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/sand" >
+        </FrameLayout>
+
+
+
+        <ListView
+            android:id="@+id/drawerList"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="@color/white"
+            android:choiceMode="singleChoice"
+            android:divider="@color/transparent"
+            >
+
+
+        </ListView>
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+<!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/layout-small/activity_store__status.xml -->
