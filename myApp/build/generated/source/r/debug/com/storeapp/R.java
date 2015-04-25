@@ -1287,11 +1287,10 @@ containing a value of this type.
         public static final int abc_search_view_preferred_width=0x7f0b000f;
         public static final int abc_search_view_text_min_width=0x7f0b0010;
         public static final int actionbar_dimen=0x7f0b0011;
-        public static final int activity_horizontal_margin=0x7f0b0024;
-        public static final int activity_horizontal_margin1=0x7f0b0025;
         public static final int alert_width=0x7f0b0012;
         public static final int common_circle_width=0x7f0b0013;
         public static final int corner_radius=0x7f0b0014;
+        public static final int edit_dist_bottom=0x7f0b0024;
         public static final int fab_actions_spacing=0x7f0b0015;
         public static final int fab_icon_size=0x7f0b0016;
         public static final int fab_labels_margin=0x7f0b0017;
@@ -1305,8 +1304,10 @@ containing a value of this type.
         public static final int floating_edit_text_underline_height=0x7f0b001f;
         public static final int floating_edit_text_underline_highlighted_height=0x7f0b0020;
         public static final int layer_padding=0x7f0b0021;
+        public static final int login_dist_top=0x7f0b0025;
         public static final int progress_circle_radius=0x7f0b0022;
         public static final int text_size_small=0x7f0b0023;
+        public static final int view_dist_sides_10=0x7f0b0026;
     }
     public static final class drawable {
         public static final int abc_ab_bottom_solid_dark_holo=0x7f020000;

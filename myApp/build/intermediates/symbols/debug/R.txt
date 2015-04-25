@@ -273,11 +273,10 @@ int dimen abc_panel_menu_list_width 0x7f0b000e
 int dimen abc_search_view_preferred_width 0x7f0b000f
 int dimen abc_search_view_text_min_width 0x7f0b0010
 int dimen actionbar_dimen 0x7f0b0011
-int dimen activity_horizontal_margin 0x7f0b0024
-int dimen activity_horizontal_margin1 0x7f0b0025
 int dimen alert_width 0x7f0b0012
 int dimen common_circle_width 0x7f0b0013
 int dimen corner_radius 0x7f0b0014
+int dimen edit_dist_bottom 0x7f0b0024
 int dimen fab_actions_spacing 0x7f0b0015
 int dimen fab_icon_size 0x7f0b0016
 int dimen fab_labels_margin 0x7f0b0017
@@ -291,8 +290,10 @@ int dimen fab_stroke_width 0x7f0b001e
 int dimen floating_edit_text_underline_height 0x7f0b001f
 int dimen floating_edit_text_underline_highlighted_height 0x7f0b0020
 int dimen layer_padding 0x7f0b0021
+int dimen login_dist_top 0x7f0b0025
 int dimen progress_circle_radius 0x7f0b0022
 int dimen text_size_small 0x7f0b0023
+int dimen view_dist_sides_10 0x7f0b0026
 int drawable abc_ab_bottom_solid_dark_holo 0x7f020000
 int drawable abc_ab_bottom_solid_light_holo 0x7f020001
 int drawable abc_ab_bottom_transparent_dark_holo 0x7f020002

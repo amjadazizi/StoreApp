@@ -7,7 +7,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="@dimen/action_bar_height"
         android:background="@color/peter_river">
 
         <ImageButton
@@ -18,7 +18,7 @@
             android:background="@drawable/ic_arrow_left"
             android:layout_alignParentLeft="true"
             android:layout_centerInParent="true"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="@dimen/view_dist_sides_10"
 
             />
 
@@ -31,7 +31,7 @@
             android:background="@drawable/ic_share_white"
             android:layout_alignParentRight="true"
             android:layout_centerInParent="true"
-            android:layout_marginRight="10dp" />
+            android:layout_marginRight="@dimen/view_dist_sides_10" />
 
 
     </RelativeLayout>
@@ -39,10 +39,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingLeft="25dp"
-        android:paddingTop="25dp"
-        android:paddingRight="25dp"
-        android:paddingBottom="100dp"
+        android:paddingLeft="@dimen"
+        android:paddingTop="@dimen/view_dist_sides_25"
+        android:paddingRight="@dimen/view_dist_sides_25"
+        android:paddingBottom="@dimen/login_dist_top"
         tools:context=".ReceiptActivity"
         android:background="@color/sand"
         android:orientation="vertical">
@@ -62,11 +62,11 @@
                 android:id="@+id/txtStoreInfoReceipt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:textSize="@dimen/text_size_cart_empty"
                 android:textColor="@color/black"
                 android:gravity="center_horizontal"
                 android:layout_weight="1.5"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/view_dist_sides_10"
                 />
 
 
@@ -76,7 +76,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
-                android:textSize="18sp"
+                android:textSize="@dimen/text_size_cart_empty"
                 android:layout_weight="5" />
 
 
@@ -89,7 +89,7 @@
                 android:gravity="center_horizontal"
                 android:layout_weight="0.5"
                 android:textColor="@color/black"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/view_dist_sides_10"
 
                 />
 

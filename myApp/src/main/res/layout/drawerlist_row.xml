@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="45dp"
+    android:layout_height="@dimen/dialog_list_item_height"
     android:orientation="horizontal"
-    android:padding="5dip"
+    android:padding="@dimen/view_dist_sides_5"
     android:background="@drawable/selector_drawer_list_store_status"
     >
 
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:paddingLeft="60dp"
         android:textColor="#000"
-        android:textSize="25sp"
+        android:textSize="@dimen/text_dialog_list_item"
         android:textStyle="normal"
         android:typeface="serif"
         android:text="KAKAKAKKA"/>

@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/cartListViewItem"
     android:layout_width="match_parent"
-    android:layout_height="60dp"
+    android:layout_height="@dimen/cash_register_item_row"
     android:layout_weight="5"
     android:background="@color/white"
     android:gravity="center_vertical"
@@ -14,10 +14,10 @@
         android:gravity="center"
         android:layout_weight="1"
         android:layout_height="match_parent"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="@dimen/view_dist_sides_10"
         android:text="Amt:"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="@dimen/text_cash_register_item_row"
         android:textStyle="normal" >
     </TextView>
 
@@ -31,7 +31,7 @@
         android:gravity="center"
 
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="@dimen/text_cash_register_item_row"
         android:textStyle="normal" >
     </TextView>
 
@@ -44,7 +44,7 @@
         android:gravity="center"
 
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="@dimen/text_cash_register_item_row"
         android:textStyle="normal" >
     </TextView>
 

@@ -9,21 +9,20 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:background="@color/peter_river"
         android:gravity="center"
         >
 
         <ImageView
             android:id="@+id/drawer_indicator"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:scaleType="centerInside"
             android:background="@drawable/selector_back_arrow_employee_list"
             android:layout_alignParentLeft="true"
             android:gravity="center_vertical"
             android:layout_marginLeft="5dp"
-
             />
 
         <TextView
@@ -59,8 +58,6 @@
             android:background="@color/sand" >
         </FrameLayout>
 
-
-
         <ListView
             android:id="@+id/drawerList"
             android:layout_width="170dp"
@@ -70,8 +67,6 @@
             android:choiceMode="singleChoice"
             android:divider="@color/transparent"
             >
-
-
         </ListView>
 
 

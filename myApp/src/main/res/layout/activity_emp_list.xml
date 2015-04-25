@@ -7,7 +7,7 @@
     android:background="@color/white">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="@dimen/action_bar_height"
         android:background="@color/peter_river"
         >
 
@@ -19,7 +19,7 @@
             android:background="@drawable/ic_arrow_left"
             android:layout_alignParentLeft="true"
             android:layout_centerInParent="true"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="@dimen/view_dist_sides_10"
             />
 
 
@@ -41,9 +41,9 @@
            android:layout_width="match_parent"
            android:dividerHeight="30dp"
            android:layout_height="wrap_content"
-           android:layout_marginRight="10dp"
-           android:layout_marginLeft="10dp"
-           android:layout_marginTop="5dp">
+           android:layout_marginRight="@dimen/view_dist_sides_10"
+           android:layout_marginLeft="@dimen/view_dist_sides_10"
+           android:layout_marginTop="@dimen/view_dist_sides_5">
            </ListView>
 </LinearLayout>
 

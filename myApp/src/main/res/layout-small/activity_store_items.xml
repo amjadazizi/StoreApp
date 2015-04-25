@@ -14,7 +14,7 @@
     <FrameLayout
         android:id="@+id/lll"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="140dp"
         android:orientation="horizontal"
         android:background="@color/clouds"
 
@@ -24,7 +24,7 @@
             android:id="@+id/imgItemPic"
             android:scaleType="fitXY"
             android:layout_width="match_parent"
-            android:layout_height="148dp"
+            android:layout_height="138dp"
             android:src="@drawable/ic_image_white"
             />
 
@@ -145,7 +145,7 @@
                             android:id="@+id/btnScanItem"
                             android:layout_width="0dp"
                             android:layout_weight="0.5"
-                            android:layout_height="40dp"
+                            android:layout_height="35dp"
                             android:singleLine="true"
                             android:background="@drawable/selector_button_pressed"
                             android:layout_marginRight="10dp"
@@ -300,7 +300,7 @@
                 <Button
                     android:id="@+id/btnSaveItem"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="35dp"
                     android:layout_centerInParent="true"
                     android:background="@drawable/selector_button_pressed"
                     android:text="Save Item"

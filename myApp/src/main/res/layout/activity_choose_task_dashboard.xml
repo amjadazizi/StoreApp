@@ -15,7 +15,7 @@
         <RelativeLayout
             android:id="@+id/topBar"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="@dimen/action_bar_height"
             android:background="@color/peter_river"
             android:gravity="center_vertical"
             >
@@ -38,7 +38,7 @@
                 android:scaleType="centerInside"
                 android:background="@drawable/ic_pen_white"
                 android:layout_alignParentRight="true"
-                android:layout_marginRight="10dp"
+                android:layout_marginRight="@dimen/view_dist_sides_10"
                 android:visibility="gone"
                 />
 

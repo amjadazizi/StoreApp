@@ -18,7 +18,7 @@
         <ImageView
             android:id="@+id/imgProfile"
             android:layout_width="match_parent"
-            android:layout_height="170dp"
+            android:layout_height="140dp"
             android:scaleType="fitXY"
             android:src="@drawable/ic_profile_white" />
 
@@ -31,9 +31,9 @@
         android:layout_height="wrap_content"
         fab:fab_title="Infomation"
         fab:fab_colorPressed="@color/white_pressed"
-        app:fab_size="normal"
+        app:fab_size="mini"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="133dp"
+        android:layout_marginTop="103dp"
         android:padding="14dp" />
 
     <RelativeLayout
@@ -41,7 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/lll"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -65,7 +65,7 @@
                 <LinearLayout
 
                     android:layout_width="0dp"
-                    android:layout_height="40dp"
+                    android:layout_height="30dp"
                     android:layout_weight="5"
                     android:layout_marginLeft="20dp"
                     android:orientation="vertical">
@@ -78,7 +78,7 @@
                         android:layout_centerVertical="true"
                         android:text="Person Name Profile"
                         style="@style/RegistrationExplainText"
-                        android:layout_marginBottom="10dp" />
+                        android:layout_marginBottom="5dp" />
 
 
                     <View
@@ -132,7 +132,7 @@
                 android:layout_height="match_parent"
                 android:clickable="true"
                 android:layout_weight="1"
-                android:layout_marginTop="-5dp">
+                android:layout_marginTop="5dp">
 
 
                 <ImageView
@@ -179,7 +179,7 @@
                 <LinearLayout
 
                     android:layout_width="0dp"
-                    android:layout_height="40dp"
+                    android:layout_height="30dp"
                     android:layout_weight="5"
                     android:layout_marginLeft="20dp"
                     android:orientation="vertical">
@@ -191,7 +191,7 @@
                         android:layout_centerVertical="true"
                         android:text="Change Password"
                         style="@style/RegistrationExplainText"
-                        android:layout_marginBottom="10dp" />
+                        android:layout_marginBottom="5dp" />
 
 
                     <View
@@ -240,12 +240,11 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/itemButtons"
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
                 android:clickable="true"
                 android:layout_weight="1"
-                android:layout_marginTop="-5dp">
+                android:layout_marginTop="5dp">
 
 
                 <ImageView

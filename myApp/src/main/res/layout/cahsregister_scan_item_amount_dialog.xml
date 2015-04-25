@@ -12,14 +12,14 @@
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:gravity="center"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="20dp">
+            android:layout_marginTop="@dimen/view_dist_sides_25"
+            android:layout_marginBottom="@dimen/view_dist_sides_25">
 
             <Button
                 android:id="@+id/btnMinus"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="20dp"
+                android:layout_width="@dimen/blue_button_height"
+                android:layout_height="@dimen/blue_button_height"
+                android:layout_marginLeft="@dimen/view_dist_sides_20"
                 android:background="@drawable/round_button_shape"
                 />
 
@@ -28,8 +28,9 @@
                 android:id="@+id/editCashDiaAmount"
                 android:layout_width="wrap_content"
                 android:layout_height="55dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+                style="@style/EditTextStyle"
+                android:layout_marginLeft="@dimen/view_dist_sides_10"
+                android:layout_marginRight="@dimen/view_dist_sides_10"
                 android:text="1"
                 android:ellipsize="start"
                 android:gravity="center"
@@ -40,9 +41,9 @@
 
             <Button
                 android:id="@+id/btnPlus"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginRight="20dp"
+                android:layout_width="@dimen/blue_button_height"
+                android:layout_height="@dimen/blue_button_height"
+                android:layout_marginRight="@dimen/view_dist_sides_20"
                 android:background="@drawable/round_button_shape"
                 />
 
@@ -54,23 +55,23 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="right|center_vertical"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginLeft="@dimen/view_dist_sides_15"
+            android:layout_marginRight="@dimen/view_dist_sides_15"
             android:orientation="horizontal"
             android:gravity="right"
-            android:paddingBottom="16dp"
-            android:paddingTop="10dp">
+            android:paddingBottom="@dimen/view_dist_sides_15"
+            android:paddingTop="@dimen/view_dist_sides_10">
 
             <Button
                 android:id="@+id/btnCasgDiaCancel"
-                android:layout_width="88dp"
-                android:layout_height="36dp"
+                android:layout_height="@dimen/dialog_button_height"
+                android:layout_width="@dimen/dialog_button_widt"
                 android:gravity="center"
-                android:padding="8dp"
+                android:padding="@dimen/view_dist_sides_10"
                 android:textAllCaps="true"
                 tools:text="Cancel"
                 android:background="@drawable/button_selector"
-                android:textSize="15sp"
+                android:textSize="@dimen/text_dialog_button"
                 android:layout_gravity="right"
                 android:visibility="visible"
                 android:textColor="@color/black"
@@ -78,14 +79,14 @@
 
             <Button
                 android:id="@+id/btnCashDiaAccept"
-                android:layout_width="88dp"
-                android:layout_height="36dp"
+                android:layout_width="@dimen/dialog_button_widt"
+                android:layout_height="@dimen/dialog_button_height"
                 android:gravity="center"
-                android:padding="8dp"
+                android:padding="@dimen/view_dist_sides_10"
                 android:textAllCaps="true"
                 tools:text="Accept"
                 android:background="@drawable/button_selector"
-                android:textSize="15sp"
+                android:textSize="@dimen/text_dialog_button"
                 android:layout_gravity="right"
                 android:visibility="visible"
                 android:textColor="@color/black"

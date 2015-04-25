@@ -419,7 +419,7 @@ public class Store_Status extends Activity implements
         }
 
     }
-
+/*
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
@@ -429,6 +429,6 @@ public class Store_Status extends Activity implements
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-    }
+    }*/
 }
 

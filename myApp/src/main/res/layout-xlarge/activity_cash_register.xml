@@ -8,31 +8,30 @@
     android:orientation="vertical">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="@dimen/action_bar_height"
         android:background="@color/peter_river"
         >
 
         <ImageButton
             android:id="@+id/btnbackArrow"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/action_bar_img_button_height"
+            android:layout_height="@dimen/action_bar_img_button_height"
             android:scaleType="centerInside"
             android:background="@drawable/ic_arrow_left"
             android:layout_alignParentLeft="true"
             android:layout_centerInParent="true"
-            android:layout_marginLeft="10dp"
-
+            android:layout_marginLeft="@dimen/view_dist_sides_10"
             />
 
         <ImageButton
             android:id="@+id/btnCancelExp"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/action_bar_img_button_height"
+            android:layout_height="@dimen/action_bar_img_button_height"
             android:scaleType="centerInside"
             android:background="@drawable/ic_clear_cart_whie"
             android:layout_alignParentRight="true"
             android:layout_centerInParent="true"
-            android:layout_marginRight="10dp"
+            android:layout_marginRight="@dimen/view_dist_sides_10"
               />
 
 
@@ -48,7 +47,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:dividerHeight="1px" />
-        <!--    android:divider="@drawable/divider"-->
 
 
         <TextView
@@ -57,7 +55,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="@string/text_cart_is_Empty"
-            android:textSize="15sp"
+            android:textSize="@dimen/text_size_cart_empty"
             android:textStyle="bold"
             android:visibility="gone" />
 
@@ -65,7 +63,7 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="6dp"
+        android:layout_height="@dimen/view_height_blue_line_6"
         android:background="@color/peter_river" />
 
     <LinearLayout
@@ -94,7 +92,7 @@
             android:id="@+id/ediTxtTotal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginRight="5dp"
+            android:layout_marginRight="@dimen/view_dist_sides_5"
             android:editable="false"
             android:hint="@string/text_total"
             android:inputType="none"
@@ -108,13 +106,13 @@
             android:id="@+id/ediTxtrecieved"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
+            android:layout_marginRight="@dimen/view_dist_sides_10"
             android:ems="10"
             android:hint="@string/hint_dkk"
             android:inputType="number"
             android:layout_gravity="right"
             android:singleLine="true"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="@dimen/view_dist_sides_15"
             style="@style/EditTextStyle"
             />
        </LinearLayout>
@@ -122,15 +120,15 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="4dp"
+        android:layout_height="@dimen/view_height_blue_line_4"
         android:background="@color/peter_river" />
 
     <com.storeapp.ui.FloatingEditText
         android:id="@+id/ediTxtNumItems"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginLeft="@dimen/view_dist_sides_10"
+        android:layout_marginRight="@dimen/view_dist_sides_10"
         android:layout_weight="1"
         android:inputType="number"
         android:singleLine="true"
@@ -144,10 +142,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginRight="@dimen/view_dist_sides_10"
+        android:layout_marginLeft="@dimen/view_dist_sides_10"
+        android:layout_marginTop="@dimen/view_dist_sides_10"
+        android:layout_marginBottom="@dimen/view_dist_sides_10"
         android:layout_weight="0.2">
 
 
@@ -156,7 +154,7 @@
             android:layout_width="0dp"
             android:layout_height="68dp"
             android:layout_weight="1"
-            android:layout_marginRight="10dp"
+            android:layout_marginRight="@dimen/view_dist_sides_10"
             android:background="@drawable/selector_button_pressed"
             android:text="Scan Item"
             android:onClick="ctrlButtons"
@@ -166,7 +164,7 @@
         <Button
             android:id="@+id/btnPayment"
             android:layout_width="0dp"
-            android:layout_height="68dp"
+            android:layout_height="@dimen/blue_button_height"
             android:layout_centerInParent="true"
             android:background="@drawable/selector_button_pressed"
             android:text="Payment"

@@ -9,16 +9,16 @@
 
     <GridView
         android:id="@+id/gridview"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginLeft="@dimen/view_dist_sides_10"
+        android:layout_marginTop="@dimen/view_dist_sides_10"
+        android:layout_marginBottom="@dimen/view_dist_sides_10"
+        android:layout_marginRight="@dimen/view_dist_sides_10"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:numColumns="2"
         android:stretchMode="columnWidth"
-        android:horizontalSpacing="10dp"
-        android:verticalSpacing="10dp"
+        android:horizontalSpacing="@dimen/view_dist_sides_10"
+        android:verticalSpacing="@dimen/view_dist_sides_10"
         />
 
 

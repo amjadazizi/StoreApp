@@ -19,13 +19,13 @@
                 android:id="@+id/dialog_custom_content"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="15dp"
+                android:paddingLeft="@dimen/edit_layout_store_items_height"
+                android:paddingRight="@dimen/edit_layout_store_items_height"
+                android:paddingTop="@dimen/view_dist_sides_15"
                 android:textColor="@color/red"
                 tools:text="Content"
                 android:layout_weight="8"
-                android:textSize="16sp"
+                android:textSize="@dimen/text_size_action_bar"
                 android:visibility="visible"
                 tools:visibility="visible"/>
 
@@ -37,7 +37,7 @@
                 android:id="@+id/checkEmailExistsProgressBar"
                 android:layout_weight="1"
                 android:gravity="end"
-                android:layout_marginRight="5dp"/>
+                android:layout_marginRight="@dimen/view_dist_sides_5"/>
 
 
 
@@ -47,8 +47,8 @@
         android:id="@+id/newUserEmail"
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginLeft="@dimen/view_dist_sides_10"
+        android:layout_marginRight="@dimen/view_dist_sides_10"
         android:hint="@string/text_email"
         android:layout_weight="1"
         android:inputType="textEmailAddress"
@@ -60,23 +60,23 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="right|center_vertical"
-            android:layout_marginLeft="16dp"
+            android:layout_marginLeft="@dimen/view_dist_sides_15"
             android:layout_marginRight="10dp"
             android:orientation="horizontal"
             android:gravity="right"
-            android:paddingBottom="5dp"
+            android:paddingBottom="@dimen/view_dist_sides_5"
           >
 
             <Button
                 android:id="@+id/btnCasgDiaCancel"
-                android:layout_width="88dp"
-                android:layout_height="36dp"
+                android:layout_width="@dimen/dialog_button_widt"
+                android:layout_height="@dimen/dialog_button_height"
                 android:gravity="center"
-                android:padding="8dp"
+                android:padding="@dimen/view_dist_sides_10"
                 android:textAllCaps="true"
                 tools:text="Cancel"
                 android:background="@drawable/button_selector"
-                android:textSize="15sp"
+                android:textSize="@dimen/text_size_dialog_button"
                 android:layout_gravity="right"
                 android:visibility="visible"
                 android:textColor="@color/black"
@@ -84,14 +84,14 @@
 
             <Button
                 android:id="@+id/btnCashDiaAccept"
-                android:layout_width="88dp"
-                android:layout_height="36dp"
+                android:layout_width="@dimen/dialog_button_widt"
+                android:layout_height="@dimen/dialog_button_height"
                 android:gravity="center"
-                android:padding="8dp"
+                android:padding="@dimen/view_dist_sides_10"
                 android:textAllCaps="true"
                 tools:text="Add"
                 android:background="@drawable/button_selector"
-                android:textSize="15sp"
+                android:textSize="@dimen/text_size_dialog_button"
                 android:layout_gravity="right"
                 android:visibility="visible"
                 android:textColor="@color/black"

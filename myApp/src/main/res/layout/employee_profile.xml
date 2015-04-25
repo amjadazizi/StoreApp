@@ -18,7 +18,7 @@
         <ImageView
             android:id="@+id/imgProfile"
             android:layout_width="match_parent"
-            android:layout_height="220dp"
+            android:layout_height="@dimen/store_items_image_height"
             android:scaleType="fitXY"
             android:src="@drawable/ic_profile_white" />
 
@@ -33,7 +33,7 @@
         fab:fab_colorPressed="@color/white_pressed"
         app:fab_size="normal"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="183dp"
+        android:layout_marginTop="@dimen/store_items_floating_button_dist"
         android:padding="14dp" />
 
     <RelativeLayout
@@ -41,7 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/lll"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="@dimen/view_dist_sides_15">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -65,7 +65,7 @@
                 <LinearLayout
 
                     android:layout_width="0dp"
-                    android:layout_height="35dp"
+                    android:layout_height="@dimen/header_profile_textview"
                     android:layout_weight="5"
                     android:layout_marginLeft="20dp"
                     android:orientation="vertical">
@@ -83,7 +83,7 @@
 
                     <View
                         android:layout_width="fill_parent"
-                        android:layout_height="4dp"
+                        android:layout_height="@dimen/view_height_blue_line_4"
                         android:layout_alignParentBottom="true"
                         android:background="@color/peter_river" />
                 </LinearLayout>
@@ -107,7 +107,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/ic_email_grey" />
+                     />
 
 
                 <com.storeapp.ui.FloatingEditText
@@ -142,7 +142,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/ic_call_grey" />
+                    />
 
 
                 <com.storeapp.ui.FloatingEditText
@@ -178,9 +178,8 @@
 
 
                 <LinearLayout
-
                     android:layout_width="0dp"
-                    android:layout_height="35dp"
+                    android:layout_height="@dimen/header_profile_textview"
                     android:layout_weight="5"
                     android:layout_marginLeft="20dp"
                     android:orientation="vertical">
@@ -197,7 +196,7 @@
 
                     <View
                         android:layout_width="fill_parent"
-                        android:layout_height="4dp"
+                        android:layout_height="@dimen/view_height_blue_line_4"
                         android:layout_alignParentBottom="true"
                         android:background="@color/peter_river" />
                 </LinearLayout>
