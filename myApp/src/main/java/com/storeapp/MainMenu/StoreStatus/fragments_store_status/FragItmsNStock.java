@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.parse.FindCallback;
@@ -19,7 +20,6 @@ import com.parse.ParseFile;
 import com.parse.ParseQuery;
 import com.squareup.picasso.LruCache;
 import com.squareup.picasso.Picasso;
-import com.storeapp.MainMenu.EmployeeList.CustomImageView;
 import com.storeapp.R;
 import com.storeapp.parse.InventoryItem;
 import com.storeapp.util.Prefs;
@@ -85,7 +85,7 @@ public class FragItmsNStock extends Fragment implements AdapterView.OnItemClickL
     }
 
     private class ItemsInStocAdapter extends BaseAdapter {
-        public CustomImageView itemImage;
+        public ImageView itemImage;
 
         Context ctx;
         List<InventoryItem> itemsList;
@@ -122,7 +122,7 @@ public class FragItmsNStock extends Fragment implements AdapterView.OnItemClickL
                 view = layoutInflater.inflate(R.layout.items_instock_grid_item, null);
 
                 itemName = (TextView) view.findViewById(R.id.txtItemName);
-                itemImage = (CustomImageView) view.findViewById(R.id.itemImage);
+                itemImage = (ImageView) view.findViewById(R.id.itemImage);
 
                 ViewHolder holder = new ViewHolder();
                 holder.itemDescription = itemName;
@@ -142,7 +142,7 @@ public class FragItmsNStock extends Fragment implements AdapterView.OnItemClickL
 
             itemName.setText(items.getDescription());
 
-            itemImage.setImageResource(R.drawable.ic_cash_register_white);
+            itemImage.setImageResource(R.drawable.ic_image_white);
             ParseFile pf = items.getItemImg();
             if(pf!=null){
                 picasso.load(pf.getUrl()).resize(140, 140).placeholder(R.drawable.ic_image_white).into(itemImage);
@@ -156,7 +156,7 @@ public class FragItmsNStock extends Fragment implements AdapterView.OnItemClickL
     public static class ViewHolder {
 
         public TextView itemDescription;
-         public CustomImageView itemPicture;
+         public ImageView itemPicture;
 
 
     }

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.parse.FindCallback;
@@ -21,6 +22,7 @@ import com.storeapp.qrreader.IntentIntegrator;
 import com.storeapp.qrreader.IntentResult;
 import com.storeapp.ui.FloatingEditText;
 import com.storeapp.util.Prefs;
+import com.storeapp.util.SweetAlerts;
 import com.storeapp.util.Utils;
 
 import java.util.List;
@@ -30,8 +32,8 @@ import java.util.List;
  */
 public class ScanItemAmountDialog extends Activity {
 
-    Button btnMinus, btnPlus;
-    Button btnCasgDiaCancel,btnCasgDiaAccept;
+    ImageButton btnMinus, btnPlus;
+    Button btnScanCancel,btnScanItem;
     FloatingEditText editCashDiaAmount;
     int currentItemAmount ;
     private String scanBarcode;
@@ -48,10 +50,14 @@ public class ScanItemAmountDialog extends Activity {
 
         editCashDiaAmount = (FloatingEditText) findViewById(R.id.editCashDiaAmount);
 
-        btnMinus = (Button) findViewById(R.id.btnMinus);
+        btnMinus = (ImageButton) findViewById(R.id.btnMinus);
         btnMinus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(Utils.isNullOrEmpty(editCashDiaAmount.getText().toString())){
+                    SweetAlerts.showBasicMsg(ScanItemAmountDialog.this,"Enter The Amount");
+                    return;
+                }
                 currentItemAmount = Integer.parseInt(editCashDiaAmount.getText().toString());
                 if(currentItemAmount<1){
                     return;
@@ -61,21 +67,32 @@ public class ScanItemAmountDialog extends Activity {
             }
         });
 
-        btnPlus = (Button) findViewById(R.id.btnPlus);
+        btnPlus = (ImageButton) findViewById(R.id.btnPlus);
         btnPlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(Utils.isNullOrEmpty(editCashDiaAmount.getText().toString())){
+                    editCashDiaAmount.setText("1");
+                    return;
+                }
                 currentItemAmount = Integer.parseInt(editCashDiaAmount.getText().toString());
                 currentItemAmount++;
                 editCashDiaAmount.setText(currentItemAmount + "");
             }
         });
 
-        btnCasgDiaAccept = (Button) findViewById(R.id.btnCashDiaAccept);
-        btnCasgDiaAccept.setText("Scan");
-        btnCasgDiaAccept.setOnClickListener(new View.OnClickListener() {
+        btnScanItem = (Button) findViewById(R.id.btnScanItem);
+        btnScanItem.setText("Scan");
+        btnScanItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                currentItemAmount = Integer.parseInt(editCashDiaAmount.getText().toString());
+
+                if(Utils.isNullOrEmpty(editCashDiaAmount.getText().toString()) && currentItemAmount<=0 ){
+                    SweetAlerts.showBasicMsg(ScanItemAmountDialog.this,"Enter The Amount");
+                    return;
+                }
 
                 IntentIntegrator scanIntegrator = new IntentIntegrator(ScanItemAmountDialog.this);
                 scanIntegrator.initiateScan();
@@ -84,9 +101,9 @@ public class ScanItemAmountDialog extends Activity {
         });
 
 
-        btnCasgDiaCancel = (Button) findViewById(R.id.btnCasgDiaCancel);
-        btnCasgDiaCancel.setText("Cancel");
-        btnCasgDiaCancel.setOnClickListener(new View.OnClickListener() {
+        btnScanCancel = (Button) findViewById(R.id.btnScanCancel);
+        btnScanCancel.setText("Cancel");
+        btnScanCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();

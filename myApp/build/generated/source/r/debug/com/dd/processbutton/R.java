@@ -30,15 +30,15 @@ public final class R {
 		public static final int red_error = 0x7f090025;
 	}
 	public static final class dimen {
-		public static final int corner_radius = 0x7f0b0014;
-		public static final int layer_padding = 0x7f0b0021;
+		public static final int corner_radius = 0x7f0b001a;
+		public static final int layer_padding = 0x7f0b0031;
 	}
 	public static final class drawable {
-		public static final int rect_complete = 0x7f0200ad;
-		public static final int rect_error = 0x7f0200ae;
-		public static final int rect_normal = 0x7f0200af;
-		public static final int rect_pressed = 0x7f0200b0;
-		public static final int rect_progress = 0x7f0200b1;
+		public static final int rect_complete = 0x7f0200aa;
+		public static final int rect_error = 0x7f0200ab;
+		public static final int rect_normal = 0x7f0200ac;
+		public static final int rect_pressed = 0x7f0200ad;
+		public static final int rect_progress = 0x7f0200ae;
 	}
 	public static final class string {
 		public static final int define_processbutton = 0x7f0d0012;

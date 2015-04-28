@@ -78,7 +78,8 @@
                         android:layout_centerVertical="true"
                         android:text="Person Name Profile"
                         android:textColor="@color/black"
-                        android:layout_marginBottom="5dp" />
+                        android:layout_marginBottom="5dp"
+                        android:textSize="@dimen/text_blue_line_header"/>
 
 
                     <View
@@ -113,15 +114,14 @@
                 <com.storeapp.ui.FloatingEditText
                     android:id="@+id/editProEmail"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="5"
                     android:hint="Email"
                     android:editable="false"
-                    android:textColor="@color/black"
-
+                    style="@style/EditTextStyle"
                     />
 
 
@@ -148,14 +148,14 @@
                 <com.storeapp.ui.FloatingEditText
                     android:id="@+id/editProPhoneNumber"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:hint="Phone"
                     android:inputType="number"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="5"
-                    android:textColor="@color/black"
+                    style="@style/EditTextStyle"
 
                     />
 
@@ -191,7 +191,8 @@
                         android:layout_centerVertical="true"
                         android:text="Change Password"
                         android:textColor="@color/black"
-                        android:layout_marginBottom="5dp" />
+                        android:layout_marginBottom="5dp"
+                        android:textSize="@dimen/text_blue_line_header"/>
 
 
                     <View
@@ -226,13 +227,13 @@
                 <com.storeapp.ui.FloatingEditText
                     android:id="@+id/editProNewPassword"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:hint="New Password"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="5"
-                    android:textColor="@color/black"
+                    style="@style/EditTextStyle"
                     android:inputType="textPassword"
                     />
 
@@ -261,13 +262,13 @@
 
                     android:id="@+id/editProRepeatPassword"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:hint="Repeat Password"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="5"
-                    android:textColor="@color/black"
+                    style="@style/EditTextStyle"
                     android:inputType="textPassword"
                      />
 

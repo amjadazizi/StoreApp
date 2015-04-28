@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="vertical"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/view_dist_sides_20"
 >
 
         <TextView
@@ -31,8 +31,8 @@
             android:id="@+id/txtDescrip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginLeft="@dimen/view_dist_sides_20"
+            android:layout_marginRight="@dimen/view_dist_sides_20"
             android:gravity="center_horizontal"
             android:text="@string/text_your_email_phone_number"
             style="@style/RegistrationExplainText"
@@ -43,9 +43,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="@dimen/view_dist_sides_50"
         android:layout_weight="2"
         android:orientation="vertical"
+        android:layout_marginLeft="@dimen/view_dist_sides_15"
+        android:layout_marginRight="@dimen/view_dist_sides_15"
         android:gravity="center"
         >
 
@@ -53,8 +55,7 @@
             android:id="@+id/editEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
+
             android:ems="10"
             android:hint="@string/text_email"
             android:inputType="textWebEmailAddress"
@@ -65,9 +66,8 @@
             android:id="@+id/editPhoneNum"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginTop="20dp"
+
+            android:layout_marginTop="@dimen/view_dist_sides_20"
             android:ems="10"
             android:hint="@string/text_phone_number"
             android:inputType="number"
@@ -78,17 +78,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="@dimen/view_dist_sides_50"
         android:layout_weight=".5"
         android:orientation="vertical"
         android:weightSum="1.5" >
 
-       <!-- <ImageButton
-           android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/ic_arrow_right"
-            android:layout_gravity="bottom|center_horizontal"
-            android:id="@+id/btnImgContinue" /> -->
+
 
     </LinearLayout>
 

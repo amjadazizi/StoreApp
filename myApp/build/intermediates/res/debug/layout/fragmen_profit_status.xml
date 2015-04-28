@@ -19,7 +19,7 @@
            android:layout_gravity="center"
            android:text="Sale Of Today"
            android:textColor="@color/white"
-           android:textSize="22sp"
+           android:textSize="@dimen/text_profit_status_header"
            android:layout_weight="0.5"
            android:layout_marginTop="15dp"/>
 
@@ -34,8 +34,8 @@
                android:layout_height="wrap_content"
                android:text="Cash:"
                android:textColor="@color/white"
-               android:layout_marginLeft="20dp"
-               android:textSize="20sp"
+               android:layout_marginLeft="@dimen/view_dist_sides_20"
+               android:textSize="@dimen/text_profit_status"
                android:layout_alignParentLeft="true"/>
 
            <TextView
@@ -45,7 +45,7 @@
                android:text="0"
                android:textColor="@color/white"
                android:layout_marginRight="40dp"
-               android:textSize="20sp"
+               android:textSize="@dimen/text_profit_status"
                android:layout_alignParentRight="true"/>
        </RelativeLayout>
 
@@ -61,7 +61,7 @@
                android:text="Credit Cash:"
                android:textColor="@color/white"
                android:layout_marginLeft="20dp"
-               android:textSize="20sp"
+               android:textSize="@dimen/text_profit_status"
                android:layout_alignParentLeft="true"/>
 
            <TextView
@@ -71,7 +71,7 @@
                android:text="0"
                android:textColor="@color/white"
                android:layout_marginRight="40dp"
-               android:textSize="20dp"
+               android:textSize="@dimen/text_profit_status"
                android:layout_alignParentRight="true"/>
        </RelativeLayout>
        <RelativeLayout
@@ -86,7 +86,7 @@
                android:text="Total Sale:"
                android:textColor="@color/white"
                android:layout_marginLeft="20dp"
-               android:textSize="20sp"
+               android:textSize="@dimen/text_profit_status"
                android:layout_alignParentLeft="true"/>
 
            <TextView
@@ -96,7 +96,7 @@
                android:text="0"
                android:textColor="@color/white"
                android:layout_marginRight="40dp"
-               android:textSize="20sp"
+               android:textSize="@dimen/text_profit_status"
                android:layout_alignParentRight="true"/>
        </RelativeLayout>
 
@@ -113,7 +113,7 @@
                android:text="Date"
                android:textColor="@color/white"
                android:layout_marginRight="40dp"
-               android:textSize="10sp"
+               android:textSize="@dimen/text_profit_status_date"
                android:layout_alignParentRight="true"/>
        </RelativeLayout>
 
@@ -131,7 +131,7 @@
             android:layout_height="match_parent"
             android:layout_marginTop="5dp"
             android:scrollbarAlwaysDrawHorizontalTrack="true"
-            android:dividerHeight="30dp"
+            android:dividerHeight="@dimen/divider_height_emp_list"
             android:background="@color/white">
         </ListView>
 

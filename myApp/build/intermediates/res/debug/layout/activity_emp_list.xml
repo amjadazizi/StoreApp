@@ -7,23 +7,24 @@
     android:background="@color/white">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="@dimen/action_bar_height"
         android:background="@color/peter_river"
         >
 
         <ImageButton
             android:id="@+id/btnbackArrowEmpList"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/action_bar_img_button_width"
+            android:layout_height="@dimen/action_bar_img_button_height"
             android:scaleType="centerInside"
-            android:background="@drawable/ic_arrow_left"
+            android:src="@drawable/ic_arrow_left"
+            android:background="@drawable/selector_action_bar_items"
             android:layout_alignParentLeft="true"
             android:layout_centerInParent="true"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="@dimen/view_dist_sides_10"
             />
 
 
-        <SearchView
+       <!-- <SearchView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/empSearchView"
@@ -32,7 +33,7 @@
             android:layout_alignParentRight="true"
             android:layout_centerInParent="true"
             />
-
+-->
 
     </RelativeLayout>
 
@@ -41,9 +42,9 @@
            android:layout_width="match_parent"
            android:dividerHeight="30dp"
            android:layout_height="wrap_content"
-           android:layout_marginRight="10dp"
-           android:layout_marginLeft="10dp"
-           android:layout_marginTop="5dp">
+           android:layout_marginRight="@dimen/view_dist_sides_10"
+           android:layout_marginLeft="@dimen/view_dist_sides_10"
+           android:layout_marginTop="@dimen/view_dist_sides_5">
            </ListView>
 </LinearLayout>
 

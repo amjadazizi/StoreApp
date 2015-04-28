@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="16"
+        android:minSdkVersion="14"
         android:targetSdkVersion="19" />
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
@@ -80,7 +80,7 @@
             android:theme="@android:style/Theme.Holo.Dialog" >
         </activity>
         <activity
-            android:name="com.storeapp.util.PictureDialog"
+            android:name="com.storeapp.MainMenu.PictureDialog"
             android:theme="@style/custom_theme" >
         </activity>
         <activity
@@ -109,6 +109,17 @@
             android:label="@string/title_activity_cash_register"
             android:screenOrientation="portrait" >
         </activity>
+
+        <receiver
+            android:name="com.storeapp.util.ConnectionChangeReceiver"
+            android:label="ConnectionChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" >
+                    <action android:name="android.net.wifi.WIFI_STATE_CHANGED" >
+                    </action>
+                </action>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

@@ -34,6 +34,7 @@ public class SoldItem extends ParseObject {
 
         ParseQuery<InventoryItem> iiQuery = InventoryItem.getQuery(cvr);
         ParseQuery<SoldItem> query= ParseQuery.getQuery(SoldItem.class);
+        query.include(COL_INVENTORY_ITEM);
         query.whereMatchesQuery (COL_INVENTORY_ITEM, iiQuery);
         return query;
     }

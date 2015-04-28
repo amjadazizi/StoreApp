@@ -28,7 +28,7 @@
                     android:paddingLeft="@dimen/view_dist_sides_10"
                     android:background="@drawable/button_selector"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/text_dialog_button"
+                    android:textSize="@dimen/text_dialog_list_item"
     />
 
             </LinearLayout>

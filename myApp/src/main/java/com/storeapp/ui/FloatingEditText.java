@@ -120,11 +120,14 @@ public class FloatingEditText extends EditText {
                 return PixelFormat.TRANSPARENT;
             }
         };
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN) {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
             setBackgroundDrawable(drawable);
         } else {
-            setBackground(drawable);
+            ////////////////
+            setBackgroundDrawable(drawable);
         }
+
+
         int paddingTop = dpToPx(12);
         int paddingBottom = dpToPx(20);
         setPadding(0, paddingTop, 0, paddingBottom);

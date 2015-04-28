@@ -18,7 +18,7 @@
         <ImageView
             android:id="@+id/imgProfile"
             android:layout_width="match_parent"
-            android:layout_height="220dp"
+            android:layout_height="@dimen/store_items_image_height"
             android:scaleType="fitXY"
             android:src="@drawable/ic_profile_white" />
 
@@ -33,7 +33,7 @@
         fab:fab_colorPressed="@color/white_pressed"
         app:fab_size="normal"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="183dp"
+        android:layout_marginTop="@dimen/store_items_floating_button_dist"
         android:padding="14dp" />
 
     <RelativeLayout
@@ -41,7 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/lll"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="@dimen/view_dist_sides_15">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -65,7 +65,7 @@
                 <LinearLayout
 
                     android:layout_width="0dp"
-                    android:layout_height="35dp"
+                    android:layout_height="@dimen/header_profile_textview"
                     android:layout_weight="5"
                     android:layout_marginLeft="20dp"
                     android:orientation="vertical">
@@ -78,12 +78,13 @@
                         android:layout_centerVertical="true"
                         android:text="Person Name Profile"
                         android:textColor="@color/black"
-                        android:layout_marginBottom="5dp" />
+                        android:layout_marginBottom="5dp"
+                        android:textSize="@dimen/text_blue_line_header"/>
 
 
                     <View
                         android:layout_width="fill_parent"
-                        android:layout_height="4dp"
+                        android:layout_height="@dimen/view_height_blue_line_4"
                         android:layout_alignParentBottom="true"
                         android:background="@color/peter_river" />
                 </LinearLayout>
@@ -107,21 +108,20 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/ic_email_grey" />
+                     />
 
 
                 <com.storeapp.ui.FloatingEditText
                     android:id="@+id/editProEmail"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="5"
                     android:hint="Email"
                     android:editable="false"
-                    android:textColor="@color/black"
-
+                    style="@style/EditTextStyle"
                     />
 
 
@@ -142,20 +142,20 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/ic_call_grey" />
+                    />
 
 
                 <com.storeapp.ui.FloatingEditText
                     android:id="@+id/editProPhoneNumber"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:hint="Phone"
                     android:inputType="number"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="5"
-                    android:textColor="@color/black"
+                    style="@style/EditTextStyle"
 
                     />
 
@@ -178,9 +178,8 @@
 
 
                 <LinearLayout
-
                     android:layout_width="0dp"
-                    android:layout_height="35dp"
+                    android:layout_height="@dimen/header_profile_textview"
                     android:layout_weight="5"
                     android:layout_marginLeft="20dp"
                     android:orientation="vertical">
@@ -192,12 +191,13 @@
                         android:layout_centerVertical="true"
                         android:text="Change Password"
                         android:textColor="@color/black"
-                        android:layout_marginBottom="5dp" />
+                        android:layout_marginBottom="5dp"
+                        android:textSize="@dimen/text_blue_line_header"/>
 
 
                     <View
                         android:layout_width="fill_parent"
-                        android:layout_height="4dp"
+                        android:layout_height="@dimen/view_height_blue_line_4"
                         android:layout_alignParentBottom="true"
                         android:background="@color/peter_river" />
                 </LinearLayout>
@@ -227,13 +227,13 @@
                 <com.storeapp.ui.FloatingEditText
                     android:id="@+id/editProNewPassword"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:hint="New Password"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="5"
-                    android:textColor="@color/black"
+                    style="@style/EditTextStyle"
                     android:inputType="textPassword"
                     />
 
@@ -262,13 +262,13 @@
 
                     android:id="@+id/editProRepeatPassword"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:hint="Repeat Password"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="5"
-                    android:textColor="@color/black"
+                    style="@style/EditTextStyle"
                     android:inputType="textPassword"
                      />
 

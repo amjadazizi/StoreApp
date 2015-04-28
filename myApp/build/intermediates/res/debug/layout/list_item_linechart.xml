@@ -7,7 +7,7 @@
     <com.github.mikephil.charting.charts.LineChart
         android:id="@+id/chart"
         android:layout_width="match_parent"
-        android:layout_height="200dp" />
+        android:layout_height="@dimen/linechar_height" />
 
 </LinearLayout>
 <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/layout/list_item_linechart.xml -->

@@ -6,7 +6,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="16"
+        android:minSdkVersion="14"
         android:targetSdkVersion="19" />
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
@@ -83,7 +83,7 @@
             android:theme="@android:style/Theme.Holo.Dialog" >
         </activity>
         <activity
-            android:name=".util.PictureDialog"
+            android:name=".MainMenu.PictureDialog"
             android:theme="@style/custom_theme" >
         </activity>
 
@@ -121,6 +121,14 @@
             android:screenOrientation="portrait">
 
         </activity>
+
+        <receiver android:name="com.storeapp.util.ConnectionChangeReceiver"
+            android:label="ConnectionChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE">
+                    <action android:name="android.net.wifi.WIFI_STATE_CHANGED">
+                    </action></action></intent-filter>
+        </receiver>
     </application>
 
 

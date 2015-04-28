@@ -1,6 +1,5 @@
 package com.storeapp.MainMenu.CashRegister;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
@@ -14,11 +13,10 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.github.mikephil.charting.utils.ColorTemplate;
+import com.storeapp.BaseActivity;
 import com.storeapp.Db.CartItemsManager;
 import com.storeapp.Db.DbManager;
 import com.storeapp.R;
@@ -32,9 +30,8 @@ import com.storeapp.util.Utils;
 import java.util.List;
 import java.util.Random;
 
-public class Cash_Register extends Activity {
+public class Cash_Register extends BaseActivity {
 
- private LinearLayout layoutItmScanBtns;
     private ListView itemsListView;
     ImageButton btnCancelExp, btnbackArrow;
     private static FloatingEditText ediTxtTotal, ediTxtrecieved;
@@ -115,7 +112,6 @@ public class Cash_Register extends Activity {
         ediTxtrecieved = (FloatingEditText) findViewById(R.id.ediTxtrecieved);
         ediTxtrecieved.setText("0");
 
-       // layoutItmScanBtns = (LinearLayout) findViewById(R.id.layoutItmScanBtns);
 
         btnbackArrow = (ImageButton) findViewById(R.id.btnbackArrow);
         btnbackArrow.setOnClickListener(new View.OnClickListener() {
@@ -332,8 +328,8 @@ public class Cash_Register extends Activity {
             txtDescription.setText(desc);
 
             txtPrice.setText(Double.toString(price * count));
-            int colorItem = rn.nextInt(ColorTemplate.JOYFUL_COLORS.length - 1 + 1) + 0;
-            convertView.setBackgroundColor(ColorTemplate.VORDIPLOM_COLORS[colorItem]);
+            int colorItem = rn.nextInt(Utils.COLORFUL_COLORS.length- 1 + 1) + 0;
+            convertView.setBackgroundColor(Utils.COLORFUL_COLORS[colorItem]);
             return convertView;
         }
     }

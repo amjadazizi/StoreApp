@@ -1,13 +1,12 @@
 package com.storeapp;
 
-import android.app.ActionBar;
 import android.app.Activity;
 import android.os.Bundle;
 
 public abstract class BaseActivity extends Activity {
 
-	protected ActionBar actionBar;
-	protected abstract int getActivityTitleResId();
+	//protected ActionBar actionBar;
+	//protected abstract int getActivityTitleResId();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

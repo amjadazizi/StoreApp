@@ -1,8 +1,11 @@
+/*
 package com.storeapp.MainMenu.LeftMenu;
 
+*/
 /**
  * Created by Amjad on 04-03-2015.
- */
+ *//*
+
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -19,4 +22,4 @@ public class SettingsFragment extends Fragment {
         return inflater.inflate(R.layout.settings, container, false);
     }
 
-}
+}*/

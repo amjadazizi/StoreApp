@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.github.mikephil.charting.charts.BarChart;
@@ -16,17 +17,16 @@ import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
-import com.github.mikephil.charting.utils.ColorTemplate;
 import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseFile;
 import com.parse.ParseQuery;
 import com.squareup.picasso.LruCache;
 import com.squareup.picasso.Picasso;
-import com.storeapp.MainMenu.EmployeeList.CustomImageView;
 import com.storeapp.R;
 import com.storeapp.parse.SoldItem;
 import com.storeapp.util.Prefs;
+import com.storeapp.util.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -102,7 +102,7 @@ private void draw(ArrayList<BarEntry> yValues){
     }
 
     BarDataSet set1 = new BarDataSet(yValues, "Data Set");
-    set1.setColors(ColorTemplate.VORDIPLOM_COLORS);
+    set1.setColors(Utils.COLORFUL_COLORS);
     set1.setDrawValues(false);
 
     ArrayList<BarDataSet> dataSets = new ArrayList<BarDataSet>();
@@ -118,6 +118,7 @@ private void draw(ArrayList<BarEntry> yValues){
 
 
         ParseQuery<SoldItem> query = SoldItem.getQuery(Prefs.getBusinessCvr());
+        query.orderByDescending(SoldItem.COL_AMOUNT);
         query.findInBackground(new FindCallback<SoldItem>() {
             @Override
             public void done(List<SoldItem> list, ParseException e) {
@@ -125,16 +126,19 @@ private void draw(ArrayList<BarEntry> yValues){
                 if (e == null) {
                     if (list != null && list.size() > 0) {
 
+                              List<SoldItem> soldItemList = new ArrayList<SoldItem>();
+
                             ArrayList<BarEntry> yValues = new ArrayList<BarEntry>();
                               itemsCount = Math.min(list.size(), 10);
 
                             for (int i = 0; i < itemsCount; i++) {
+                                soldItemList.add(list.get(i));
                                 yValues.add(new BarEntry(list.get(i).getAmount(), i));
                             }
 
                             draw(yValues);
 
-                        TopItemsAdapter topItemsAdapter = new TopItemsAdapter(getActivity(), list);
+                        TopItemsAdapter topItemsAdapter = new TopItemsAdapter(getActivity(), soldItemList);
                         topItemGridView.setAdapter(topItemsAdapter);
                     }
                 }
@@ -173,8 +177,7 @@ private void draw(ArrayList<BarEntry> yValues){
         public View getView(int position, View convertView, ViewGroup viewGroup) {
             View view = convertView;
             TextView itemName = null;
-            CustomImageView itemImage;
-
+            ImageView itemImage;
 
 
             if (view == null) {
@@ -184,7 +187,7 @@ private void draw(ArrayList<BarEntry> yValues){
                 view = layoutInflater.inflate(R.layout.items_instock_grid_item, null);
 
                 itemName = (TextView) view.findViewById(R.id.txtItemName);
-               itemImage = (CustomImageView) view.findViewById(R.id.itemImage);
+               itemImage = (ImageView) view.findViewById(R.id.itemImage);
 
                 ViewHolder holder = new ViewHolder();
                 holder.itemDescription = itemName;
@@ -199,12 +202,13 @@ private void draw(ArrayList<BarEntry> yValues){
 
 
             SoldItem items = top10ItemsList.get(position);
-            itemName.setText(items.getInventoryItem().getBarcode());
-
-            itemImage.setImageResource(R.drawable.ic_cash_register_white);
+            String  itemDecrip =   items.getInventoryItem().getDescription();
+            itemName.setText(itemDecrip);
+            itemName.setBackgroundColor(Utils.COLORFUL_COLORS[position]);
+            itemImage.setImageResource(R.drawable.ic_image_white);
             ParseFile pf = items.getInventoryItem().getItemImg();
             if(pf!=null){
-                picasso.load(pf.getUrl()).resize(140, 140).placeholder(R.drawable.ic_image_white).into(itemImage);
+                picasso.load(pf.getUrl()).placeholder(R.drawable.ic_image_white).into(itemImage);
             }
 
             return view;
@@ -214,7 +218,7 @@ private void draw(ArrayList<BarEntry> yValues){
     public static class ViewHolder {
 
         public TextView itemDescription;
-        public CustomImageView itemPicture;
+        public ImageView itemPicture;
     }
 
 }

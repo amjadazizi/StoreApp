@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:gravity="left"
-    android:background="@color/white">
+    android:background="@color/clouds">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -15,22 +15,24 @@
             android:layout_marginTop="@dimen/view_dist_sides_25"
             android:layout_marginBottom="@dimen/view_dist_sides_25">
 
-            <Button
+            <ImageButton
                 android:id="@+id/btnMinus"
                 android:layout_width="@dimen/blue_button_height"
                 android:layout_height="@dimen/blue_button_height"
+                android:src="@drawable/ic_minus_white"
                 android:layout_marginLeft="@dimen/view_dist_sides_20"
+                android:gravity="center"
                 android:background="@drawable/round_button_shape"
                 />
-
 
             <com.storeapp.ui.FloatingEditText
                 android:id="@+id/editCashDiaAmount"
                 android:layout_width="wrap_content"
-                android:layout_height="55dp"
+                android:layout_height="60dp"
                 style="@style/EditTextStyle"
                 android:layout_marginLeft="@dimen/view_dist_sides_10"
                 android:layout_marginRight="@dimen/view_dist_sides_10"
+                android:paddingTop="@dimen/view_dist_sides_5"
                 android:text="1"
                 android:ellipsize="start"
                 android:gravity="center"
@@ -39,10 +41,11 @@
                 android:textColor="@color/black"
                 />
 
-            <Button
+            <ImageButton
                 android:id="@+id/btnPlus"
                 android:layout_width="@dimen/blue_button_height"
                 android:layout_height="@dimen/blue_button_height"
+                android:src="@drawable/ic_plus_white"
                 android:layout_marginRight="@dimen/view_dist_sides_20"
                 android:background="@drawable/round_button_shape"
                 />
@@ -63,7 +66,7 @@
             android:paddingTop="@dimen/view_dist_sides_10">
 
             <Button
-                android:id="@+id/btnCasgDiaCancel"
+                android:id="@+id/btnScanCancel"
                 android:layout_height="@dimen/dialog_button_height"
                 android:layout_width="@dimen/dialog_button_widt"
                 android:gravity="center"
@@ -78,7 +81,7 @@
                 tools:visibility="visible" />
 
             <Button
-                android:id="@+id/btnCashDiaAccept"
+                android:id="@+id/btnScanItem"
                 android:layout_width="@dimen/dialog_button_widt"
                 android:layout_height="@dimen/dialog_button_height"
                 android:gravity="center"

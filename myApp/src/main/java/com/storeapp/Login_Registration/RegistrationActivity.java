@@ -32,11 +32,6 @@ public class RegistrationActivity extends BaseActivity implements BaseFragment.O
     FloatingActionButton btnImgContinue;
 
 
-    @Override
-    protected int getActivityTitleResId() {
-        return R.id.title;
-    }
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,7 +88,7 @@ public class RegistrationActivity extends BaseActivity implements BaseFragment.O
             if (nextFragment != null) {
                 nextFragment.setValidateFragmentListener(this);
                 FragmentTransaction ft = getFragmentManager().beginTransaction();
-                ft.setCustomAnimations(R.anim.slide_in_from_right, R.anim.slide_out_to_left, R.anim.slide_out_to_right,R.anim.slide_in_from_left);
+                ft.setCustomAnimations(R.anim.slide_in_from_right, R.anim.slide_out_to_left, R.anim.slide_in_from_left,R.anim.slide_out_to_right);
                 ft.replace(R.id.fragmentsRegistCont, nextFragment, null);
                 ft.addToBackStack(null);
                 ft.commit();

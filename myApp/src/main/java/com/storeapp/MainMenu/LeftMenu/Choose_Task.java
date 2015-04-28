@@ -52,13 +52,13 @@ public class Choose_Task extends FragmentActivity {
                 if(!isProfileEidtable){
                     profileFragment.startEditingProfile();
                     isProfileEidtable = true;
-                    btnEditProfilePen.setBackground(getResources().getDrawable(R.drawable.ic_nike_white));
+                    btnEditProfilePen.setBackgroundDrawable(getResources().getDrawable(R.drawable.ic_nike_white));
 
 
                 }else{
                     profileFragment.endEditingProfile();
                     isProfileEidtable = false;
-                    btnEditProfilePen.setBackground(getResources().getDrawable(R.drawable.ic_pen_white));
+                    btnEditProfilePen.setBackgroundDrawable(getResources().getDrawable(R.drawable.ic_pen_white));
 
                 }
 

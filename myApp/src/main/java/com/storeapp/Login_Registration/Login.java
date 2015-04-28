@@ -1,5 +1,6 @@
 package com.storeapp.Login_Registration;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -22,12 +23,13 @@ import com.parse.ParseException;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.RequestPasswordResetCallback;
-import com.storeapp.BaseActivity;
 import com.storeapp.MainMenu.LeftMenu.Choose_Task;
 import com.storeapp.R;
 import com.storeapp.parse.Admin;
 import com.storeapp.parse.User;
 import com.storeapp.ui.CustomDialog.ProgressGenerator;
+import com.storeapp.ui.sweetalert.SweetAlertDialog;
+import com.storeapp.util.ConnectionUtil;
 import com.storeapp.util.Prefs;
 import com.storeapp.util.SweetAlerts;
 import com.storeapp.util.Utils;
@@ -37,7 +39,7 @@ import java.util.List;
 import de.psdev.licensesdialog.LicensesDialog;
 import de.psdev.licensesdialog.model.Notice;
 
-public class Login extends BaseActivity implements ProgressGenerator.OnCompleteListener, OnClickListener {
+public class Login extends Activity implements ProgressGenerator.OnCompleteListener, OnClickListener {
 
     private static final String KEY_ANIMATE_LOGO = "key_animate_logo";
     private static final String KEY_SLIDING_DRAWER_OPEN = "sliding_drawer_open";
@@ -69,7 +71,8 @@ public class Login extends BaseActivity implements ProgressGenerator.OnCompleteL
         getWindow().setSoftInputMode(
                 WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
-      if (Prefs.isUserLoggedIn()) {
+
+        if (Prefs.isUserLoggedIn()) {
             Intent intent = new Intent(Login.this, Choose_Task.class);
             startActivity(intent);
             finish();
@@ -169,6 +172,22 @@ public class Login extends BaseActivity implements ProgressGenerator.OnCompleteL
                         R.anim.fade);
                 loginBox.startAnimation(animFade);
                 animationDone = true;
+
+
+                if(ConnectionUtil.getConnectivityStatusInt(Login.this)==0){
+
+                new SweetAlertDialog(Login.this, SweetAlertDialog.WARNING_TYPE)
+                        .setTitleText("Warning!")
+                        .setContentText("No Internet Access. It is Required!")
+                        .setConfirmText("Try Again")
+                        .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                            @Override
+                            public void onClick(SweetAlertDialog sDialog) {
+                                finish();
+                            }
+                        })
+                        .show();
+            }
             }
 
         });
@@ -195,9 +214,9 @@ public class Login extends BaseActivity implements ProgressGenerator.OnCompleteL
                 Prefs.setTaskType(TASK_EMPLOYEE);
                 Intent i = new Intent(Login.this, RegistrationActivity.class);
                 startActivity(i);
-
-
-                Utils.showToastShort("DET ER EMPLOYEE REGIS");
+                int pixel=getWindowManager().getDefaultDisplay().getWidth();
+                int dp = pixel/(int)getResources().getDisplayMetrics().density;
+                Utils.showToastShort(dp+"");
 
 
             }
@@ -236,6 +255,8 @@ public class Login extends BaseActivity implements ProgressGenerator.OnCompleteL
 
             }
         });
+
+
 
     }
 
@@ -317,10 +338,6 @@ public class Login extends BaseActivity implements ProgressGenerator.OnCompleteL
 
     }
 
-    @Override
-    protected int getActivityTitleResId() {
-        return R.string.title_activity_login;
-    }
 
 
     @Override

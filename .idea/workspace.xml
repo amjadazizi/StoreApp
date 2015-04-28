@@ -13,13 +13,13 @@
       <config>
         <devices>
           <device id="Nexus 6" />
-          <device id="Nexus S" />
-          <device id="Nexus One" />
-          <device id="Nexus 7" />
           <device id="Nexus 7 2013" />
-          <device id="Nexus 9" />
-          <device id="Nexus 5" />
           <device id="Nexus 10" />
+          <device id="Nexus One" />
+          <device id="Nexus 9" />
+          <device id="Nexus S" />
+          <device id="Nexus 7" />
+          <device id="Nexus 5" />
           <device id="Nexus 4" />
           <device id="Galaxy Nexus" />
         </devices>
@@ -43,107 +43,13 @@
           <theme>@android:style/Theme.Holo</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/myApp/src/main/res/layout-normal/activity_login.xml">
+      <layout url="file://$PROJECT_DIR$/myApp/src/main/res/layout-large/activity_cash_register.xml">
         <config>
-          <theme>@android:style/Theme.Holo</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/myApp/src/main/res/layout-small/activity_cash_register.xml">
-        <config>
-          <theme>@android:style/Theme.Holo</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/myApp/src/main/res/layout-small/activity_choose_task_dashboard.xml">
-        <config>
-          <theme>@android:style/Theme.Holo</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/myApp/src/main/res/layout-small/activity_login.xml">
-        <config>
-          <theme>@android:style/Theme.Holo</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/myApp/src/main/res/layout-small/activity_store__status.xml">
-        <config>
-          <theme>@android:style/Theme.Holo</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/myApp/src/main/res/layout-small/activity_store_items.xml">
-        <config>
-          <theme>@android:style/Theme.Holo</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/myApp/src/main/res/layout-small/drawerlist_row.xml">
-        <config>
-          <theme>@android:style/Theme.Holo</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/myApp/src/main/res/layout-small/employee_profile.xml">
-        <config>
-          <theme>@android:style/Theme.Holo</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/myApp/src/main/res/layout-small/header_store_status_listview.xml">
-        <config>
-          <theme>@android:style/Theme.Holo</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/myApp/src/main/res/layout-small/home.xml">
-        <config>
-          <theme>@android:style/Theme.Holo</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/myApp/src/main/res/layout-xlarge/activity_cash_register.xml">
-        <config>
-          <state>Portrait</state>
-          <theme>@android:style/Theme.Holo</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/myApp/src/main/res/layout-xlarge/activity_emp_list.xml">
-        <config>
-          <state>Portrait</state>
-          <theme>@android:style/Theme.Holo</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/myApp/src/main/res/layout-xlarge/activity_login.xml">
-        <config>
-          <state>Portrait</state>
-          <theme>@android:style/Theme.Holo</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/myApp/src/main/res/layout-xlarge/activity_store_items.xml">
-        <config>
-          <state>Portrait</state>
-          <theme>@android:style/Theme.Holo</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/myApp/src/main/res/layout-xlarge/drawerlist_row.xml">
-        <config>
-          <state>Portrait</state>
-          <theme>@android:style/Theme.Holo</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/myApp/src/main/res/layout-xlarge/employee_profile.xml">
-        <config>
-          <state>Portrait</state>
-          <theme>@android:style/Theme.Holo</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/myApp/src/main/res/layout-xlarge/header_store_status_listview.xml">
-        <config>
-          <state>Portrait</state>
-          <theme>@android:style/Theme.Holo</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/myApp/src/main/res/layout-xlarge/home.xml">
-        <config>
-          <state>Portrait</state>
           <theme>@android:style/Theme.Holo</theme>
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/myApp/src/main/res/layout/activity_cash_register.xml">
         <config>
-          <state>Portrait</state>
           <theme>@android:style/Theme.Holo</theme>
         </config>
       </layout>
@@ -154,7 +60,6 @@
       </layout>
       <layout url="file://$PROJECT_DIR$/myApp/src/main/res/layout/activity_emp_list.xml">
         <config>
-          <state>Landscape</state>
           <theme>@android:style/Theme.Holo</theme>
         </config>
       </layout>
@@ -303,12 +208,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dimens.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/myApp/src/main/res/values/dimens.xml">
+      <file leaf-file-name="home.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/home.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18032786" vertical-offset="406" max-vertical-offset="1360">
-              <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
-              <folding />
+            <state vertical-scroll-proportion="0.49275362" vertical-offset="0" max-vertical-offset="952">
+              <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+              <folding>
+                <element signature="e#809#847#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1224,7 +1134,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4285964790458" />
+        <entry key="$PROJECT_DIR$" value="4286342445011" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1579,57 +1489,57 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout-small/drawerlist_row.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout-small/fragmen_profit_status.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout-small/home.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout-small/items_instock_grid_item.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout-small/list_item_linechart.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout-small/list_item_barchart.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout-small/employee_list_row.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/EmployeeList/CustomImageView.java" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout-small/activity_login.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout-small/activity_emp_list.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout-small/activity_cash_register.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout-small/activity_store_items.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout-small/activity_store__status.xml" />
         <option value="$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/StoreStatus/Store_Status.java" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout-small/header_store_status_listview.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout-small/add_new_employee_custom_dialog.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout-small/employee_profile.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout-small/activity_registration.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/values-small/styles.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/values-xlarge/styles.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/values-normal/styles.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout-normal/activity_login.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout-xlarge/activity_cash_register.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout-xlarge/activity_choose_task_dashboard.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout-xlarge/activity_emp_list.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/values-xlarge/dimens.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/activity_cash_register.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/activity_emp__info.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/activity_choose_task_dashboard.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/activity_emp_list.xml" />
+        <option value="$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/AddNewEmployeeDialog.java" />
+        <option value="$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/CashRegister/LogoutDialog.java" />
+        <option value="$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/CashRegister/PaymentDialog.java" />
+        <option value="$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/PictureDialog.java" />
         <option value="$PROJECT_DIR$/myApp/src/main/res/values-normal/dimens.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/activity_login.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/activity_receipt.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/activity_registration.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/activity_store__status.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/activity_store_items.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/add_new_employee_custom_dialog.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/alert_dialog.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/cahsregister_scan_item_amount_dialog.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/cash_register_list_item.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/cash_register_list_item_header.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/cashregister_payemnt_dialog.xml" />
         <option value="$PROJECT_DIR$/myApp/src/main/res/layout/drawerlist_row.xml" />
+        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/header_store_status_listview.xml" />
+        <option value="$PROJECT_DIR$/myApp/src/main/java/com/storeapp/util/Utils.java" />
+        <option value="$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/Store_Items.java" />
+        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/activity_cash_register.xml" />
+        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/activity_emp_list.xml" />
+        <option value="$PROJECT_DIR$/myApp/src/main/res/drawable/selector_action_bar_items.xml" />
+        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/activity_choose_task_dashboard.xml" />
+        <option value="$PROJECT_DIR$/myApp/src/main/java/com/storeapp/AppContextProvider.java" />
+        <option value="$PROJECT_DIR$/myApp/src/main/java/com/storeapp/util/ConnectionUtil.java" />
+        <option value="$PROJECT_DIR$/myApp/src/main/res/values-large/dimens.xml" />
+        <option value="$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/EmployeeList/CustomLinearLayout.java" />
+        <option value="$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/EmployeeList/CustomImageView.java" />
+        <option value="$PROJECT_DIR$/myApp/src/main/res/drawable/layout_shape_round_corners.xml" />
+        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/items_instock_grid_item.xml" />
+        <option value="$PROJECT_DIR$/myApp/src/main/res/layout-large/employee_list_row.xml" />
+        <option value="$PROJECT_DIR$/myApp/src/main/res/layout-large/activity_cash_register.xml" />
+        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/log_out_dialog.xml" />
+        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/take_picture_dialog.xml" />
+        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/cahsregister_scan_item_amount_dialog.xml" />
+        <option value="$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/CashRegister/ScanItemAmountDialog.java" />
+        <option value="$PROJECT_DIR$/myApp/src/main/java/com/storeapp/Login_Registration/RegistrationActivity.java" />
         <option value="$PROJECT_DIR$/myApp/src/main/res/layout/employee_list_row.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/employee_profile.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/fragmen_items_in_stock.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/fragmen_items_sold_out.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/fragmen_profit_status.xml" />
-        <option value="$PROJECT_DIR$/myApp/src/main/res/values/dimens.xml" />
+        <option value="$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/EmployeeList/Emp_List.java" />
+        <option value="$PROJECT_DIR$/myApp/src/main/java/com/storeapp/parse/SoldItem.java" />
+        <option value="$PROJECT_DIR$/myApp/src/main/java/com/storeapp/ui/sweetalert/SweetAlertDialog.java" />
+        <option value="$PROJECT_DIR$/myApp/src/main/java/com/storeapp/util/SweetAlerts.java" />
+        <option value="$PROJECT_DIR$/myApp/src/main/java/com/storeapp/Login_Registration/Login.java" />
+        <option value="$PROJECT_DIR$/myApp/src/main/java/com/storeapp/util/ConnectionChangeReceiver.java" />
+        <option value="$PROJECT_DIR$/myApp/build.gradle" />
+        <option value="$PROJECT_DIR$/myApp/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/LeftMenu/Choose_Task.java" />
+        <option value="$PROJECT_DIR$/myApp/src/main/java/com/storeapp/ui/FloatingEditText.java" />
+        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/activity_login.xml" />
+        <option value="$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/CashRegister/Cash_Register.java" />
+        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/activity_receipt.xml" />
+        <option value="$PROJECT_DIR$/myApp/src/main/res/drawable/dashborad_employee_btn_pressed.xml" />
+        <option value="$PROJECT_DIR$/myApp/src/main/res/values-normal/styles.xml" />
+        <option value="$PROJECT_DIR$/myApp/src/main/res/drawable/dashboard_cash_register_btn_pressed.xml" />
+        <option value="$PROJECT_DIR$/myApp/src/main/res/drawable/dashboard_store_item_btn_pressed.xml" />
+        <option value="$PROJECT_DIR$/myApp/src/main/res/drawable/dashborad_store_status_btn_pressed.xml" />
+        <option value="$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/StoreStatus/fragments_store_status/FragItmsNStock.java" />
+        <option value="$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/StoreStatus/fragments_store_status/FragSoldItems.java" />
+        <option value="$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/StoreStatus/fragments_store_status/FragTop10Itms.java" />
+        <option value="$PROJECT_DIR$/myApp/src/main/res/layout/home.xml" />
       </list>
     </option>
   </component>
@@ -1687,13 +1597,184 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="StoreApp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StoreApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StoreApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StoreApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StoreApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StoreApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StoreApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StoreApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StoreApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StoreApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StoreApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StoreApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values-normal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StoreApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StoreApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout-large" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StoreApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StoreApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -2098,152 +2179,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StoreApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StoreApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StoreApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StoreApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StoreApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StoreApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StoreApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StoreApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StoreApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StoreApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StoreApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values-xlarge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StoreApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StoreApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2254,8 +2190,8 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="3e07c8b6" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_19" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="019b415222940feb" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="3_4_phone_API_14" />
     <property name="options.lastSelected" value="editor.preferences.completion" />
     <property name="options.splitter.main.proportions" value="0.29416665" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -2275,11 +2211,11 @@
     <property name="last_directory_selection" value="$PROJECT_DIR$/myApp/src/main/java" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.storeapp.RegistrationFragmentBusiness.Activities" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="junit.framework.TestCase" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.storeapp.RegistrationFragmentBusiness.Activities" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.storeapp.MainMenu.StoreStatus.fragments_store_status" />
@@ -2289,11 +2225,11 @@
       <recent name="com.storeapp.NewDesign" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\src\main\res\values-xlarge" />
+      <recent name="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\src\main\res\drawable-xhdpi" />
+      <recent name="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\src\main\res\layout-large" />
+      <recent name="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\src\main\res" />
       <recent name="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\src\main\res\values-normal" />
-      <recent name="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\src\main\res\layout-normal" />
-      <recent name="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\src\main\res\layout-small" />
-      <recent name="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\src\main\res\values-small" />
+      <recent name="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\src\main\res\values" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.storeapp.ActivitiesOld" />
@@ -2305,18 +2241,18 @@
       <recent name="com.storeapp.RegistrationFragmentBusiness.Activities" />
       <recent name="com.storeapp.RegistrationFragmentBusiness" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\src\main\res\drawable-xhdpi" />
-      <recent name="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\src\main\res\drawable-mdpi" />
-      <recent name="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\src\main\res\drawable-ldpi" />
-      <recent name="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\src\main\res\drawable-hdpi" />
-      <recent name="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\src\main\res\drawable" />
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.storeapp" />
     </key>
     <key name="android.template.parentActivityClass">
       <recent name="" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.storeapp" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\src\main\res\layout-large" />
+      <recent name="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\src\main\res\drawable-xhdpi" />
+      <recent name="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\src\main\res\drawable-mdpi" />
+      <recent name="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\src\main\res\drawable-ldpi" />
+      <recent name="C:\Users\Amjad\Documents\GitHub\StoreApp\myApp\src\main\res\drawable-hdpi" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.myApp">
@@ -2542,31 +2478,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963988" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24821173" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2274678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43490306" sideWeight="0.75" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19944598" sideWeight="0.7081545" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48060942" sideWeight="0.7081545" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24792244" sideWeight="0.2918455" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26180258" sideWeight="0.1731302" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28397712" sideWeight="0.17422867" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963988" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44182825" sideWeight="0.59227467" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26002866" sideWeight="0.09557522" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3365651" sideWeight="0.5178827" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23407203" sideWeight="0.84334767" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1869806" sideWeight="0.5178827" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1468144" sideWeight="0.84334767" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32904148" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32825485" sideWeight="0.5343348" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26180258" sideWeight="0.8268698" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0900277" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25035766" sideWeight="0.82577133" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26454294" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="true" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18240343" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="170" y="137" width="1256" height="676" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2651,13 +2587,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/Login_Registration/RegistrationActivity.java</url>
-          <line>153</line>
+          <line>148</line>
           <properties />
           <option name="timeStamp" value="164" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/Login_Registration/RegistrationActivity.java</url>
-          <line>218</line>
+          <line>213</line>
           <properties />
           <option name="timeStamp" value="167" />
         </line-breakpoint>
@@ -2681,13 +2617,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/Login_Registration/RegistrationActivity.java</url>
-          <line>162</line>
+          <line>157</line>
           <properties />
           <option name="timeStamp" value="297" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/Login_Registration/RegistrationActivity.java</url>
-          <line>196</line>
+          <line>191</line>
           <properties />
           <option name="timeStamp" value="300" />
         </line-breakpoint>
@@ -2702,12 +2638,6 @@
           <line>49</line>
           <properties />
           <option name="timeStamp" value="311" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/StoreStatus/fragments_store_status/FragTop10Itms.java</url>
-          <line>124</line>
-          <properties />
-          <option name="timeStamp" value="364" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/Login_Registration/RegistrationFragContactInfo2.java</url>
@@ -2741,39 +2671,51 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/Login_Registration/RegistrationActivity.java</url>
-          <line>113</line>
+          <line>108</line>
           <properties />
           <option name="timeStamp" value="397" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/Login_Registration/RegistrationActivity.java</url>
-          <line>124</line>
+          <line>119</line>
           <properties />
           <option name="timeStamp" value="398" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/LeftMenu/Choose_Task.java</url>
-          <line>106</line>
-          <properties />
-          <option name="timeStamp" value="400" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/Login_Registration/Login.java</url>
-          <line>248</line>
+          <line>269</line>
           <properties />
           <option name="timeStamp" value="401" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/Login_Registration/Login.java</url>
-          <line>124</line>
+          <line>127</line>
           <properties />
           <option name="timeStamp" value="404" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/util/PictureDialog.java</url>
+          <url>file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/PictureDialog.java</url>
           <line>55</line>
           <properties />
           <option name="timeStamp" value="405" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/util/ConnectionUtil.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="408" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/StoreStatus/fragments_store_status/FragTop10Itms.java</url>
+          <line>203</line>
+          <properties />
+          <option name="timeStamp" value="411" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/StoreStatus/fragments_store_status/FragTop10Itms.java</url>
+          <line>205</line>
+          <properties />
+          <option name="timeStamp" value="412" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/StoreStatus/fragments_store_status/FragItmsNStock.java</url>
@@ -2787,352 +2729,152 @@
           <option name="timeStamp" value="319" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="407" />
+      <option name="time" value="413" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/StoreStatus/Store_Status.java">
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/AppContextProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="7.3280506" vertical-offset="2295" max-vertical-offset="7225">
-          <caret line="422" column="13" selection-start-line="422" selection-start-column="13" selection-end-line="422" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.43987823" vertical-offset="0" max-vertical-offset="657">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout-small/drawerlist_row.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/parse/TodaysTurnover.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08600337" vertical-offset="0" max-vertical-offset="663">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="986">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout-small/header_store_status_listview.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/parse/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08600337" vertical-offset="0" max-vertical-offset="1207">
-          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="91" max-vertical-offset="816">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/header_store_status_listview.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/parse/InventoryItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30016863" vertical-offset="468" max-vertical-offset="1139">
-          <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.53932583" vertical-offset="171" max-vertical-offset="1479">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout-xlarge/home.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/parse/NewUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3035413" vertical-offset="24" max-vertical-offset="935">
-          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.2523148" vertical-offset="27" max-vertical-offset="459">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/home.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/parse/Business.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27487352" vertical-offset="24" max-vertical-offset="935">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.29166666" vertical-offset="248" max-vertical-offset="1088">
+          <caret line="29" column="12" selection-start-line="7" selection-start-column="0" selection-end-line="29" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout-small/activity_cash_register.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-16/android.jar!/android/widget/AbsListView.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3322091" vertical-offset="568" max-vertical-offset="3230">
-          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout-small/add_new_employee_custom_dialog.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41821247" vertical-offset="976" max-vertical-offset="1853">
-          <caret line="72" column="38" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout-small/cash_register_list_item.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.032040473" vertical-offset="223" max-vertical-offset="816">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout-small/home.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54468805" vertical-offset="0" max-vertical-offset="935">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout-small/activity_store_items.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3322091" vertical-offset="483" max-vertical-offset="5457">
-          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout-small/activity_registration.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25463745" vertical-offset="155" max-vertical-offset="748">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout-small/activity_choose_task_dashboard.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="2023">
-          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout-small/employee_profile.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5214724" vertical-offset="357" max-vertical-offset="4879">
-          <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/values-small/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="1632">
-          <caret line="55" column="46" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32447818" vertical-offset="713" max-vertical-offset="1632">
-          <caret line="52" column="33" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout-normal/activity_login.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4741036" vertical-offset="1751" max-vertical-offset="2856">
-          <caret line="117" column="53" selection-start-line="117" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/values-xlarge/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0967742" vertical-offset="0" max-vertical-offset="1394">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout-xlarge/activity_cash_register.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.28" vertical-offset="2694" max-vertical-offset="3196">
-          <caret line="178" column="15" selection-start-line="178" selection-start-column="15" selection-end-line="178" selection-end-column="15" />
-          <folding>
-            <element signature="e#466#492#0" expanded="false" />
-            <element signature="e#649#686#0" expanded="false" />
-            <element signature="e#721#758#0" expanded="false" />
-            <element signature="e#1139#1176#0" expanded="false" />
-            <element signature="e#1211#1248#0" expanded="false" />
-            <element signature="e#1495#1522#0" expanded="false" />
-            <element signature="e#2206#2235#0" expanded="false" />
-            <element signature="e#3366#3392#0" expanded="false" />
-            <element signature="e#3455#3475#0" expanded="false" />
-            <element signature="e#3879#3906#0" expanded="false" />
-            <element signature="e#4137#4164#0" expanded="false" />
-            <element signature="e#4349#4381#0" expanded="false" />
-            <element signature="e#4627#4654#0" expanded="false" />
-            <element signature="e#4690#4717#0" expanded="false" />
-            <element signature="e#5196#5223#0" expanded="false" />
-            <element signature="e#5258#5285#0" expanded="false" />
-            <element signature="e#5319#5346#0" expanded="false" />
-            <element signature="e#5383#5410#0" expanded="false" />
-            <element signature="e#5665#5692#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout-xlarge/activity_choose_task_dashboard.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9641434" vertical-offset="0" max-vertical-offset="1088">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding>
-            <element signature="e#604#630#0" expanded="false" />
-            <element signature="e#860#896#0" expanded="false" />
-            <element signature="e#935#972#0" expanded="false" />
-            <element signature="e#1332#1368#0" expanded="false" />
-            <element signature="e#1407#1444#0" expanded="false" />
-            <element signature="e#1652#1679#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout-xlarge/activity_emp_list.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2533532" vertical-offset="0" max-vertical-offset="731">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout-xlarge/activity_store__status.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1615">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5304">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/parse/SoldItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6134259" vertical-offset="350" max-vertical-offset="782">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/parse/ParseInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0231482" vertical-offset="0" max-vertical-offset="697">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/util/ConnectionUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="850">
+          <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout-xlarge/activity_login.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/ui/sweetalert/SweetAlertDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1028316" vertical-offset="2049" max-vertical-offset="2873">
-          <caret line="77" column="47" selection-start-line="77" selection-start-column="43" selection-end-line="77" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="655" max-vertical-offset="5780">
+          <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/Login_Registration/RegistrationFragPassword4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2037038" vertical-offset="588" max-vertical-offset="1020">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/util/SweetAlerts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38411668" vertical-offset="273" max-vertical-offset="918">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/util/ConnectionChangeReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49594814" vertical-offset="0" max-vertical-offset="617">
+          <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/Login_Registration/RegistrationActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2462" max-vertical-offset="3145">
+          <caret line="198" column="28" selection-start-line="198" selection-start-column="28" selection-end-line="198" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout-xlarge/activity_store_items.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/myApp/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30402383" vertical-offset="4743" max-vertical-offset="5457">
-          <caret line="291" column="44" selection-start-line="291" selection-start-column="0" selection-end-line="292" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1190">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/activity_emp__info.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3546945" vertical-offset="0" max-vertical-offset="671">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="2397">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/activity_choose_task_dashboard.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/LeftMenu/Choose_Task.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.025335321" vertical-offset="306" max-vertical-offset="2023">
-          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2976" max-vertical-offset="3672">
+          <caret line="240" column="25" selection-start-line="240" selection-start-column="0" selection-end-line="243" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/activity_cash_register.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/ui/FloatingEditText.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.5335321" vertical-offset="918" max-vertical-offset="3128">
-          <caret line="154" column="65" selection-start-line="154" selection-start-column="65" selection-end-line="154" selection-end-column="65" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1569" max-vertical-offset="4063">
+          <caret line="125" column="28" selection-start-line="125" selection-start-column="28" selection-end-line="125" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/activity_emp_list.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/Login_Registration/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9880775" vertical-offset="0" max-vertical-offset="935">
-          <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
-          <folding>
-            <element signature="e#393#419#0" expanded="true" />
-            <element signature="e#886#913#0" expanded="true" />
-            <element signature="e#1580#1607#0" expanded="true" />
-            <element signature="e#1645#1672#0" expanded="true" />
-            <element signature="e#1709#1735#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/activity_receipt.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.79880774" vertical-offset="1097" max-vertical-offset="1768">
-          <caret line="33" column="65" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
-          <folding>
-            <element signature="e#373#399#0" expanded="false" />
-            <element signature="e#1536#1563#0" expanded="false" />
-            <element signature="e#1651#1674#0" expanded="false" />
-            <element signature="e#2350#2379#0" expanded="false" />
-            <element signature="e#2566#2593#0" expanded="false" />
-            <element signature="e#2921#2950#0" expanded="false" />
-            <element signature="e#3422#3449#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/activity_registration.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69597614" vertical-offset="60" max-vertical-offset="731">
-          <caret line="31" column="62" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="5134">
+          <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -3142,418 +2884,217 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.29787233" vertical-offset="2219" max-vertical-offset="2890">
-          <caret line="119" column="73" selection-start-line="119" selection-start-column="73" selection-end-line="119" selection-end-column="73" />
-          <folding>
-            <element signature="e#1642#1665#0" expanded="true" />
-            <element signature="e#2039#2066#0" expanded="true" />
-            <element signature="e#2114#2141#0" expanded="true" />
-            <element signature="e#2622#2649#0" expanded="true" />
-            <element signature="e#2696#2723#0" expanded="true" />
-            <element signature="e#2771#2798#0" expanded="true" />
-            <element signature="e#2832#2855#0" expanded="true" />
-            <element signature="e#3232#3259#0" expanded="true" />
-            <element signature="e#3306#3333#0" expanded="true" />
-            <element signature="e#3381#3408#0" expanded="true" />
-            <element signature="e#4133#4160#0" expanded="true" />
-            <element signature="e#4206#4233#0" expanded="true" />
-            <element signature="e#4271#4305#0" expanded="true" />
-            <element signature="e#5178#5205#0" expanded="true" />
-            <element signature="e#5400#5427#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/activity_store__status.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.52011925" vertical-offset="1063" max-vertical-offset="1734">
-          <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
-          <folding>
-            <element signature="e#536#573#0" expanded="false" />
-            <element signature="e#608#644#0" expanded="false" />
-            <element signature="e#1069#1096#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/activity_store_items.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28115502" vertical-offset="1702" max-vertical-offset="15164">
-          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-          <folding>
-            <element signature="e#497#537#0" expanded="true" />
-            <element signature="e#814#847#0" expanded="true" />
-            <element signature="e#1011#1043#0" expanded="true" />
-            <element signature="e#1563#1604#0" expanded="true" />
-            <element signature="e#2150#2184#0" expanded="true" />
-            <element signature="e#2671#2698#0" expanded="true" />
-            <element signature="e#2822#2854#0" expanded="true" />
-            <element signature="e#3168#3207#0" expanded="true" />
-            <element signature="e#4228#4255#0" expanded="true" />
-            <element signature="e#4963#4990#0" expanded="true" />
-            <element signature="e#5049#5076#0" expanded="true" />
-            <element signature="e#5665#5692#0" expanded="true" />
-            <element signature="e#6102#6141#0" expanded="true" />
-            <element signature="e#6643#6670#0" expanded="true" />
-            <element signature="e#6764#6791#0" expanded="true" />
-            <element signature="e#7641#7668#0" expanded="true" />
-            <element signature="e#8201#8228#0" expanded="true" />
-            <element signature="e#8321#8348#0" expanded="true" />
-            <element signature="e#8609#8648#0" expanded="true" />
-            <element signature="e#9862#9889#0" expanded="true" />
-            <element signature="e#10553#10580#0" expanded="true" />
-            <element signature="e#10635#10662#0" expanded="true" />
-            <element signature="e#11097#11124#0" expanded="true" />
-            <element signature="e#11167#11194#0" expanded="true" />
-            <element signature="e#11387#11414#0" expanded="true" />
-            <element signature="e#11595#11622#0" expanded="true" />
-            <element signature="e#11668#11695#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/add_new_employee_custom_dialog.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.113263786" vertical-offset="1182" max-vertical-offset="1853">
-          <caret line="74" column="58" selection-start-line="74" selection-start-column="58" selection-end-line="74" selection-end-column="58" />
-          <folding>
-            <element signature="e#726#765#0" expanded="true" />
-            <element signature="e#803#842#0" expanded="true" />
-            <element signature="e#878#905#0" expanded="true" />
-            <element signature="e#1065#1094#0" expanded="true" />
-            <element signature="e#1548#1574#0" expanded="true" />
-            <element signature="e#1797#1824#0" expanded="true" />
-            <element signature="e#1860#1887#0" expanded="true" />
-            <element signature="e#1909#1929#0" expanded="true" />
-            <element signature="e#2340#2367#0" expanded="true" />
-            <element signature="e#2529#2555#0" expanded="true" />
-            <element signature="e#2677#2704#0" expanded="true" />
-            <element signature="e#2743#2772#0" expanded="true" />
-            <element signature="e#3049#3081#0" expanded="true" />
-            <element signature="e#3378#3405#0" expanded="true" />
-            <element signature="e#3444#3473#0" expanded="true" />
-            <element signature="e#3547#3574#0" expanded="true" />
-            <element signature="e#3747#3779#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/drawable/sweet_alert_shape.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34195402" vertical-offset="0" max-vertical-offset="696">
-          <caret line="14" column="36" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.27868852" vertical-offset="1683" max-vertical-offset="2873">
+          <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/alert_dialog.xml">
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/activity_cash_register.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.77198213" vertical-offset="2151" max-vertical-offset="2822">
-          <caret line="157" column="37" selection-start-line="157" selection-start-column="37" selection-end-line="157" selection-end-column="37" />
-          <folding>
-            <element signature="e#225#250#0" expanded="true" />
-            <element signature="e#465#492#0" expanded="true" />
-            <element signature="e#578#613#0" expanded="true" />
-            <element signature="e#644#681#0" expanded="true" />
-            <element signature="e#715#741#0" expanded="true" />
-            <element signature="e#777#795#0" expanded="true" />
-            <element signature="e#956#987#0" expanded="true" />
-            <element signature="e#1018#1051#0" expanded="true" />
-            <element signature="e#1085#1111#0" expanded="true" />
-            <element signature="e#1511#1529#0" expanded="true" />
-            <element signature="e#1730#1761#0" expanded="true" />
-            <element signature="e#1792#1825#0" expanded="true" />
-            <element signature="e#1859#1885#0" expanded="true" />
-            <element signature="e#2180#2216#0" expanded="true" />
-            <element signature="e#2251#2289#0" expanded="true" />
-            <element signature="e#2523#2559#0" expanded="true" />
-            <element signature="e#2594#2632#0" expanded="true" />
-            <element signature="e#3253#3284#0" expanded="true" />
-            <element signature="e#3315#3348#0" expanded="true" />
-            <element signature="e#3382#3408#0" expanded="true" />
-            <element signature="e#3773#3791#0" expanded="true" />
-            <element signature="e#4084#4111#0" expanded="true" />
-            <element signature="e#4352#4392#0" expanded="true" />
-            <element signature="e#4427#4469#0" expanded="true" />
-            <element signature="e#4712#4738#0" expanded="true" />
-            <element signature="e#4808#4835#0" expanded="true" />
-            <element signature="e#4891#4921#0" expanded="true" />
-            <element signature="e#5012#5039#0" expanded="true" />
-            <element signature="e#5154#5183#0" expanded="true" />
-            <element signature="e#5342#5369#0" expanded="true" />
-            <element signature="e#5705#5732#0" expanded="true" />
-            <element signature="e#5796#5819#0" expanded="true" />
-            <element signature="e#5956#5975#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/cahsregister_scan_item_amount_dialog.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5946349" vertical-offset="1097" max-vertical-offset="1768">
-          <caret line="88" column="59" selection-start-line="88" selection-start-column="59" selection-end-line="88" selection-end-column="59" />
-          <folding>
-            <element signature="e#584#611#0" expanded="true" />
-            <element signature="e#652#679#0" expanded="true" />
-            <element signature="e#782#809#0" expanded="true" />
-            <element signature="e#848#875#0" expanded="true" />
-            <element signature="e#918#945#0" expanded="true" />
-            <element signature="e#1315#1342#0" expanded="true" />
-            <element signature="e#1386#1413#0" expanded="true" />
-            <element signature="e#1783#1810#0" expanded="true" />
-            <element signature="e#1849#1876#0" expanded="true" />
-            <element signature="e#1920#1947#0" expanded="true" />
-            <element signature="e#2338#2365#0" expanded="true" />
-            <element signature="e#2405#2432#0" expanded="true" />
-            <element signature="e#2548#2575#0" expanded="true" />
-            <element signature="e#2607#2634#0" expanded="true" />
-            <element signature="e#2746#2775#0" expanded="true" />
-            <element signature="e#2813#2840#0" expanded="true" />
-            <element signature="e#2914#2941#0" expanded="true" />
-            <element signature="e#3117#3144#0" expanded="true" />
-            <element signature="e#3441#3468#0" expanded="true" />
-            <element signature="e#3507#3536#0" expanded="true" />
-            <element signature="e#3610#3637#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/cash_register_list_item.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.31743667" vertical-offset="281" max-vertical-offset="952">
-          <caret line="4" column="56" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
-          <folding>
-            <element signature="e#625#652#0" expanded="true" />
-            <element signature="e#747#783#0" expanded="true" />
-            <element signature="e#1175#1211#0" expanded="true" />
-            <element signature="e#1559#1595#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/cash_register_list_item_header.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0387481" vertical-offset="0" max-vertical-offset="918">
-          <caret line="41" column="60" selection-start-line="41" selection-start-column="60" selection-end-line="41" selection-end-column="60" />
-          <folding>
-            <element signature="e#178#209#0" expanded="false" />
-            <element signature="e#598#624#0" expanded="false" />
-            <element signature="e#691#727#0" expanded="false" />
-            <element signature="e#1060#1096#0" expanded="false" />
-            <element signature="e#1478#1514#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/cash_register_row.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63338304" vertical-offset="0" max-vertical-offset="671">
-          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="1619" max-vertical-offset="3162">
+          <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/cashregister_payemnt_dialog.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/CashRegister/Cash_Register.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63338304" vertical-offset="1224" max-vertical-offset="2057">
-          <caret line="97" column="59" selection-start-line="97" selection-start-column="59" selection-end-line="97" selection-end-column="59" />
-          <folding>
-            <element signature="e#1036#1068#0" expanded="true" />
-            <element signature="e#1109#1136#0" expanded="true" />
-            <element signature="e#1294#1321#0" expanded="true" />
-            <element signature="e#1687#1714#0" expanded="true" />
-            <element signature="e#1879#1911#0" expanded="true" />
-            <element signature="e#2081#2111#0" expanded="true" />
-            <element signature="e#3154#3181#0" expanded="true" />
-            <element signature="e#3221#3248#0" expanded="true" />
-            <element signature="e#3520#3547#0" expanded="true" />
-            <element signature="e#3586#3615#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="3.0346084" vertical-offset="306" max-vertical-offset="5100">
+          <caret line="161" column="72" selection-start-line="161" selection-start-column="72" selection-end-line="161" selection-end-column="72" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/drawerlist_row.xml">
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/CashRegister/ScanItemAmountDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36567163" vertical-offset="2456" max-vertical-offset="2992">
+          <caret line="198" column="58" selection-start-line="198" selection-start-column="57" selection-end-line="198" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/activity_receipt.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20268257" vertical-offset="0" max-vertical-offset="671">
+        <state vertical-scroll-proportion="0.9608209" vertical-offset="216" max-vertical-offset="1802">
+          <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/CashRegister/ReceiptActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42424244" vertical-offset="85" max-vertical-offset="2958">
+          <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/drawable/dashborad_employee_btn_pressed.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24242425" vertical-offset="0" max-vertical-offset="561">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#180#212#0" expanded="false" />
-            <element signature="e#270#296#0" expanded="false" />
-            <element signature="e#957#987#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/employee_list_row.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.470939" vertical-offset="2236" max-vertical-offset="2907">
-          <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
-          <folding>
-            <element signature="e#210#243#0" expanded="false" />
-            <element signature="e#310#337#0" expanded="false" />
-            <element signature="e#368#395#0" expanded="false" />
-            <element signature="e#425#452#0" expanded="false" />
-            <element signature="e#1134#1160#0" expanded="false" />
-            <element signature="e#2219#2245#0" expanded="false" />
-            <element signature="e#2294#2320#0" expanded="false" />
-            <element signature="e#2676#2702#0" expanded="false" />
-            <element signature="e#2751#2777#0" expanded="false" />
-            <element signature="e#3135#3161#0" expanded="false" />
-            <element signature="e#3210#3236#0" expanded="false" />
-            <element signature="e#3596#3622#0" expanded="false" />
-            <element signature="e#3671#3698#0" expanded="false" />
-            <element signature="e#4348#4374#0" expanded="false" />
-            <element signature="e#4419#4445#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/employee_profile.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.053651266" vertical-offset="1987" max-vertical-offset="4896">
-          <caret line="119" column="28" selection-start-line="119" selection-start-column="28" selection-end-line="119" selection-end-column="28" />
-          <folding>
-            <element signature="e#747#780#0" expanded="true" />
-            <element signature="e#1286#1327#0" expanded="true" />
-            <element signature="e#1576#1603#0" expanded="true" />
-            <element signature="e#2394#2426#0" expanded="true" />
-            <element signature="e#3161#3193#0" expanded="true" />
-            <element signature="e#6520#6552#0" expanded="true" />
-            <element signature="e#7224#7256#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/fragament_top_10_items.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.96274215" vertical-offset="0" max-vertical-offset="1309">
-          <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/fragmen_items_in_stock.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5320417" vertical-offset="0" max-vertical-offset="671">
-          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-          <folding>
-            <element signature="e#401#428#0" expanded="true" />
-            <element signature="e#462#489#0" expanded="true" />
-            <element signature="e#526#553#0" expanded="true" />
-            <element signature="e#589#616#0" expanded="true" />
-            <element signature="e#813#840#0" expanded="true" />
-            <element signature="e#873#900#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/fragmen_items_sold_out.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.6" vertical-offset="0" max-vertical-offset="527">
-          <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
-          <folding>
-            <element signature="e#410#437#0" expanded="true" />
-            <element signature="e#471#498#0" expanded="true" />
-            <element signature="e#535#562#0" expanded="true" />
-            <element signature="e#598#625#0" expanded="true" />
-            <element signature="e#822#849#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/fragmen_profit_status.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69597614" vertical-offset="1794" max-vertical-offset="2465">
-          <caret line="133" column="59" selection-start-line="133" selection-start-column="59" selection-end-line="133" selection-end-column="59" />
-          <folding>
-            <element signature="e#750#784#0" expanded="true" />
-            <element signature="e#1355#1382#0" expanded="true" />
-            <element signature="e#1415#1442#0" expanded="true" />
-            <element signature="e#1831#1858#0" expanded="true" />
-            <element signature="e#2478#2505#0" expanded="true" />
-            <element signature="e#2900#2927#0" expanded="true" />
-            <element signature="e#3540#3567#0" expanded="true" />
-            <element signature="e#3961#3988#0" expanded="true" />
-            <element signature="e#4602#4634#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/fragment_item_grid.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="671">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/fragment_item_list.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="671">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myApp/src/main/res/values/dimens.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18032786" vertical-offset="406" max-vertical-offset="1360">
-          <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.05923345" vertical-offset="0" max-vertical-offset="1241">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/ui/DashboardLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.060606062" vertical-offset="34" max-vertical-offset="2941">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/drawable/ic_status_48.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/drawable/ic_statistic.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/drawable/ic_top_10_items.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/drawable/ic_items_in_stock.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/drawable-xhdpi/ic_employee_black.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/values-normal/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1649">
+          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/drawable-xhdpi/ic_cash_register.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/drawable/dashboard_cash_register_btn_pressed.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11525424" vertical-offset="0" max-vertical-offset="590">
+          <caret line="4" column="46" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/drawable-xhdpi/ic_barcode.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/drawable/dashboard_store_item_btn_pressed.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11525424" vertical-offset="0" max-vertical-offset="590">
+          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/drawable-xhdpi/ic_statistics.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/drawable-xhdpi/ic_statistics_grey.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/drawable/dashborad_store_status_btn_pressed.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05762712" vertical-offset="0" max-vertical-offset="590">
+          <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/drawable/selector_profile_side_menu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/drawable/success_bow.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="548">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/StoreStatus/fragments_store_status/FragTop10Itms.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43821838" vertical-offset="2568" max-vertical-offset="3264">
+          <caret line="207" column="64" selection-start-line="207" selection-start-column="64" selection-end-line="207" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/StoreStatus/fragments_store_status/FragSoldItems.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36494252" vertical-offset="1514" max-vertical-offset="2210">
+          <caret line="135" column="64" selection-start-line="135" selection-start-column="64" selection-end-line="135" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/java/com/storeapp/MainMenu/StoreStatus/fragments_store_status/FragItmsNStock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29166666" vertical-offset="1650" max-vertical-offset="2346">
+          <caret line="142" column="53" selection-start-line="142" selection-start-column="53" selection-end-line="142" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/drawable/receiptbackgroud.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/drawable/receiptpaperbck.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/main/res/layout/home.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49275362" vertical-offset="0" max-vertical-offset="952">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+          <folding>
+            <element signature="e#809#847#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

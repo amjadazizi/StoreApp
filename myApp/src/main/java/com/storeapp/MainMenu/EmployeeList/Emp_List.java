@@ -1,7 +1,6 @@
 package com.storeapp.MainMenu.EmployeeList;
 
 
-import android.app.Activity;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.content.Intent;
@@ -12,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -23,6 +23,7 @@ import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.squareup.picasso.LruCache;
 import com.squareup.picasso.Picasso;
+import com.storeapp.BaseActivity;
 import com.storeapp.R;
 import com.storeapp.parse.User;
 import com.storeapp.util.Prefs;
@@ -30,7 +31,7 @@ import com.storeapp.util.Prefs;
 import java.util.List;
 
 
-public class Emp_List extends Activity {
+public class Emp_List extends BaseActivity {
 
     private ListView empoyeeList;
     Picasso picasso;
@@ -201,7 +202,7 @@ public class Emp_List extends Activity {
             TextView lastName = null;
             TextView Email = null;
             TextView phoneNumber = null;
-            CustomImageView profile_image;
+            ImageView profile_image;
 
             if (view == null) {
                 LayoutInflater layoutInflator = LayoutInflater.from(ctx);
@@ -215,7 +216,7 @@ public class Emp_List extends Activity {
                         .findViewById(R.id.Email);
                 phoneNumber = (TextView) view
                         .findViewById(R.id.phoneNumber);
-                profile_image = (CustomImageView) view.findViewById(R.id.profile_image);
+                profile_image = (ImageView) view.findViewById(R.id.profile_image);
 
                 ViewHolder holder = new ViewHolder();
                 holder.fname = firstName;
@@ -244,6 +245,7 @@ public class Emp_List extends Activity {
 
 
             profile_image.setImageResource(R.drawable.ic_employee_white);
+
             ParseFile pf = user.getProfileImage();
             if(pf!=null){
                 picasso.load(pf.getUrl()).resize(140, 140).placeholder(R.drawable.ic_employee_white).into(profile_image);
@@ -296,7 +298,7 @@ public class Emp_List extends Activity {
 
     public static class ViewHolder {
 
-        public CustomImageView imgEmpPic;
+        public ImageView imgEmpPic;
         public TextView fname,lname, empEmail, empPhoneNumber;
 
     }

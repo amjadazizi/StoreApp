@@ -1,6 +1,5 @@
 package com.storeapp.MainMenu;
 
-import android.app.Activity;
 import android.app.ActivityManager;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -24,12 +23,12 @@ import com.parse.ParseQuery;
 import com.parse.SaveCallback;
 import com.squareup.picasso.LruCache;
 import com.squareup.picasso.Picasso;
+import com.storeapp.BaseActivity;
 import com.storeapp.R;
 import com.storeapp.parse.InventoryItem;
 import com.storeapp.qrreader.IntentIntegrator;
 import com.storeapp.qrreader.IntentResult;
 import com.storeapp.ui.FloatingEditText;
-import com.storeapp.util.PictureDialog;
 import com.storeapp.util.Prefs;
 import com.storeapp.util.SweetAlerts;
 import com.storeapp.util.Utils;
@@ -38,7 +37,7 @@ import java.io.ByteArrayOutputStream;
 import java.util.List;
 
 
-public class Store_Items extends Activity implements OnColorSelectedListener {
+public class Store_Items extends BaseActivity implements OnColorSelectedListener {
 
     FloatingActionButton btnAddImage;
     Bitmap bitmap;
@@ -89,6 +88,7 @@ public class Store_Items extends Activity implements OnColorSelectedListener {
         editDecription = (FloatingEditText) findViewById(R.id.editDecription);
         editAmount = (FloatingEditText) findViewById(R.id.editAmount);
         editCurAmountNstock = (FloatingEditText) findViewById(R.id.editCurAmountNstock);
+        editCurAmountNstock.setFocusable(false);
         editPurchaseprice = (FloatingEditText) findViewById(R.id.editPurchaseprice);
         editSellprice = (FloatingEditText) findViewById(R.id.editSellprice);
         imgItemPic = (ImageView) findViewById(R.id.imgItemPic);

@@ -7,14 +7,10 @@
     android:orientation="vertical"
     android:background="@color/clouds">
 
-
-
-
-
     <FrameLayout
         android:id="@+id/lll"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="@dimen/store_items_image_layout_height"
         android:orientation="horizontal"
         android:background="@color/clouds"
 
@@ -24,13 +20,13 @@
             android:id="@+id/imgItemPic"
             android:scaleType="fitXY"
             android:layout_width="match_parent"
-            android:layout_height="198dp"
+            android:layout_height="@dimen/store_items_image_height"
             android:src="@drawable/ic_image_white"
             />
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="2dp"
+            android:layout_height="@dimen/view_height_blue_line_4"
             android:background="@color/peter_river"
             />
 
@@ -47,7 +43,7 @@
         fab:fab_title="Infomation"
         app:fab_size="normal"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="163dp"
+        android:layout_marginTop="@dimen/store_items_floating_button_dist"
         />
 
 
@@ -68,8 +64,9 @@
             >
             <LinearLayout
                 android:layout_width="fill_parent"
-                android:layout_height="50dp"
+                android:layout_height="@dimen/header_store_items_height"
                 android:layout_marginLeft="104dp"
+                android:layout_marginTop="@dimen/view_margin_top"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -80,12 +77,13 @@
                     android:layout_centerVertical="true"
                     android:text="Store Items"
                     android:textColor="@color/black"
-                    android:layout_marginBottom="10dp"/>
+                    android:textSize="@dimen/text_blue_line_header"
+                    android:layout_marginBottom="@dimen/view_dist_sides_10"/>
 
 
                 <View
                     android:layout_width="fill_parent"
-                    android:layout_height="4dp"
+                    android:layout_height="@dimen/view_height_blue_line_4"
                     android:layout_alignParentBottom="true"
                     android:background="@color/peter_river" />
             </LinearLayout>
@@ -93,7 +91,7 @@
             <LinearLayout
                 android:id="@+id/itemButtons"
                 android:layout_width="fill_parent"
-                android:layout_height="64dp"
+                android:layout_height="@dimen/edit_layout_store_items_height"
                 android:clickable="true"
                 android:layout_weight="1">
 
@@ -108,21 +106,19 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="horizontal"
 
                        >
-
-
 
                             <com.storeapp.ui.FloatingEditText
                                 android:singleLine="true"
                                 android:id="@+id/editBarcode"
                                 android:layout_width="0dp"
-                                android:layout_height="match_parent"
+                                android:layout_height="wrap_content"
                                 android:layout_centerVertical="true"
                                 android:hint="Barcode"
-                                android:layout_marginLeft="10dp"
+                                android:layout_marginLeft="@dimen/view_dist_sides_10"
                                 android:layout_weight="1.2"
                                 style="@style/EditTextStyle"
                                 />
@@ -131,12 +127,12 @@
                                 android:id="@+id/editEan"
                                 android:singleLine="true"
                                 android:layout_width="0dp"
-                                android:layout_height="match_parent"
+                                android:layout_height="wrap_content"
                                 android:layout_centerVertical="true"
                                 android:hint="Ean-Type"
                                 android:layout_weight="0.8"
-                                android:layout_marginRight="10dp"
-                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="@dimen/view_dist_sides_10"
+                                android:layout_marginLeft="@dimen/view_dist_sides_10"
                                 style="@style/EditTextStyle"
 
                                 />
@@ -145,10 +141,10 @@
                                 android:id="@+id/btnScanItem"
                                 android:layout_width="0dp"
                                 android:layout_weight="0.5"
-                                android:layout_height="wrap_content"
+                                android:layout_height="@dimen/blue_button_height"
                                 android:singleLine="true"
                                 android:background="@drawable/selector_button_pressed"
-                                android:layout_marginRight="10dp"
+                                android:layout_marginRight="@dimen/view_dist_sides_10"
                                 style="@style/ButtonStyle"
                                 android:text="Scan"
                                 />
@@ -163,9 +159,10 @@
             <LinearLayout
                 android:id="@+id/itemSwitches"
                 android:layout_width="fill_parent"
-                android:layout_height="64dp"
+                android:layout_height="wrap_content"
                 android:clickable="true"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                >
 
 
                 <com.storeapp.ui.FloatingEditText
@@ -173,11 +170,11 @@
                     android:singleLine="true"
                     style="@style/EditTextStyle"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="@dimen/view_dist_sides_10"
                     android:hint="Description"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="@dimen/view_dist_sides_10"
                     android:layout_weight="1"
                     />
 
@@ -189,9 +186,10 @@
             <LinearLayout
                 android:id="@+id/itemSwitches"
                 android:layout_width="fill_parent"
-                android:layout_height="64dp"
+                android:layout_height="wrap_content"
                 android:clickable="true"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                >
 
 
 
@@ -201,11 +199,11 @@
                     android:singleLine="true"
                     style="@style/EditTextStyle"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:hint="Amount"
                     android:inputType="number"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="@dimen/view_dist_sides_10"
                     android:layout_weight="1"
                     />
 
@@ -214,12 +212,12 @@
                     android:singleLine="true"
                     style="@style/EditTextStyle"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:hint="Amount In Stock"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="@dimen/view_dist_sides_10"
                     android:layout_weight="1"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="@dimen/view_dist_sides_10"
                     android:inputType="none"
                     />
 
@@ -228,7 +226,7 @@
             <LinearLayout
                 android:id="@+id/itemProgress"
                 android:layout_width="fill_parent"
-                android:layout_height="64dp"
+                android:layout_height="@dimen/edit_layout_store_items_height"
                 android:clickable="true"
                 android:layout_weight="1">
 
@@ -236,14 +234,14 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
 
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:layout_weight="2"
                        >
@@ -258,7 +256,7 @@
                             android:layout_centerVertical="true"
                             android:hint="Purchaseprice"
                             android:layout_weight="1"
-                            android:layout_marginLeft="10dp"
+                            android:layout_marginLeft="@dimen/view_dist_sides_10"
                             />
 
                         <com.storeapp.ui.FloatingEditText
@@ -271,8 +269,8 @@
                             android:layout_weight="1"
                             style="@style/EditTextStyle"
                             android:inputType="number"
-                            android:layout_marginRight="10dp"
-                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="@dimen/view_dist_sides_10"
+                            android:layout_marginLeft="@dimen/view_dist_sides_10"
 
                             />
 
@@ -286,20 +284,22 @@
             <!-- RECTANGLE BUTTON -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:layout_weight="1"
-                android:layout_marginRight="30dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginRight="@dimen/view_dist_sides_25"
+                android:layout_marginLeft="@dimen/view_dist_sides_25"
 
                 >
 
                 <Button
                     android:id="@+id/btnSaveItem"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="@dimen/blue_button_height"
                     android:layout_centerInParent="true"
                     android:background="@drawable/selector_button_pressed"
+                    android:layout_marginBottom="@dimen/view_dist_sides_5"
+                    android:layout_marginTop="@dimen/view_dist_sides_5"
                     android:text="Save Item"
                     style="@style/ButtonStyle"
                     />

@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.parse.FindCallback;
@@ -17,7 +18,6 @@ import com.parse.ParseFile;
 import com.parse.ParseQuery;
 import com.squareup.picasso.LruCache;
 import com.squareup.picasso.Picasso;
-import com.storeapp.MainMenu.EmployeeList.CustomImageView;
 import com.storeapp.R;
 import com.storeapp.parse.InventoryItem;
 import com.storeapp.util.Prefs;
@@ -103,7 +103,7 @@ public class FragSoldItems extends Fragment {
             View view = convertView;
 
             TextView itemName;
-            CustomImageView itemImage;
+            ImageView itemImage;
 
             if (view == null) {
 
@@ -111,7 +111,7 @@ public class FragSoldItems extends Fragment {
                 view = layoutInflater.inflate(R.layout.items_instock_grid_item, null);
 
                 itemName = (TextView) view.findViewById(R.id.txtItemName);
-                itemImage = (CustomImageView) view.findViewById(R.id.itemImage);
+                itemImage = (ImageView) view.findViewById(R.id.itemImage);
 
 
                 ViewHolder holder = new ViewHolder();
@@ -133,7 +133,7 @@ public class FragSoldItems extends Fragment {
             String barcode = soldItem.getBarcode();
             itemName.setText(barcode);
 
-            itemImage.setImageResource(R.drawable.ic_cash_register_white);
+            itemImage.setImageResource(R.drawable.ic_image_white);
             ParseFile pf = soldItem.getItemImg();
             if(pf!=null){
                 picasso.load(pf.getUrl()).placeholder(R.drawable.ic_image_white).into(itemImage);
@@ -147,7 +147,7 @@ public class FragSoldItems extends Fragment {
     public static class ViewHolder {
 
         public TextView itemDecription;
-        public CustomImageView itemPicture;
+        public ImageView itemPicture;
 
 
     }

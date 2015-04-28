@@ -5,12 +5,12 @@ import android.graphics.Canvas;
 import android.graphics.Path;
 import android.graphics.RectF;
 import android.util.AttributeSet;
-import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 /**
  * Created by Amjad on 09-04-2015.
  */
-public class CustomImageView extends ImageView {
+public class CustomImageView extends LinearLayout {
 
    public static float radius = 25.0f;
 

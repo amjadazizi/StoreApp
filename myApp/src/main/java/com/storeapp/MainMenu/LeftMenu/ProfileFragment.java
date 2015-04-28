@@ -32,7 +32,7 @@ import com.squareup.picasso.LruCache;
 import com.squareup.picasso.Picasso;
 import com.storeapp.R;
 import com.storeapp.parse.User;
-import com.storeapp.util.PictureDialog;
+import com.storeapp.MainMenu.PictureDialog;
 import com.storeapp.util.Prefs;
 import com.storeapp.util.SweetAlerts;
 import com.storeapp.util.Utils;

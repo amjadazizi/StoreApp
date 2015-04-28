@@ -4,12 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <android.support.v4.view.PagerTitleStrip
+    <!--<android.support.v4.view.PagerTitleStrip
         android:id="@+id/pager_title_strip"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_gravity="top"
         android:background="#000"
-        android:textColor="#000" />
+        android:textColor="#000" />-->
 
 </android.support.v4.view.ViewPager><!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/layout/activity_emp__info.xml -->

@@ -1,7 +1,6 @@
 package com.storeapp.MainMenu.StoreStatus;
 
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
@@ -27,6 +26,7 @@ import android.widget.TextView;
 import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseQuery;
+import com.storeapp.BaseActivity;
 import com.storeapp.MainMenu.StoreStatus.fragments_store_status.FragItmsNStock;
 import com.storeapp.MainMenu.StoreStatus.fragments_store_status.FragProfitStatus;
 import com.storeapp.MainMenu.StoreStatus.fragments_store_status.FragSoldItems;
@@ -40,7 +40,7 @@ import java.util.List;
 import static android.view.Gravity.START;
 
 
-public class Store_Status extends Activity implements
+public class Store_Status extends BaseActivity implements
         AdapterView.OnItemClickListener {
 
     private DrawerArrowDrawable drawerArrowDrawable;
