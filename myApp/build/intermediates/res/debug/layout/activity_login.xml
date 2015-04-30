@@ -8,7 +8,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <RelativeLayout
         android:id="@+id/storeLooAnimation"
         android:layout_width="match_parent"
@@ -70,8 +69,6 @@
                     android:text="1"
                     />
 
-
-
                 <com.dd.processbutton.iml.ActionProcessButton
                     android:id="@+id/liLoginBtnmm"
                     android:layout_width="match_parent"
@@ -85,7 +82,6 @@
                     custom:pb_colorProgress="@color/purple_progress"
                     style="@style/ButtonStyle"
                      />
-
 
                 <TextView
                     android:id="@+id/txtForgotPassword"
@@ -106,7 +102,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_gravity="right"
                 >
                 <com.getbase.floatingactionbutton.FloatingActionsMenu
                     android:id="@+id/multiple_actions"
@@ -150,15 +145,10 @@
 
                 </com.getbase.floatingactionbutton.FloatingActionsMenu>
 
-
-
-
             </LinearLayout>
 
         </LinearLayout>
 
     </RelativeLayout>
-
-
 
 </LinearLayout><!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/layout/activity_login.xml -->

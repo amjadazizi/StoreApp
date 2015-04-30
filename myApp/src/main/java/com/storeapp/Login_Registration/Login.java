@@ -63,11 +63,9 @@ public class Login extends Activity implements ProgressGenerator.OnCompleteListe
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.activity_login);
         getActionBar().hide();
+        setContentView(R.layout.activity_login);
         getWindow().setSoftInputMode(
                 WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 

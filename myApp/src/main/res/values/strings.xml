@@ -32,12 +32,12 @@
     <string name="text_this_password_will">This password will be your access code to log in with to this application.</string>
     <string name="title_activity_cash_register">Cash  Register</string>
     <string name="title_activity_store_status">Store  Status</string>
-    <string name="title_activity_employee_list">Employee" "List</string>
     <string name="title_activity_list_view_opened">ListViewOpened</string>
     <string name="action_settings1">Settings</string>
     <string name="title_activity_emp__info">Employee"  "Info</string>
     <string name="title_activity_fragment_write_message">FragmentWriteMessage</string>
     <string name="title_activity_store__status">Store Status</string>
+    <string name="title_activity_employee_list">Employee List</string>
     <string name="drawer_open">Open Navigation Drawer</string>
     <string name="drawer_close">Close Navigation Drawer</string>
     <string name="title_activity_settings">Settings</string>

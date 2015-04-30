@@ -14,26 +14,26 @@
         <ImageButton
             android:id="@+id/btnbackArrowEmpList"
             android:layout_width="@dimen/action_bar_img_button_width"
-            android:layout_height="@dimen/action_bar_img_button_height"
-            android:scaleType="centerInside"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
             android:src="@drawable/ic_arrow_left"
             android:background="@drawable/selector_action_bar_items"
             android:layout_alignParentLeft="true"
             android:layout_centerInParent="true"
-            android:layout_marginLeft="@dimen/view_dist_sides_10"
-            />
+            android:paddingTop="@dimen/view_dist_sides_5"
+            android:paddingBottom="@dimen/view_dist_sides_5"
+            android:paddingRight="@dimen/view_dist_sides_5"
+            android:paddingLeft="@dimen/view_dist_sides_5"/>
 
-
-       <!-- <SearchView
+        <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/empSearchView"
-            android:layout_gravity="center_vertical"
-            android:layout_alignBottom="@+id/drawer_indicator"
-            android:layout_alignParentRight="true"
-            android:layout_centerInParent="true"
-            />
--->
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/view_dist_sides_10"
+            android:text="@string/title_activity_employee_list"
+            android:textSize="@dimen/text_size_action_bar"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_toRightOf="@id/btnbackArrowEmpList"/>
 
     </RelativeLayout>
 

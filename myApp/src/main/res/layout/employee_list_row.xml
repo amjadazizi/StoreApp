@@ -7,10 +7,12 @@
     android:layout_marginRight="@dimen/view_dist_sides_10"
     android:layout_marginLeft="@dimen/view_dist_sides_10"
     android:layout_marginTop="@dimen/view_dist_sides_10"
-    android:background="@drawable/layout_shape_round_corners"
-
+    android:background="@color/peter_river"
     >
 
+
+   <!--    android:background="@drawable/layout_shape_round_corners"
+-->
     <LinearLayout
         android:id="@+id/header"
         android:layout_width="match_parent"

@@ -59,7 +59,7 @@ public class ScanItemAmountDialog extends Activity {
                     return;
                 }
                 currentItemAmount = Integer.parseInt(editCashDiaAmount.getText().toString());
-                if(currentItemAmount<1){
+                if(currentItemAmount<=1){
                     return;
                 }
                 currentItemAmount--;
@@ -87,16 +87,20 @@ public class ScanItemAmountDialog extends Activity {
             @Override
             public void onClick(View view) {
 
-                currentItemAmount = Integer.parseInt(editCashDiaAmount.getText().toString());
+                if(!Utils.isNullOrEmpty(editCashDiaAmount.getText().toString())){
+                    currentItemAmount = Integer.parseInt(editCashDiaAmount.getText().toString());
+                    if(currentItemAmount<1 ){
+                        SweetAlerts.showBasicMsg(ScanItemAmountDialog.this,"Enter The Amount");
+                        return;
+                    }
 
-                if(Utils.isNullOrEmpty(editCashDiaAmount.getText().toString()) && currentItemAmount<=0 ){
+                    IntentIntegrator scanIntegrator = new IntentIntegrator(ScanItemAmountDialog.this);
+                    scanIntegrator.initiateScan();
+
+                }else {
                     SweetAlerts.showBasicMsg(ScanItemAmountDialog.this,"Enter The Amount");
-                    return;
+
                 }
-
-                IntentIntegrator scanIntegrator = new IntentIntegrator(ScanItemAmountDialog.this);
-                scanIntegrator.initiateScan();
-
             }
         });
 
@@ -112,12 +116,10 @@ public class ScanItemAmountDialog extends Activity {
 
     }
 
-
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
 
         IntentResult scanningResult = IntentIntegrator.parseActivityResult(
                 requestCode, resultCode, intent);
-
         if (scanningResult != null) {
             // we have a result
             scanBarcode = scanningResult.getContents();
@@ -127,7 +129,6 @@ public class ScanItemAmountDialog extends Activity {
                     "No scan data received!", Toast.LENGTH_SHORT);
             toast.show();
         }
-
     }
     private void fetchItemInStore(String barcode) {
 
@@ -136,26 +137,20 @@ public class ScanItemAmountDialog extends Activity {
         query.findInBackground(new FindCallback<InventoryItem>() {
             @Override
             public void done(List<InventoryItem> inventoryItems, ParseException e) {
-
                 if (e == null) {
                     if (inventoryItems != null && inventoryItems.size() > 0) {
 
                         //int itemAmount = itemScannedAmount;
                        int itemScannedAmount =  Integer.parseInt(editCashDiaAmount.getText().toString());
                         if (inventoryItems.get(0).getAmount() >= itemScannedAmount) {
-
                             if (!cartItemsManager.itemExists(scanBarcode)) {
-
                                 InventoryItem ii = inventoryItems.get(0);
-
                                 CartItem cartItem = new CartItem();
                                 cartItem.setParseInventoryItemId(ii.getObjectId());
                                 cartItem.setBarcode(ii.getBarcode());
                                 cartItem.setDescription(ii.getDescription());
                                 cartItem.setAmount(itemScannedAmount);
                                 cartItem.setSellPrice(ii.getSellPrice());
-
-
                                 int rowId = -1;
                                 rowId = cartItemsManager.addItemToCart(cartItem);
                                // loadItems();

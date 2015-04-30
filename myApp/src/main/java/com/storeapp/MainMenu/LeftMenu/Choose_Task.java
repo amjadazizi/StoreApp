@@ -8,6 +8,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import com.special.ResideMenu.ResideMenu;
 import com.special.ResideMenu.ResideMenuItem;
@@ -30,6 +31,7 @@ public class Choose_Task extends FragmentActivity {
     ImageButton btnEditProfilePen;
     boolean isProfileEidtable=false;
     ProfileFragment profileFragment = new ProfileFragment();
+    TextView actionBarHometxt;
 
 
     @Override
@@ -44,6 +46,8 @@ public class Choose_Task extends FragmentActivity {
         if (!Prefs.isUserLoggedIn()) {
             startActivity(new Intent(this, Login.class));
         }
+
+        actionBarHometxt = (TextView) findViewById(R.id.actionBarHometxt);
 
         btnEditProfilePen = (ImageButton) findViewById(R.id.btnEditProfile);
         btnEditProfilePen.setOnClickListener(new View.OnClickListener() {
@@ -91,6 +95,7 @@ public class Choose_Task extends FragmentActivity {
 
                     itemProfile.setIcon(R.drawable.ic_profile_grey);
                     changeFragment(profileFragment);
+                    actionBarHometxt.setText("Profile");
                     btnEditProfilePen.setVisibility(View.VISIBLE);
                 } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
                     itemProfile.setIcon(R.drawable.ic_profile_white);

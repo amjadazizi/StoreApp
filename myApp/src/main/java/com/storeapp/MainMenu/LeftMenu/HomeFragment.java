@@ -10,13 +10,13 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.special.ResideMenu.ResideMenu;
-import com.storeapp.MainMenu.EmployeeList.Emp_List;
 import com.storeapp.MainMenu.CashRegister.Cash_Register;
-import com.storeapp.MainMenu.Store_Items;
+import com.storeapp.MainMenu.EmployeeList.Emp_List;
 import com.storeapp.MainMenu.StoreStatus.Store_Status;
+import com.storeapp.MainMenu.Store_Items;
 import com.storeapp.R;
 
 
@@ -30,7 +30,7 @@ public class HomeFragment extends Fragment {
         view = inflater.inflate(R.layout.home, container, false);
 
 
-            Button ctCashRegBtn = (Button) view.findViewById(R.id.ctCashRegBtn);
+            ImageButton ctCashRegBtn = (ImageButton) view.findViewById(R.id.ctCashRegBtn);
             ctCashRegBtn.setOnClickListener(new View.OnClickListener() {
 
                 @Override
@@ -41,7 +41,7 @@ public class HomeFragment extends Fragment {
                 }
             });
 
-            Button ctStoreStatus = (Button) view.findViewById(R.id.ctStoreStatus);
+        ImageButton ctStoreStatus = (ImageButton) view.findViewById(R.id.ctStoreStatus);
             ctStoreStatus.setOnClickListener(new View.OnClickListener() {
 
                 @Override
@@ -54,7 +54,7 @@ public class HomeFragment extends Fragment {
                 }
             });
 
-            Button ctStoreItemBtn = (Button) view.findViewById(R.id.ctStoreItemBtn);
+        ImageButton ctStoreItemBtn = (ImageButton) view.findViewById(R.id.ctStoreItemBtn);
             ctStoreItemBtn.setOnClickListener(new View.OnClickListener() {
 
                 @Override
@@ -66,7 +66,7 @@ public class HomeFragment extends Fragment {
                 }
             });
 
-            Button ctEmplList = (Button) view.findViewById(R.id.ctEmplList);
+        ImageButton ctEmplList = (ImageButton) view.findViewById(R.id.ctEmplList);
             ctEmplList.setOnClickListener(new View.OnClickListener() {
 
                 @Override

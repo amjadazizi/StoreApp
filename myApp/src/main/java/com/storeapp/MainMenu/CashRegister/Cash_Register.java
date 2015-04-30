@@ -33,7 +33,7 @@ import java.util.Random;
 public class Cash_Register extends BaseActivity {
 
     private ListView itemsListView;
-    ImageButton btnCancelExp, btnbackArrow;
+    ImageButton btnCancelExped, btnbackArrow;
     private static FloatingEditText ediTxtTotal, ediTxtrecieved;
     Random rn = new Random();
     public static final String TOTAL_TO_PAY_AMOUNT = "totaltopayamount";
@@ -53,7 +53,11 @@ public class Cash_Register extends BaseActivity {
         View header = getLayoutInflater().inflate(
                 R.layout.cash_register_list_item_header, null);
         itemsListView.addHeaderView(header);
+
         TextView txtCartEmpty = (TextView) findViewById(R.id.empty);
+        btnCancelExped = (ImageButton) findViewById(R.id.btnCancelExped);
+
+
 
         itemsListView.setEmptyView(txtCartEmpty);
         itemsListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
@@ -128,8 +132,8 @@ public class Cash_Register extends BaseActivity {
 
 
     private void cancelExpedition(){
-        btnCancelExp = (ImageButton) findViewById(R.id.btnCancelExp);
-        btnCancelExp.setOnClickListener(new View.OnClickListener() {
+        btnCancelExped = (ImageButton) findViewById(R.id.btnCancelExped);
+        btnCancelExped.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 DbManager.getDbManager().getCartItemsManager().clearCart();
@@ -247,6 +251,11 @@ public class Cash_Register extends BaseActivity {
 
                 currentTotal += item.getAmount() * item.getSellPrice();
             }
+            btnCancelExped.setVisibility(View.VISIBLE);
+
+        }else {
+            btnCancelExped.setVisibility(View.GONE);
+
         }
         ediTxtTotal.setText(currentTotal+"");
     }

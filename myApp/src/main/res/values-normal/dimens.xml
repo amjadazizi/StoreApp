@@ -23,10 +23,9 @@
     <dimen name="view_dist_sides_10">10dp</dimen>
     <dimen name="action_bar_height">50dp</dimen>
     <dimen name="action_bar_img_button_height">40dp</dimen>
-    <dimen name="action_bar_img_button_width">40dp</dimen>
+    <dimen name="action_bar_img_button_width">50dp</dimen>
     <dimen name="view_height_blue_line">6dp</dimen>
     <dimen name="view_dist_sides_5">5dp</dimen>
-
     <dimen name="view_dist_sides_15">15dp</dimen>
     <dimen name="text_size_action_bar">20sp</dimen>
     <dimen name="store_status_listview_width">250sp</dimen>
@@ -64,6 +63,7 @@
     <dimen name="linechar_height">200dp</dimen>
     <dimen name="barchar_height">200dp</dimen>
     <dimen name="header_store_status_height">200dp</dimen>
+    <dimen name="home_item_height_width">80dp</dimen>
 
 
 

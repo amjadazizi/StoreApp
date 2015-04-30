@@ -3,11 +3,9 @@
 
     <string name="error_name_empty">Name is Required</string>
     <string name="error_last_name_empty">Last name is Required</string>
-
     <string name="error_email_empty">Email is Required</string>
     <string name="error_email_invalid">Email is Invalid</string>
     <string name="error_phone_number_empty">Phoneumber is Required</string>
-
     <string name="error_passwords_empty">Passwords is Required</string>
     <string name="error_passwords_mismatch">Passwords Dosnt Match</string>
     <string name="error_email_unregistered">Email Is not Registered!</string>
