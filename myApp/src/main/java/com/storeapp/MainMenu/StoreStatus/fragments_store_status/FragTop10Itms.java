@@ -57,7 +57,7 @@ public class FragTop10Itms extends Fragment {
 
         Picasso.Builder pb = new Picasso.Builder(getActivity());
         picasso = pb.memoryCache(new LruCache(cacheSizeInBytes)).build();
-        picasso.setIndicatorsEnabled(true);
+    //    picasso.setIndicatorsEnabled(true);
 
 
 
@@ -101,7 +101,7 @@ private void draw(ArrayList<BarEntry> yValues){
         xVals.add((int) yValues.get(i).getVal() + "");
     }
 
-    BarDataSet set1 = new BarDataSet(yValues, "Data Set");
+    BarDataSet set1 = new BarDataSet(yValues, "Top 10 Items");
     set1.setColors(Utils.COLORFUL_COLORS);
     set1.setDrawValues(false);
 

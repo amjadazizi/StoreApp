@@ -50,19 +50,23 @@ public class Choose_Task extends FragmentActivity {
         actionBarHometxt = (TextView) findViewById(R.id.actionBarHometxt);
 
         btnEditProfilePen = (ImageButton) findViewById(R.id.btnEditProfile);
+        btnEditProfilePen.setImageResource(R.drawable.ic_pen_white);
+        //btnEditProfilePen.setBackgroundDrawable();
         btnEditProfilePen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(!isProfileEidtable){
                     profileFragment.startEditingProfile();
                     isProfileEidtable = true;
-                    btnEditProfilePen.setBackgroundDrawable(getResources().getDrawable(R.drawable.ic_nike_white));
+                    btnEditProfilePen.setImageResource(R.drawable.ic_nike_white);
+                  //  btnEditProfilePen.setBackgroundDrawable(getResources().getDrawable(R.drawable.ic_nike_white));
 
 
                 }else{
                     profileFragment.endEditingProfile();
                     isProfileEidtable = false;
-                    btnEditProfilePen.setBackgroundDrawable(getResources().getDrawable(R.drawable.ic_pen_white));
+                    btnEditProfilePen.setImageResource(R.drawable.ic_pen_white);
+                  //  btnEditProfilePen.setBackgroundDrawable(getResources().getDrawable(R.drawable.ic_pen_white));
 
                 }
 
@@ -133,24 +137,7 @@ public class Choose_Task extends FragmentActivity {
             }
         });
 
-        /*itemSettings.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-                if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
 
-                    itemSettings.setIcon(R.drawable.ic_setting_white);
-                    btnEditProfilePen.setVisibility(View.GONE);
-                } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    changeFragment(new SettingsFragment());
-                    resideMenu.closeMenu();
-
-                    itemSettings.setIcon(R.drawable.ic_setting_white);
-
-                }
-
-                return true;
-            }
-        });*/
 
         itemLogOut.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -185,13 +172,11 @@ public class Choose_Task extends FragmentActivity {
         itemHome     = new ResideMenuItem(this, R.drawable.ic_home_white,"Home");
         itemProfile  = new ResideMenuItem(this, R.drawable.ic_profile_white,  "Profile");
         itemAddNewEmployee = new ResideMenuItem(this, R.drawable.ic_add_employee_white, "Add New Employee");
-       // itemSettings = new ResideMenuItem(this, R.drawable.ic_setting_white, "Settings");
         itemLogOut = new ResideMenuItem(this, R.drawable.ic_log_out_white, "Log Out");
 
         resideMenu.addMenuItem(itemHome, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(itemProfile, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(itemAddNewEmployee, ResideMenu.DIRECTION_LEFT);
-//        resideMenu.addMenuItem(itemSettings, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(itemLogOut, ResideMenu.DIRECTION_LEFT);
 
 
@@ -220,8 +205,14 @@ public class Choose_Task extends FragmentActivity {
     @Override
     public void onBackPressed() {
         // super.onBackPressed();
-        startActivity(new Intent(Choose_Task.this, LogoutDialog.class));
-    }
+           if(resideMenu.isOpened()){
+               resideMenu.closeMenu();
+           }else {
+               startActivity(new Intent(Choose_Task.this, LogoutDialog.class));
+
+           }
+
+          }
 
 
     private ResideMenu.OnMenuListener menuListener = new ResideMenu.OnMenuListener() {

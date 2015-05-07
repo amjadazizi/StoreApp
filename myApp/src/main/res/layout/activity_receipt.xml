@@ -77,38 +77,155 @@
             >
 
 
-            <TextView
-                android:id="@+id/txtStoreInfoReceipt"
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1.5"
+               android:orientation="vertical"
+               android:layout_marginTop="@dimen/view_dist_sides_10"
+               android:layout_marginBottom="@dimen/view_dist_sides_10"
+               >
+
+               <TextView
+                   android:id="@+id/txtStoreName"
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1"
+                    style="@style/ReceiptTextviewStyle"
+                   android:gravity="center_horizontal"
+                   android:layout_marginTop="@dimen/view_dist_sides_10"
+
+                   />
+               <TextView
+                   android:id="@+id/txtStoreCvr"
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1"
+                   style="@style/ReceiptTextviewStyle"
+                   android:gravity="center_horizontal"
+                   android:layout_marginTop="@dimen/view_dist_sides_10"
+                   />
+               <TextView
+                   android:id="@+id/txtStorePhoneNumber"
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1"
+                   style="@style/ReceiptTextviewStyle"
+                   android:gravity="center_horizontal"
+                   android:layout_marginTop="@dimen/view_dist_sides_10"
+                   />
+               <TextView
+                   android:id="@+id/txtStoreEmail"
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1"
+                   style="@style/ReceiptTextviewStyle"
+                   android:gravity="center_horizontal"
+                   android:layout_marginTop="@dimen/view_dist_sides_10"
+                   />
+
+
+           </LinearLayout>
+
+
+            <ListView
+                android:layout_marginRight="@dimen/view_dist_sides_10"
+                android:layout_marginLeft="@dimen/view_dist_sides_10"
+                android:id="@+id/listviewReceipt"
+                android:background="@color/transparent"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size_cart_empty"
-                android:textColor="@color/black"
-                android:gravity="center_horizontal"
+                android:layout_height="0dp"
                 android:layout_weight="1.5"
-                android:layout_marginTop="@dimen/view_dist_sides_10"
-                />
+                >
 
+            </ListView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:background="@color/transparent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtReceipt"
+                    android:gravity="right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="@style/ReceiptTextviewStyle"
+                    android:layout_weight="2"
+                    android:text="@string/text_total"
+                    />
+
+                <TextView
+                    android:id="@+id/txtReceiptTotalPrice"
+                    android:gravity="center_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="@style/ReceiptTextviewStyle"
+                    android:layout_weight="1" />
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:background="@color/transparent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtReceiptPaymentMethod"
+                    android:gravity="right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="@style/ReceiptTextviewStyle"
+                    android:layout_weight="2"
+                    />
+
+                <TextView
+                    android:id="@+id/txtReceiptTotalReceived"
+                    android:gravity="center_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="@style/ReceiptTextviewStyle"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:background="@color/transparent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtReceiptReturn"
+                    android:gravity="right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="@style/ReceiptTextviewStyle"
+                    android:layout_weight="2"
+                    android:text="@string/text_to_pay_back"
+                    />
+
+                <TextView
+                    android:id="@+id/txtReceiptReturnAmount"
+                    android:gravity="center_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="@style/ReceiptTextviewStyle"
+                    android:layout_weight="1" />
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/txtReceipt"
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:textSize="@dimen/text_size_cart_empty"
-                android:layout_weight="5" />
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:text="See You Soon Again\nHave A nice Day"
-                android:textSize="16sp"
                 android:gravity="center_horizontal"
                 android:layout_weight="0.5"
-                android:textColor="@color/black"
-                android:layout_marginBottom="@dimen/view_dist_sides_10"
+                style="@style/ReceiptTextviewStyle"
+                android:layout_marginBottom="@dimen/view_dist_sides_5"
 
                 />
 

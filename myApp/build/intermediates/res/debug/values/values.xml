@@ -130,6 +130,7 @@
     <color name="purple_progress">#ffaa66cc</color>
     <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/values/colors.xml -->
     <eat-comment/>
+    <color name="receipt_color">#DBDFE4</color>
     <color name="red">#f00</color>
     <color name="red_btn_bg_color">#DD6B55</color>
     <color name="red_btn_bg_pressed_color">#CD5B55</color>
@@ -498,7 +499,7 @@
     <string name="text_wrong_credentials"> "Wrong credentials!"</string>
     <string name="text_yes">Yes</string>
     <string name="text_you_are_now_calling_to">"You Are Now Calling To: "</string>
-    <string name="text_your_email_phone_number">Your Email must be the that is added to this application by your store manager, and this will also function as the login username to this application.</string>
+    <string name="text_your_email_phone_number">Your Email must be the one that is added to this application by your store manager, and this will also function as the login username to this application.</string>
     <string name="title_activity_bar_chart_activity_example">BarChartActivityExample</string>
     <string name="title_activity_cash_register">Cash  Register</string>
     <string name="title_activity_choose_task">Choose Task</string>
@@ -553,6 +554,11 @@
         <item name="android:textStyle">normal</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:textSize">19sp</item>
+    </style>
+    <style name="ReceiptTextviewStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
     </style>
     <style name="RegistrationExplainText">
         <item name="android:textStyle">normal</item>

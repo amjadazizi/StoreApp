@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:gravity="left"
-    android:background="@color/clouds">
+    android:background="@color/white">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -72,7 +72,7 @@
                 android:gravity="center"
                 android:padding="@dimen/view_dist_sides_10"
                 android:textAllCaps="true"
-                tools:text="Cancel"
+                tools:text="@string/text_cancel"
                 android:background="@drawable/button_selector"
                 android:textSize="@dimen/text_dialog_button"
                 android:layout_gravity="right"
@@ -87,7 +87,7 @@
                 android:gravity="center"
                 android:padding="@dimen/view_dist_sides_10"
                 android:textAllCaps="true"
-                tools:text="Accept"
+                tools:text="@string/text_accept"
                 android:background="@drawable/button_selector"
                 android:textSize="@dimen/text_dialog_button"
                 android:layout_gravity="right"

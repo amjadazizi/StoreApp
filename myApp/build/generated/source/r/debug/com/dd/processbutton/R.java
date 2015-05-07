@@ -27,7 +27,7 @@ public final class R {
 		public static final int holo_orange_light = 0x7f09001d;
 		public static final int holo_red_light = 0x7f09001e;
 		public static final int purple_progress = 0x7f090021;
-		public static final int red_error = 0x7f090025;
+		public static final int red_error = 0x7f090026;
 	}
 	public static final class dimen {
 		public static final int corner_radius = 0x7f0b001a;

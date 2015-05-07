@@ -22,7 +22,11 @@
 
     </style>
 
-
+    <style name="ReceiptTextviewStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
 
     <!-- Sweet Alert Dialog -->
    <style name="alert_dialog" parent="android:Theme.Dialog">

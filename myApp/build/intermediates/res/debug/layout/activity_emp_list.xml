@@ -15,7 +15,7 @@
             android:id="@+id/btnbackArrowEmpList"
             android:layout_width="@dimen/action_bar_img_button_width"
             android:layout_height="match_parent"
-            android:scaleType="fitXY"
+            android:scaleType="center"
             android:src="@drawable/ic_arrow_left"
             android:background="@drawable/selector_action_bar_items"
             android:layout_alignParentLeft="true"

@@ -61,7 +61,7 @@ public class Emp_List extends BaseActivity {
 
         Picasso.Builder pb = new Picasso.Builder(this);
         picasso = pb.memoryCache(new LruCache(cacheSizeInBytes)).build();
-        picasso.setIndicatorsEnabled(true);
+      //  picasso.setIndicatorsEnabled(true);
 
         empoyeeList = (ListView) findViewById(R.id.employeeList);
 

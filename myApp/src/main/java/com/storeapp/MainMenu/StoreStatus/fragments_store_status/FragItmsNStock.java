@@ -43,7 +43,7 @@ public class FragItmsNStock extends Fragment implements AdapterView.OnItemClickL
 
        Picasso.Builder pb = new Picasso.Builder(getActivity());
        picasso = pb.memoryCache(new LruCache(cacheSizeInBytes)).build();
-        picasso.setIndicatorsEnabled(true);
+      //  picasso.setIndicatorsEnabled(true);
 
 
         View view = inflater.inflate(R.layout.fragmen_items_in_stock, container,

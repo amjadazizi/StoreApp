@@ -24,6 +24,7 @@ import com.storeapp.model.CartItem;
 import com.storeapp.ui.FloatingEditText;
 import com.storeapp.ui.sweetalert.SweetAlertDialog;
 import com.storeapp.util.ParseNumber;
+import com.storeapp.util.Prefs;
 import com.storeapp.util.SweetAlerts;
 import com.storeapp.util.Utils;
 
@@ -167,9 +168,10 @@ public class Cash_Register extends BaseActivity {
                 if(totalPayment>0){
                     if(receivedPayment>=totalPayment){
 
+                        Prefs.setTotalReceivedAmount(receivedAmount+"");
                         Intent intent = new Intent(Cash_Register.this, PaymentDialog.class);
                         intent.putExtra(TOTAL_TO_PAY_AMOUNT, totalPayment);
-                        intent.putExtra(RECEIVED_AMOUNT, receivedPayment);
+                       // intent.putExtra(RECEIVED_AMOUNT, receivedPayment);
                         startActivity(intent);
 
                     }else {

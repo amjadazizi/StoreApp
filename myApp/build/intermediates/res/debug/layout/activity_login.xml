@@ -75,7 +75,7 @@
                     android:layout_height="@dimen/blue_button_height"
                     android:layout_marginLeft="@dimen/view_dist_sides_10"
                     android:layout_marginRight="@dimen/view_dist_sides_10"
-                    android:text="Login In"
+                    android:text="Log In"
                     android:textColor="@android:color/white"
                     custom:pb_colorNormal="@color/button_normal"
                     custom:pb_colorPressed="@color/button_pressed"

@@ -50,7 +50,7 @@ public class FragSoldItems extends Fragment {
 
         Picasso.Builder pb = new Picasso.Builder(getActivity());
         picasso = pb.memoryCache(new LruCache(cacheSizeInBytes)).build();
-        picasso.setIndicatorsEnabled(true);
+    //    picasso.setIndicatorsEnabled(true);
         loadSoldItems();
         return view;
     }

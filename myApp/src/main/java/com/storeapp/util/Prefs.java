@@ -6,16 +6,14 @@ import android.preference.PreferenceManager;
 
 import com.storeapp.AppContextProvider;
 
-import java.util.Locale;
-
 public class Prefs {
     public static final String KEY_IS_USER_LOGGED_IN = "pref_is_user_logged_in";
     public static final String PREF_TASK_TYPE = "pref_task_type";
     public static final String PREF_BUSINESS_CVR = "pref_business_cvr";
     public static  final String PREF_LOGED_IN_USER ="pref_loged_in_user";
     public static  final String PREF_IS_USER_ADMIN ="pref_is_user_admin";
+    public static  final String PREF_TOTAL_RECEIVED_AMOUNT ="pref_total_received_amount";
 
-    private static Locale locale = null;
 
     public static SharedPreferences getPrefs() {
         Context context = AppContextProvider.getContext();
@@ -23,7 +21,24 @@ public class Prefs {
     }
 
 
-    public static void setTaskType(int taskType) {
+    public static void setTotalReceivedAmount(String totalReceivedAmount){
+        SharedPreferences prefs = Prefs.getPrefs();
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putString(PREF_TOTAL_RECEIVED_AMOUNT, totalReceivedAmount);
+        editor.commit();
+
+    }
+
+    public  static String getTotalReceviedAmount(){
+
+
+        SharedPreferences prefs = Prefs.getPrefs();
+        return  prefs.getString(PREF_TOTAL_RECEIVED_AMOUNT,null);
+    }
+
+
+
+        public static void setTaskType(int taskType) {
 
         SharedPreferences prefs = Prefs.getPrefs();
         SharedPreferences.Editor editor = prefs.edit();

@@ -5,7 +5,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="left"
-        android:background="@drawable/layout_shape_round_corners">
+    android:background="@color/white"
+        >
 
         <LinearLayout
         android:id="@+id/addEmployeeLayout"
@@ -13,7 +14,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="left"
-        android:background="@color/clouds">
+        >
 
 
             <LinearLayout
@@ -54,23 +55,6 @@
 
             </LinearLayout>
 
-            <!--<LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="gone"
-                >
-                <TextView
-                    android:id="@+id/txtInfoPayback"
-                    android:paddingLeft="10dp"
-                    android:gravity="center_vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="@drawable/button_selector"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
-                    />
-
-            </LinearLayout>-->
 
 
             <LinearLayout

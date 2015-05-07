@@ -253,7 +253,7 @@ public class Store_Items extends BaseActivity implements OnColorSelectedListener
 
                     } else {
 
-                        SweetAlerts.showErrorMsg(Store_Items.this, "Items Does Not Exists");
+                        //SweetAlerts.showErrorMsg(Store_Items.this, "Items Does Not Exists");
                     }
 
                 }

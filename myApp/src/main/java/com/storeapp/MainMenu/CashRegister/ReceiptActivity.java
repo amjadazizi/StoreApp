@@ -1,45 +1,51 @@
 package com.storeapp.MainMenu.CashRegister;
 
         import android.app.Activity;
-        import android.content.ContentValues;
-        import android.content.Intent;
-        import android.graphics.Bitmap;
-        import android.graphics.Canvas;
-        import android.graphics.Color;
-        import android.graphics.drawable.Drawable;
-        import android.net.Uri;
-        import android.os.Bundle;
-        import android.provider.MediaStore;
-        import android.view.View;
-        import android.view.animation.Animation;
-        import android.view.animation.AnimationUtils;
-        import android.widget.ImageButton;
-        import android.widget.LinearLayout;
-        import android.widget.TextView;
+import android.content.ContentValues;
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
+import android.net.Uri;
+import android.os.Bundle;
+import android.provider.MediaStore;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.BaseAdapter;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.TextView;
 
-        import com.parse.FindCallback;
-        import com.parse.ParseException;
-        import com.parse.ParseQuery;
-        import com.storeapp.Db.CartItemsManager;
-        import com.storeapp.Db.DbManager;
-        import com.storeapp.R;
-        import com.storeapp.model.CartItem;
-        import com.storeapp.parse.Business;
-        import com.storeapp.util.Prefs;
+import com.parse.FindCallback;
+import com.parse.ParseException;
+import com.parse.ParseQuery;
+import com.storeapp.Db.CartItemsManager;
+import com.storeapp.Db.DbManager;
+import com.storeapp.R;
+import com.storeapp.model.CartItem;
+import com.storeapp.parse.Business;
+import com.storeapp.util.Prefs;
 
-        import java.io.OutputStream;
-        import java.util.List;
+import java.io.OutputStream;
+import java.util.List;
 
 
 public class ReceiptActivity extends Activity {
 
-    TextView txtReceipt,txtStoreInfoReceipt;
-    double totalcartPrice = 0;
-    String shopInfo;
+    double totalcartPrice;
     String paymentMethod;
     ImageButton btnShareReceipt,btnbackArrowReceipt;
     LinearLayout receipt_layout;
     boolean animationDone=false;
+    TextView txtStoreName, txtStoreCvr, txtStorePhoneNumber, txtStoreEmail,
+            txtReceiptPaymentMethod,txtReceiptTotalPrice, txtReceiptTotalReceived, txtReceiptReturnAmount;
+    ListView listviewReceipt;
     private static final String ANIMATION_DONE = "animation_done";
 
     @Override
@@ -66,8 +72,17 @@ public class ReceiptActivity extends Activity {
             animationDone=true;
         }
 
-        txtStoreInfoReceipt = (TextView) findViewById(R.id.txtStoreInfoReceipt);
-        txtReceipt = (TextView) findViewById(R.id.txtReceipt);
+
+        listviewReceipt = (ListView) findViewById(R.id.listviewReceipt);
+        txtStoreName = (TextView) findViewById(R.id.txtStoreName);
+        txtStoreCvr = (TextView) findViewById(R.id.txtStoreCvr);
+        txtStorePhoneNumber = (TextView) findViewById(R.id.txtStorePhoneNumber);
+        txtStoreEmail = (TextView) findViewById(R.id.txtStoreEmail);
+
+        txtReceiptPaymentMethod = (TextView) findViewById(R.id.txtReceiptPaymentMethod);
+        txtReceiptTotalPrice = (TextView) findViewById(R.id.txtReceiptTotalPrice);
+        txtReceiptTotalReceived = (TextView) findViewById(R.id.txtReceiptTotalReceived);
+        txtReceiptReturnAmount = (TextView) findViewById(R.id.txtReceiptReturnAmount);
 
         btnbackArrowReceipt = (ImageButton) findViewById(R.id.btnbackArrowReceipt);
         btnbackArrowReceipt.setOnClickListener(new View.OnClickListener() {
@@ -142,36 +157,6 @@ public class ReceiptActivity extends Activity {
 
     }
 
-    private void generateReceipt(){
-
-        CartItemsManager cartItemsManager = DbManager.getDbManager().getCartItemsManager();
-        List<CartItem> cartItemList = cartItemsManager.getAllItemsInCart();
-
-        String tab = getString(R.string.tab) ;
-        String tabs10 = tab+tab+tab+tab+tab+tab+tab+tab+tab+tab;
-        String tabs5 = tab+tab+tab+tab+tab;
-
-        String text = "Amount"+tabs5+"Description"+tabs5+"Price\n\n";
-
-
-        for(CartItem cartItem :cartItemList ){
-            text += cartItem.getAmount()+tabs10+cartItem.getDescription()+tabs10+cartItem.getAmount()*cartItem.getSellPrice()+"\n";
-            totalcartPrice += cartItem.getAmount()*cartItem.getSellPrice();
-        }
-        String total;
-        if(paymentMethod=="Cash") {
-            total = ""+tabs10+"Total: "+tabs10+totalcartPrice+"\n";
-
-        }{
-            total =  ""+tabs10+"Total: "+tabs10+totalcartPrice+"\n"
-                    +""+tabs10+paymentMethod+tabs10+totalcartPrice+"\n" +
-                    "\n";
-        }
-        txtReceipt.setText(text+total);
-        txtStoreInfoReceipt.setText(shopInfo);
-
-    }
-
 
     private void shopInfomation(){
 
@@ -182,8 +167,12 @@ public class ReceiptActivity extends Activity {
                 if(e==null){
                     if(businesses!=null && businesses.size()>0){
                         Business bus = businesses.get(0);
-                        shopInfo = bus.getName()+"\n"+ bus.getCvr()+"\n"+bus.getPhoneNumber()+"\n"+bus.getEmail();
+                        txtStoreName.setText(bus.getName());
+                        txtStoreCvr.setText(bus.getCvr());
+                        txtStorePhoneNumber.setText(bus.getPhoneNumber());
+                        txtStoreEmail.setText(bus.getEmail());
                         generateReceipt();
+
                     }
                 }
             }
@@ -192,11 +181,102 @@ public class ReceiptActivity extends Activity {
     }
 
 
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
 
-        outState.putBoolean(ANIMATION_DONE,animationDone);
+    public void generateReceipt(){
+
+        CartItemsManager cartItemsManager = DbManager.getDbManager().getCartItemsManager();
+        List<CartItem> cartItemList = cartItemsManager.getAllItemsInCart();
+        ReceiptAdapter receiptAdapter = new ReceiptAdapter(this, cartItemList);
+        listviewReceipt.setAdapter(receiptAdapter);
+
+        if(paymentMethod.equals("Cash")) {
+            txtReceiptPaymentMethod.setText("Cash: ");
+        }else {
+            txtReceiptPaymentMethod.setText("Credit Card: ");
+
+        }
+        txtReceiptTotalReceived.setText(Prefs.getTotalReceviedAmount());
+    }
+
+    private class ReceiptAdapter extends BaseAdapter{
+
+        Context ctx;
+        List<CartItem> itemsList;
+
+        public ReceiptAdapter(Context ctx,List<CartItem> itemsList ){
+
+            this.ctx = ctx;
+            this.itemsList = itemsList;
+
+        }
+
+
+        @Override
+        public int getCount() {
+            return itemsList.size();
+        }
+
+        @Override
+        public Object getItem(int i) {
+            return null;
+        }
+
+        @Override
+        public long getItemId(int i) {
+            return 0;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup viewGroup) {
+
+            View view = convertView;
+            TextView itemsAmount, itemsDescription, itemsPrice;
+
+            if(view == null){
+                LayoutInflater layoutInflator = LayoutInflater.from(ctx);
+                view = layoutInflator.inflate(R.layout.receipt_list_item, null);
+
+                itemsAmount = (TextView) view
+                        .findViewById(R.id.txtReceiptItemAmount);
+                itemsDescription = (TextView) view
+                        .findViewById(R.id.txtReceiptItemDescription);
+                itemsPrice = (TextView) view
+                        .findViewById(R.id.txtReceiptItemPrice);
+                ViewHolder holder = new ViewHolder();
+                holder.itemAmount = itemsAmount;
+                holder.itemDescription = itemsDescription;
+                holder.itemPrice = itemsPrice;
+                view.setTag(holder);
+
+            }else  {
+
+            ViewHolder holder =(ViewHolder) view.getTag();
+            itemsAmount = holder.itemAmount;
+            itemsDescription = holder.itemDescription;
+            itemsPrice = holder.itemPrice;
+
+            }
+
+            CartItem item = itemsList.get(position);
+            itemsAmount.setText(item.getAmount()+"");
+            itemsDescription.setText(item.getDescription());
+            double itemTPrice = item.getSellPrice()*item.getAmount();
+            totalcartPrice +=itemTPrice;
+            itemsPrice.setText(itemTPrice+"");
+            txtReceiptTotalPrice.setText(totalcartPrice+"");
+            txtReceiptReturnAmount.setText("" +(totalcartPrice-(Double.parseDouble(Prefs.getTotalReceviedAmount()))));
+            return view;
+
+        }
+
+    }
+
+
+
+
+    public  static class ViewHolder{
+        public TextView itemAmount, itemDescription, itemPrice;
+
 
     }
 }
