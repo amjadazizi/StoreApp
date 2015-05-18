@@ -119,8 +119,8 @@ public class Store_Status extends BaseActivity implements
 
         drawerListView.setOnItemClickListener(this);
         drawerListner = new ActionBarDrawerToggle(this, drawer,
-                R.drawable.ic_statistic, R.string.drawer_open,
-                R.string.drawer_close) {
+                R.drawable.ic_statistic, R.string.text_yes,
+                R.string.text_no) {
             @Override
             public void onDrawerOpened(View drawerView) {
 

@@ -15,8 +15,8 @@ import com.github.mikephil.charting.data.ChartData;
 import com.storeapp.R;
 
 /**
- * Created by Amjad on 10-04-2015.
- */
+ Sorce https://github.com/PhilJay/MPAndroidChart
+ **/
 
 public class BarChartItem extends ChartItem {
 

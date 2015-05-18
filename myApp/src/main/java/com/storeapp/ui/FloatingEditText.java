@@ -1,7 +1,7 @@
 package com.storeapp.ui;
 
 /**
- * Created by Amjad on 28-02-2015.
+ * Source https://github.com/keithellis/MaterialWidget
  */
 
 import android.content.Context;

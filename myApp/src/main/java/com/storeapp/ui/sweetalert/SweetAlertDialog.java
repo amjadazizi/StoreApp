@@ -1,6 +1,8 @@
 package com.storeapp.ui.sweetalert;
 
-
+/**
+ * Source https://github.com/pedant/sweet-alert-dialog
+ */
 import android.app.Dialog;
 import android.content.Context;
 import android.graphics.drawable.Drawable;

@@ -1,5 +1,8 @@
 package com.storeapp.MainMenu.LeftMenu;
 
+/**
+  Sorce http://tutorialsface.blogspot.dk/2014/08/innovative-sliding-menureside-menu-in.html
+**/
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

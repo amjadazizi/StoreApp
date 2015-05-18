@@ -77,7 +77,7 @@
                 android:gravity="center"
                 android:padding="8dp"
                 android:textAllCaps="true"
-                tools:text="Cancel"
+                tools:text="@string/text_cancel"
                 android:background="@drawable/button_selector"
                 android:textSize="@dimen/text_dialog_button"
                 android:layout_gravity="right"

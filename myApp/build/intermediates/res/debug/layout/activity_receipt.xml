@@ -155,7 +155,7 @@
                     android:layout_height="wrap_content"
                     style="@style/ReceiptTextviewStyle"
                     android:layout_weight="2"
-                    android:text="Total:"
+                    android:text="@string/text_total"
                     />
 
                 <TextView
@@ -181,7 +181,6 @@
                     android:layout_height="wrap_content"
                     style="@style/ReceiptTextviewStyle"
                     android:layout_weight="2"
-                    android:text="kaka:"
                     />
 
                 <TextView
@@ -207,7 +206,7 @@
                     android:layout_height="wrap_content"
                     style="@style/ReceiptTextviewStyle"
                     android:layout_weight="2"
-                    android:text="Return Amount: "
+                    android:text="@string/text_to_pay_back"
                     />
 
                 <TextView

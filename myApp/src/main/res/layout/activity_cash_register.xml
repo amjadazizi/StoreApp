@@ -127,7 +127,7 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/view_dist_sides_5"
             android:ems="10"
-            android:hint="@string/hint_dkk"
+            android:hint="DKK"
             android:inputType="number"
             android:layout_gravity="right"
             android:singleLine="true"
@@ -150,7 +150,7 @@
         android:layout_weight="1"
         android:inputType="number"
         android:singleLine="true"
-        android:text="@string/text_1"
+        android:text="1"
         android:textColor="@color/black"
         android:textStyle="normal"
         android:visibility="gone"
@@ -175,6 +175,7 @@
             android:background="@drawable/selector_button_pressed"
             android:text="Scan Item"
             android:onClick="ctrlButtons"
+            style="@style/ButtonStyle"
             android:layout_gravity="center" />
 
         <Button
@@ -185,6 +186,7 @@
             android:background="@drawable/selector_button_pressed"
             android:text="Payment"
             android:layout_weight="1"
+            style="@style/ButtonStyle"
             android:onClick="ctrlButtons"
             android:layout_gravity="center" />
 

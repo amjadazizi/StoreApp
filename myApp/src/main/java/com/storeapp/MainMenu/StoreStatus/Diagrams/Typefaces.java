@@ -7,8 +7,8 @@ import android.util.Log;
 import java.util.Hashtable;
 
 /**
- * Created by Amjad on 10-04-2015.
- */
+ Sorce https://github.com/PhilJay/MPAndroidChart
+ **/
 public class Typefaces {
     private static final String TAG = "Typefaces";
 

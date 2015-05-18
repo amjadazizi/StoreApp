@@ -235,19 +235,3 @@ ADDED from AndroidManifest.xml:118:9
 		ADDED from AndroidManifest.xml:120:13
 	android:name
 		ADDED from AndroidManifest.xml:119:13
-receiver#com.storeapp.util.ConnectionChangeReceiver
-ADDED from AndroidManifest.xml:125:9
-	android:label
-		ADDED from AndroidManifest.xml:126:13
-	android:name
-		ADDED from AndroidManifest.xml:125:19
-intent-filter#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from AndroidManifest.xml:127:13
-action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from AndroidManifest.xml:128:17
-	android:name
-		ADDED from AndroidManifest.xml:128:25
-action#android.net.wifi.WIFI_STATE_CHANGED
-ADDED from AndroidManifest.xml:129:21
-	android:name
-		ADDED from AndroidManifest.xml:129:29

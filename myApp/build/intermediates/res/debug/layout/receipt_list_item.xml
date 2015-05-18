@@ -15,7 +15,7 @@
         android:gravity="center"
         android:layout_weight="1"
         android:layout_height="match_parent"
-        android:text="Amount"
+        android:text="@string/text_amount"
         android:layout_marginLeft="@dimen/view_dist_sides_5"
         android:singleLine="true"
         style="@style/ReceiptTextviewStyle"
@@ -36,7 +36,7 @@
         android:gravity="center"
         android:layout_weight="3.5"
         android:layout_height="match_parent"
-        android:text="Description"
+        android:text="@string/text_description"
         android:singleLine="true"
         style="@style/ReceiptTextviewStyle"
        >

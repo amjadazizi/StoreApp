@@ -1,13 +1,10 @@
 package com.storeapp.util;
 
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.Intent;
-
 /**
  * Created by Amjad on 26-04-2015.
  */
 
+/*
 public class ConnectionChangeReceiver extends BroadcastReceiver {
 
     @Override
@@ -30,4 +27,4 @@ public class ConnectionChangeReceiver extends BroadcastReceiver {
             default:
         }
     }
-}
+}*/

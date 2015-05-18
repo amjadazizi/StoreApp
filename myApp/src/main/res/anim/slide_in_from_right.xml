@@ -15,6 +15,6 @@
     android:duration="@android:integer/config_longAnimTime"
     android:interpolator="@android:anim/accelerate_decelerate_interpolator"
     android:propertyName="translationX"
-    android:valueFrom="2000"
+    android:valueFrom="2000" 1040
     android:valueTo="0"
     android:valueType="floatType" />-->

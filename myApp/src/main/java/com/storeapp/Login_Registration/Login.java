@@ -39,11 +39,7 @@ import java.util.List;
 import de.psdev.licensesdialog.LicensesDialog;
 import de.psdev.licensesdialog.model.Notice;
 
-public class Login extends Activity implements ProgressGenerator.OnCompleteListener, OnClickListener {
-
-    private static final String KEY_ANIMATE_LOGO = "key_animate_logo";
-    private static final String KEY_SLIDING_DRAWER_OPEN = "sliding_drawer_open";
-    private static final String KEY_CURRENT_FRAGMENT_INDEX = "current_fragment_index";
+public class Login extends Activity implements ProgressGenerator.OnCompleteListener {
 
     private TextView imgviewStoreApp;
     private Animation animTranslate;
@@ -51,15 +47,14 @@ public class Login extends Activity implements ProgressGenerator.OnCompleteListe
     private EditText liInitials, liPassword;
 
     private boolean animationDone = false;
-    private boolean isSlidDraerOpen = false;
-    private int currentFragIndex;
     public static final int TASK_BUSINESS = 1;
     public static final int TASK_EMPLOYEE = 2;
+//    final Notice LICENSES_DIALOG_NOTICE = new Notice("StoreApp ","https://github.com/amjadazizi",getResources().getString(R.string.text_amount), null);
 
 
     final Notice LICENSES_DIALOG_NOTICE = new Notice("StoreApp ", "DET_HER_SKAL_VÆRE_EM_URL",
             "BESKRIV EN LICENSEAFTALE! BESKRIV EN LICENSEAFTALE! BESKRIV EN LICENSEAFTALE! BESKRIV EN LICENSEAFTALE!", null);
-
+   // dialog_description
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -95,7 +90,6 @@ public class Login extends Activity implements ProgressGenerator.OnCompleteListe
 
             @Override
             public void onClick(View v) {
-
           progressGenerator.start(liLoginBtn);
 
                 liLoginBtn.setMode(ActionProcessButton.Mode.ENDLESS);
@@ -235,8 +229,6 @@ public class Login extends Activity implements ProgressGenerator.OnCompleteListe
                 Intent i = new Intent(Login.this, RegistrationActivity.class);
                 startActivity(i);
 
-                Utils.showToastShort("DET ER BUSINESS REGIST");
-
             }
         });
 
@@ -249,12 +241,10 @@ public class Login extends Activity implements ProgressGenerator.OnCompleteListe
             public void onClick(View view) {
 
                 new LicensesDialog.Builder(Login.this).setNotices(LICENSES_DIALOG_NOTICE).setThemeResourceId(R.style.custom_theme)
-                        .setDividerColorId(R.color.custom_divider_color).setTitle("Information").build().show();
+                        .setDividerColorId(R.color.custom_divider_color).setTitle("StoreApp Info").build().show();
 
             }
         });
-
-
 
     }
 
@@ -304,6 +294,8 @@ public class Login extends Activity implements ProgressGenerator.OnCompleteListe
     }
 
 
+
+
     @Override
     public void onBackPressed() {
 
@@ -316,32 +308,6 @@ public class Login extends Activity implements ProgressGenerator.OnCompleteListe
     }
 
 
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-        outState.putBoolean(KEY_ANIMATE_LOGO, animationDone);
-        outState.putBoolean(KEY_SLIDING_DRAWER_OPEN, isSlidDraerOpen);
-
-        currentFragIndex = getFragmentManager().getBackStackEntryCount();
-        outState.putInt(KEY_CURRENT_FRAGMENT_INDEX, currentFragIndex);
-
-    }
-
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-        animationDone = savedInstanceState.getBoolean(KEY_ANIMATE_LOGO);
-        currentFragIndex = savedInstanceState
-                .getInt(KEY_CURRENT_FRAGMENT_INDEX);
-
-    }
-
-
-
-    @Override
-    public void onClick(View view) {
-
-    }
 
     @Override
     public void onComplete() {

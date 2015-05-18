@@ -109,17 +109,6 @@
             android:label="@string/title_activity_cash_register"
             android:screenOrientation="portrait" >
         </activity>
-
-        <receiver
-            android:name="com.storeapp.util.ConnectionChangeReceiver"
-            android:label="ConnectionChangeReceiver" >
-            <intent-filter>
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" >
-                    <action android:name="android.net.wifi.WIFI_STATE_CHANGED" >
-                    </action>
-                </action>
-            </intent-filter>
-        </receiver>
     </application>
 
 </manifest>

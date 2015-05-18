@@ -125,7 +125,6 @@ public class AddNewEmployeeDialog extends Activity {
         btnCasgDiaCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Utils.showToastShort("DET ER CANNECEL");
 
                 finish();
             }

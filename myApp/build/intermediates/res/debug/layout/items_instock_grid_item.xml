@@ -14,13 +14,6 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/items_in_stock_item_height"        >
 
-
-      <!--
-       android:background="@drawable/layout_shape_round_corners"
-      -->
-
-
-
         <ImageView
             android:id="@+id/itemImage"
             android:layout_width="match_parent"
@@ -33,7 +26,6 @@
             android:id="@+id/txtItemName"
             android:layout_width="match_parent"
             android:layout_height="@dimen/items_in_stock_item_textview_height"
-            android:text="Item"
             android:background="@color/peter_river"
             android:gravity="center"
             style="@style/employee_list_card_style"

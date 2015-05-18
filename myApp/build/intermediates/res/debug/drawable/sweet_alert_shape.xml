@@ -10,12 +10,20 @@
         android:topRightRadius="10dp"
         />
 
-    <gradient
+<!--    <gradient
         android:angle="45"
         android:centerColor="#E5E4E2"
         android:centerX="35%"
         android:endColor="#E5E4E2"
         android:startColor="#E5E4E2"
+        android:type="linear" />-->
+
+    <gradient
+        android:angle="45"
+        android:centerColor="#fff"
+        android:centerX="35%"
+        android:endColor="#fff"
+        android:startColor="#fff"
         android:type="linear" />
 
 </shape><!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/drawable/sweet_alert_shape.xml -->

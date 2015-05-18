@@ -6,8 +6,8 @@ import android.view.View;
 import com.github.mikephil.charting.data.ChartData;
 
 /**
- * Created by Amjad on 10-04-2015.
- */
+ Sorce https://github.com/PhilJay/MPAndroidChart
+ **/
 public abstract class ChartItem {
 
     protected static final int TYPE_BARCHART = 0;

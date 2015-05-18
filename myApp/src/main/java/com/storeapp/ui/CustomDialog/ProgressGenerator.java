@@ -1,7 +1,7 @@
 package com.storeapp.ui.CustomDialog;
 
 /**
- * Created by Amjad on 16-03-2015.
+ * Source:
  */
 import android.os.Handler;
 

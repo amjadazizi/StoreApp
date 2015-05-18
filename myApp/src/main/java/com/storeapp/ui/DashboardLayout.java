@@ -1,3 +1,4 @@
+/*
 package com.storeapp.ui;
 
 import android.content.Context;
@@ -172,4 +173,4 @@ public class DashboardLayout extends ViewGroup {
 			++visibleIndex;
 		}
 	}
-}
+}*/
