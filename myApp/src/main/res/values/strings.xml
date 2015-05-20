@@ -79,9 +79,9 @@
     <string name="text_you_are_now_calling_to">"You Are Now Calling To: "</string>
     <string name="text_message_sent">"Message Sent!"</string>
     <string name="text_message_not_sent">"Error: Message Is Not Sent!"</string>
-    <string name="text_alle_fields_required">"Alle Fields Required!"</string>
+    <string name="text_alle_fields_required">"lle Fields Required!</string>
     <string name="text_wrong_credentials"> "Wrong credentials!"</string>
-    <string name="text_password_does_not_match">"Passwords Does Not Match!"</string>
+    <string name="text_password_does_not_match">Passwords Does Not Match!</string>
     <string name="title_activity_registration_busines_employee">RegistrationBusinesEmployee</string>
     <string name="title_activity_store_status_dialog">StoreStatusDialogActivity</string>
     <string name="dialog_default_title">Here\'s a message!</string>
@@ -89,15 +89,6 @@
     <string name="dialog_cancel">Cancel</string>
     <string name="LOADING">Loading...</string>
     <string name="default_progressbar">Default Progressbar:</string>
-    <string name="dialog_description">This app is for those who have a small business where they would like to have a mobile cash register and have better
-overview of stock and items in store. The app contains a cash register, a store items function, a list of all employees and
-a statistics function where you can see a static of products and turnover. Above it, there is also a
-profile where users can view and modify their information or change the profile picture.\n
-
-The app is open source. Source code is available to anyone who would like to use parts of it or develop it (See the above link to Github).
-The app uses some 3rd party open source libraries.\n
-
-Android Advanced semester project developed by:\n Amjad Azizi s127817 \n Fahima Azizi s081961 </string>
 
     <string name="tab">\u0009</string>
 

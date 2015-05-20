@@ -49,12 +49,15 @@ public class Login extends Activity implements ProgressGenerator.OnCompleteListe
     private boolean animationDone = false;
     public static final int TASK_BUSINESS = 1;
     public static final int TASK_EMPLOYEE = 2;
-//    final Notice LICENSES_DIALOG_NOTICE = new Notice("StoreApp ","https://github.com/amjadazizi",getResources().getString(R.string.text_amount), null);
+  String a = "This app is for those who have a small business where they would like to have a mobile cash register" +
+        " and have better overview of stock and items in store. The app contains a cash register, a store items function," +
+        " a list of all employees and a statistics function where you can see a statistics of products and turnover. " +
+        "There is also a profile where users can view and modify their information or change the profile picture." +
+        " The app is open source. Source code is available to anyone who would like to use parts of it or develop it" +
+        " (See the above link to Github). The app uses some 3rd party open source libraries. " +
+        "Android Advanced semester project developed by: Amjad Azizi s127817  Fahima Azizi s081961";
 
-
-    final Notice LICENSES_DIALOG_NOTICE = new Notice("StoreApp ", "DET_HER_SKAL_VÆRE_EM_URL",
-            "BESKRIV EN LICENSEAFTALE! BESKRIV EN LICENSEAFTALE! BESKRIV EN LICENSEAFTALE! BESKRIV EN LICENSEAFTALE!", null);
-   // dialog_description
+    final Notice LICENSES_DIALOG_NOTICE = new Notice("StoreApp ", "https://github.com/amjadazizi/StoreApp",a, null);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

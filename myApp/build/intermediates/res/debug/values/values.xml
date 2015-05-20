@@ -336,15 +336,6 @@
     <eat-comment/>
     <string name="dialog_cancel">Cancel</string>
     <string name="dialog_default_title">Here\'s a message!</string>
-    <string name="dialog_description">This app is for those who have a small business where they would like to have a mobile cash register and have better
-overview of stock and items in store. The app contains a cash register, a store items function, a list of all employees and
-a statistics function where you can see a static of products and turnover. Above it, there is also a
-profile where users can view and modify their information or change the profile picture.\n
-
-The app is open source. Source code is available to anyone who would like to use parts of it or develop it (See the above link to Github).
-The app uses some 3rd party open source libraries.\n
-
-Android Advanced semester project developed by:\n Amjad Azizi s127817 \n Fahima Azizi s081961 </string>
     <string name="dialog_ok">OK</string>
     <!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/values/strings_errors.xml -->
     <eat-comment/>
@@ -401,7 +392,7 @@ Android Advanced semester project developed by:\n Amjad Azizi s127817 \n Fahima 
     <string name="tab">\u0009</string>
     <string name="text_Login">Login</string>
     <string name="text_add_employe">Add</string>
-    <string name="text_alle_fields_required">"Alle Fields Required!"</string>
+    <string name="text_alle_fields_required">"lle Fields Required!</string>
     <string name="text_amount">Amount:</string>
     <string name="text_barcode">Barcode:</string>
     <string name="text_business_info">Enter Your Business Info?</string>
@@ -435,7 +426,7 @@ Android Advanced semester project developed by:\n Amjad Azizi s127817 \n Fahima 
     <string name="text_no">NO</string>
     <string name="text_not_enough">"Not Enough in Stock. We have only: "</string>
     <string name="text_password">Password</string>
-    <string name="text_password_does_not_match">"Passwords Does Not Match!"</string>
+    <string name="text_password_does_not_match">Passwords Does Not Match!</string>
     <string name="text_phone_number">Phone Number</string>
     <string name="text_profit_status">Profit Status</string>
     <string name="text_received">"Received: "</string>
