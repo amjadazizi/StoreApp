@@ -20,7 +20,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.TextView;
+        import android.widget.ProgressBar;
+        import android.widget.TextView;
 
 import com.parse.FindCallback;
 import com.parse.ParseException;
@@ -46,6 +47,7 @@ public class ReceiptActivity extends Activity {
     TextView txtStoreName, txtStoreCvr, txtStorePhoneNumber, txtStoreEmail,
             txtReceiptPaymentMethod,txtReceiptTotalPrice, txtReceiptTotalReceived, txtReceiptReturnAmount;
     ListView listviewReceipt;
+    ProgressBar receiptProgress;
     private static final String ANIMATION_DONE = "animation_done";
 
     @Override
@@ -62,10 +64,28 @@ public class ReceiptActivity extends Activity {
         if(bundle!=null){
             paymentMethod =   bundle.getString(PaymentDialog.PAYMENT_METHOD);
         }
+         receiptProgress = (ProgressBar) findViewById(R.id.receiptProgress);
 
         final LinearLayout ll = (LinearLayout) findViewById(R.id.receipt_layout);
         Animation translateAnimation = AnimationUtils.loadAnimation(getApplicationContext(),
                 R.anim.receipt);
+        translateAnimation.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                receiptProgress.setVisibility(View.GONE);
+                btnShareReceipt.setVisibility(View.VISIBLE);
+
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
 
         if(!animationDone){
             ll.startAnimation(translateAnimation);
@@ -74,6 +94,7 @@ public class ReceiptActivity extends Activity {
 
 
         listviewReceipt = (ListView) findViewById(R.id.listviewReceipt);
+        listviewReceipt.setSelector(android.R.color.transparent);
         txtStoreName = (TextView) findViewById(R.id.txtStoreName);
         txtStoreCvr = (TextView) findViewById(R.id.txtStoreCvr);
         txtStorePhoneNumber = (TextView) findViewById(R.id.txtStorePhoneNumber);
@@ -92,6 +113,7 @@ public class ReceiptActivity extends Activity {
                 finish();
             }
         });
+
 
 
         receipt_layout = (LinearLayout) findViewById(R.id.receipt_layout);

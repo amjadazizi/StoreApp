@@ -21,7 +21,7 @@ public class CartItemsManager {
     public static final String COL_DESCRIPTION = "col_description";
     public static final String COL_AMOUNT = "col_amount";
     public static final String COL_SELL_PRICE = "col_sell_price";
-
+    public static final String COL_ITEM_COLOR = "col_item_color";
 
     private SQLiteOpenHelper dbHelper;
     private ContentValues values;
@@ -37,9 +37,9 @@ public class CartItemsManager {
 
         String sql = String
                 .format("create table %s(%s integer primary key autoincrement, %s text not null, %s text not null, " +
-                                " %s text not null,  %s integer not null,  %s real not null)",
+                                " %s text not null,  %s integer not null,  %s real not null,  %s integer not null)",
                         TABLE_NAME, COL_ID, COL_PARSE_INVENTORY_ITEM_ID, COL_BARCODE, COL_DESCRIPTION,
-                        COL_AMOUNT, COL_SELL_PRICE);
+                        COL_AMOUNT, COL_SELL_PRICE, COL_ITEM_COLOR);
 
         db.execSQL(sql);
 
@@ -62,6 +62,7 @@ public class CartItemsManager {
             values.put(COL_DESCRIPTION, cartItem.getDescription());
             values.put(COL_AMOUNT, cartItem.getAmount());
             values.put(COL_SELL_PRICE, cartItem.getSellPrice());
+            values.put(COL_ITEM_COLOR, cartItem.getItemColor());
 
             db = dbHelper.getWritableDatabase();
 

@@ -46,8 +46,6 @@ public class HomeFragment extends Fragment {
 
                 @Override
                 public void onClick(View v) {
-
-
                     Intent intent = new Intent(getActivity(), Store_Status.class);
                     startActivity(intent);
 
@@ -59,10 +57,7 @@ public class HomeFragment extends Fragment {
 
                 @Override
                 public void onClick(View v) {
-
-
                     startActivity(new Intent(getActivity(), Store_Items.class));
-
                 }
             });
 

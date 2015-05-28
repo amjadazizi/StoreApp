@@ -27,7 +27,7 @@ import com.storeapp.MainMenu.LeftMenu.Choose_Task;
 import com.storeapp.R;
 import com.storeapp.parse.Admin;
 import com.storeapp.parse.User;
-import com.storeapp.ui.CustomDialog.ProgressGenerator;
+import com.storeapp.ui.ProgressGenerator;
 import com.storeapp.ui.sweetalert.SweetAlertDialog;
 import com.storeapp.util.ConnectionUtil;
 import com.storeapp.util.Prefs;

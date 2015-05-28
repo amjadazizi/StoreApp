@@ -50,7 +50,17 @@
             android:paddingTop="@dimen/view_dist_sides_5"
             android:paddingBottom="@dimen/view_dist_sides_5"
             android:paddingRight="@dimen/view_dist_sides_5"
-            android:paddingLeft="@dimen/view_dist_sides_5"/>
+            android:paddingLeft="@dimen/view_dist_sides_5"
+            android:visibility="gone"
+            />
+
+        <ProgressBar
+            android:id="@+id/receiptProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            />
+
 
 
     </RelativeLayout>

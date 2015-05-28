@@ -5,6 +5,7 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +15,6 @@ import android.webkit.MimeTypeMap;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.gc.materialdesign.widgets.ColorSelector.OnColorSelectedListener;
 import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.parse.FindCallback;
 import com.parse.ParseException;
@@ -29,6 +29,7 @@ import com.storeapp.parse.InventoryItem;
 import com.storeapp.qrreader.IntentIntegrator;
 import com.storeapp.qrreader.IntentResult;
 import com.storeapp.ui.FloatingEditText;
+import com.storeapp.ui.sweetalert.SweetAlertDialog;
 import com.storeapp.util.Prefs;
 import com.storeapp.util.SweetAlerts;
 import com.storeapp.util.Utils;
@@ -37,7 +38,7 @@ import java.io.ByteArrayOutputStream;
 import java.util.List;
 
 
-public class Store_Items extends BaseActivity implements OnColorSelectedListener {
+public class Store_Items extends BaseActivity  {
 
     FloatingActionButton btnAddImage;
     Bitmap bitmap;
@@ -50,7 +51,9 @@ public class Store_Items extends BaseActivity implements OnColorSelectedListener
     FloatingEditText editBarcode, editEan, editDecription, editAmount,editCurAmountNstock, editPurchaseprice, editSellprice;
     Picasso picasso;
     boolean itemImageExists = false;
-    private InventoryItem inventoryItem;
+    InventoryItem inventoryItem;
+    SweetAlertDialog pDialog;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +69,7 @@ public class Store_Items extends BaseActivity implements OnColorSelectedListener
 
         Picasso.Builder pb = new Picasso.Builder(this);
         picasso = pb.memoryCache(new LruCache(cacheSizeInBytes)).build();
-        picasso.setIndicatorsEnabled(true);
+       // picasso.setIndicatorsEnabled(true);
         btnAddImage = (FloatingActionButton) findViewById(R.id.btnAddImage);
         btnAddImage.setColorNormalResId(R.color.button_normal);
         btnAddImage.setColorPressedResId(R.color.button_pressed);
@@ -120,6 +123,12 @@ public class Store_Items extends BaseActivity implements OnColorSelectedListener
         btnSaveItem.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                pDialog = new SweetAlertDialog(Store_Items.this, SweetAlertDialog.PROGRESS_TYPE);
+                pDialog.getProgressHelper().setBarColor(Color.parseColor("#A5DC86"));
+                pDialog.setTitleText("Loading");
+                pDialog.setCancelable(false);
+                pDialog.show();
 
                 String barcode = editBarcode.getText().toString();
                 String eanType = editEan.getText().toString();
@@ -177,17 +186,21 @@ public class Store_Items extends BaseActivity implements OnColorSelectedListener
                                 if (e == null) {
 
                                     resetEditTexts();
+                                    pDialog.dismiss();
                                     SweetAlerts.showSuccessMsg(Store_Items.this, " Success! Item Saved");
 
                                 } else {
 
                                     SweetAlerts.showErrorMsg(Store_Items.this, "Error! Try Again.");
+                                    pDialog.dismiss();
+
                                 }
                             }
                         });
 
                     } else {
-                        SweetAlerts.showErrorMsg(Store_Items.this, "BAD");
+                        SweetAlerts.showErrorMsg(Store_Items.this, "All Fields Required");
+                        pDialog.dismiss();
                     }
 
 
@@ -253,7 +266,6 @@ public class Store_Items extends BaseActivity implements OnColorSelectedListener
 
                     } else {
 
-                        //SweetAlerts.showErrorMsg(Store_Items.this, "Items Does Not Exists");
                     }
 
                 }
@@ -338,9 +350,6 @@ public class Store_Items extends BaseActivity implements OnColorSelectedListener
         }
     }
 
-    @Override
-    public void onColorSelected(int i) {
 
-    }
 }
 

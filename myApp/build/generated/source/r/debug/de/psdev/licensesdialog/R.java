@@ -24,7 +24,7 @@ public final class R {
 		public static final int lgpl_21_summary = 0x7f05000d;
 		public static final int mit_full = 0x7f05000e;
 		public static final int mit_summary = 0x7f05000f;
-		public static final int notices = 0x7f050011;
+		public static final int notices = 0x7f050010;
 	}
 	public static final class string {
 		public static final int notices_close = 0x7f0c0029;

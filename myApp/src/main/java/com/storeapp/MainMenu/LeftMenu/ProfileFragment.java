@@ -79,7 +79,7 @@ public class ProfileFragment extends Fragment {
 
         Picasso.Builder pb = new Picasso.Builder(getActivity());
         picasso = pb.memoryCache(new LruCache(cacheSizeInBytes)).build();
-        picasso.setIndicatorsEnabled(true);
+      //  picasso.setIndicatorsEnabled(true);
 
         btnTakePicture.setColorNormalResId(R.color.button_normal);
         btnTakePicture.setColorPressedResId(R.color.button_pressed);

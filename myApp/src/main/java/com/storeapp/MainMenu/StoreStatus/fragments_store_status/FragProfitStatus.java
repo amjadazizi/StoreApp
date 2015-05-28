@@ -65,7 +65,6 @@ public class FragProfitStatus extends Fragment {
         months.add("Nov");
         months.add("Dec");
 
-
 	}
 
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,

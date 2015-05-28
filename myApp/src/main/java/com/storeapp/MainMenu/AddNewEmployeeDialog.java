@@ -16,8 +16,8 @@ import com.parse.SaveCallback;
 import com.storeapp.R;
 import com.storeapp.parse.NewUser;
 import com.storeapp.ui.FloatingEditText;
+import com.storeapp.ui.sweetalert.SweetAlertDialog;
 import com.storeapp.util.Prefs;
-import com.storeapp.util.SweetAlerts;
 import com.storeapp.util.Utils;
 
 import java.util.List;
@@ -90,9 +90,21 @@ public class AddNewEmployeeDialog extends Activity {
                                     @Override
                                     public void done(ParseException e) {
                                         if(e==null){
-                                            finish();
-                                            SweetAlerts.showSuccessMsg(AddNewEmployeeDialog.this, "Employee with email registered successfully");
-                                            msgColor = Color.GREEN;
+
+
+                                            new SweetAlertDialog(AddNewEmployeeDialog.this, SweetAlertDialog.SUCCESS_TYPE)
+                                                    .setTitleText("Good job!")
+                                                    .setContentText("New Employee Added!")
+                                                    .setConfirmText("Ok")
+
+                                                    .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                                                        @Override
+                                                        public void onClick(SweetAlertDialog sDialog) {
+                                                            finish();
+                                                        }
+                                                    })
+                                                    .show();
+
                                         }
                                         else{
                                             msg = "Failed to register employee";

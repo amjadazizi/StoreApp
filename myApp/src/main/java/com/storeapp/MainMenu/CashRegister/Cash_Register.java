@@ -29,14 +29,13 @@ import com.storeapp.util.SweetAlerts;
 import com.storeapp.util.Utils;
 
 import java.util.List;
-import java.util.Random;
 
 public class Cash_Register extends BaseActivity {
 
     private ListView itemsListView;
     ImageButton btnCancelExped, btnbackArrow;
     private static FloatingEditText ediTxtTotal, ediTxtrecieved;
-    Random rn = new Random();
+    //Random rn = new Random();
     public static final String TOTAL_TO_PAY_AMOUNT = "totaltopayamount";
     public static final String RECEIVED_AMOUNT = "receivedamouny";
     CartItemsManager cartItemsManager = DbManager.getDbManager().getCartItemsManager();
@@ -339,8 +338,8 @@ public class Cash_Register extends BaseActivity {
             txtDescription.setText(desc);
 
             txtPrice.setText(Double.toString(price * count));
-            int colorItem = rn.nextInt(Utils.COLORFUL_COLORS.length- 1 + 1) + 0;
-            convertView.setBackgroundColor(Utils.COLORFUL_COLORS[colorItem]);
+           // int colorItem = rn.nextInt(Utils.COLORFUL_COLORS.length- 1 + 1) + 0;
+            convertView.setBackgroundColor(Utils.COLORFUL_COLORS[cursor.getInt(cursor.getColumnIndex(CartItemsManager.COL_ITEM_COLOR))]);
             return convertView;
         }
     }

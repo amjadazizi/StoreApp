@@ -11,6 +11,7 @@ public class CartItem {
     private String description;
     private int amount;
     private double sellPrice;
+    private int itemColor;
 
     public int getId() {
         return id;
@@ -58,5 +59,13 @@ public class CartItem {
 
     public void setSellPrice(double sellPrice) {
         this.sellPrice = sellPrice;
+    }
+
+    public int getItemColor() {
+        return itemColor;
+    }
+
+    public void setItemColor(int itemColor) {
+        this.itemColor = itemColor;
     }
 }

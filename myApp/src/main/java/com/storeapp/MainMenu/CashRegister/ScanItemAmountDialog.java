@@ -26,6 +26,7 @@ import com.storeapp.util.SweetAlerts;
 import com.storeapp.util.Utils;
 
 import java.util.List;
+import java.util.Random;
 
 /**
  * Created by Amjad on 21-03-2015.
@@ -37,6 +38,8 @@ public class ScanItemAmountDialog extends Activity {
     FloatingEditText editCashDiaAmount;
     int currentItemAmount ;
     private String scanBarcode;
+    Random rn = new Random();
+
     CartItemsManager cartItemsManager = DbManager.getDbManager().getCartItemsManager();
 
 
@@ -132,6 +135,8 @@ public class ScanItemAmountDialog extends Activity {
     }
     private void fetchItemInStore(String barcode) {
 
+        final int colorItem = rn.nextInt(Utils.COLORFUL_COLORS.length- 1 + 1) + 0;
+
         ParseQuery<InventoryItem> query = InventoryItem.getQuery(Prefs.getBusinessCvr());
         query.whereEqualTo("barcode", barcode);
         query.findInBackground(new FindCallback<InventoryItem>() {
@@ -140,7 +145,6 @@ public class ScanItemAmountDialog extends Activity {
                 if (e == null) {
                     if (inventoryItems != null && inventoryItems.size() > 0) {
 
-                        //int itemAmount = itemScannedAmount;
                        int itemScannedAmount =  Integer.parseInt(editCashDiaAmount.getText().toString());
                         if (inventoryItems.get(0).getAmount() >= itemScannedAmount) {
                             if (!cartItemsManager.itemExists(scanBarcode)) {
@@ -151,12 +155,11 @@ public class ScanItemAmountDialog extends Activity {
                                 cartItem.setDescription(ii.getDescription());
                                 cartItem.setAmount(itemScannedAmount);
                                 cartItem.setSellPrice(ii.getSellPrice());
+                                cartItem.setItemColor(colorItem);
                                 int rowId = -1;
                                 rowId = cartItemsManager.addItemToCart(cartItem);
-                               // loadItems();
                                 if (rowId != -1) {
                                     Utils.showToastShort("Item Added!");
-                                    // ediTxtNumItems.setText("1");
                                     finish();
 
                                 } else {
@@ -169,19 +172,12 @@ public class ScanItemAmountDialog extends Activity {
 
                                     int rowsAcffected = 0;
                                     rowsAcffected = cartItemsManager.updateCartItemAmount(scanBarcode, itemScannedAmount);
-                                   // loadItems();
                                     if (rowsAcffected > 0) {
 
-                                        Utils.showToastShort("Item Updated! NEW COUNT" + cartItemsManager.getItmCount(scanBarcode));
-                                        //  ediTxtNumItems.setText("1");
-
-                                    } else {
-                                        Utils.showToastShort("Item Not Updated!");
-
+                                        Utils.showToastShort("Item Updated! NEW COUNT");
+                                           finish();
                                     }
-
                                 } else {
-
                                     Utils.showToastShort("Not Enough In Store");
                                 }
 

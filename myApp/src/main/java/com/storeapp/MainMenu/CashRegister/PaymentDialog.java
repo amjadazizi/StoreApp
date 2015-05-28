@@ -180,7 +180,6 @@ public class PaymentDialog extends Activity {
         for (CartItem item : itemsInCartList) {
             InventoryItem ii = InventoryItem.createWithoutData(InventoryItem.class, item.getParseInventoryItemId());
             inventoryItems.add(ii);
-
             //Save which cart item corresponds to which inventory item
             hashMap.put(item.getParseInventoryItemId(), item);
         }
