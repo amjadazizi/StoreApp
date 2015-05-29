@@ -4,8 +4,6 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
-import android.view.Display;
 import android.view.View;
 
 import com.getbase.floatingactionbutton.FloatingActionButton;
@@ -77,7 +75,7 @@ public class RegistrationActivity extends BaseActivity implements BaseFragment.O
 
 
 
-    private void getScreenSize(){
+    /*private void getScreenSize(){
 
         Display display = getWindowManager().getDefaultDisplay();
         DisplayMetrics outMetrics = new DisplayMetrics();
@@ -87,7 +85,7 @@ public class RegistrationActivity extends BaseActivity implements BaseFragment.O
         float dpHeight = outMetrics.heightPixels / density;
         float dpWidth  = outMetrics.widthPixels / density;
     }
-
+*/
     @Override
     public void validated(boolean validated) {
 

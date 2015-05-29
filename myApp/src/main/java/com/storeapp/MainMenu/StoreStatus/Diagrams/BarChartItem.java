@@ -2,7 +2,6 @@ package com.storeapp.MainMenu.StoreStatus.Diagrams;
 
 
 import android.content.Context;
-import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 
@@ -20,12 +19,12 @@ import com.storeapp.R;
 
 public class BarChartItem extends ChartItem {
 
-    private Typeface mTf;
+   // private Typeface mTf;
 
     public BarChartItem(ChartData<?> cd, Context c) {
         super(cd);
 
-        mTf = Typefaces.get(c.getApplicationContext(), "OpenSans-Regular.ttf");
+      //  mTf = Typefaces.get(c.getApplicationContext(), "OpenSans-Regular.ttf");
     }
 
     @Override
@@ -59,21 +58,17 @@ public class BarChartItem extends ChartItem {
 
         XAxis xAxis = holder.chart.getXAxis();
         xAxis.setPosition(XAxisPosition.BOTTOM);
-        xAxis.setTypeface(mTf);
         xAxis.setDrawGridLines(false);
         xAxis.setDrawAxisLine(true);
 
         YAxis leftAxis = holder.chart.getAxisLeft();
-        leftAxis.setTypeface(mTf);
         leftAxis.setLabelCount(5);
         leftAxis.setSpaceTop(20f);
 
         YAxis rightAxis = holder.chart.getAxisRight();
-        rightAxis.setTypeface(mTf);
         rightAxis.setLabelCount(5);
         rightAxis.setSpaceTop(20f);
 
-        mChartData.setValueTypeface(mTf);
 
         // set data
         holder.chart.setData((BarData) mChartData);

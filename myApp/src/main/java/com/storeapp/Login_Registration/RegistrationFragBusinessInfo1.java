@@ -39,7 +39,7 @@ public class RegistrationFragBusinessInfo1 extends BaseFragment {
                 false);
 
         editBsuinessEmail = (EditText) view.findViewById(R.id.editBsuinessEmail);
-        editBsuinessEmail.setText("test1@test1.xom");
+        editBsuinessEmail.setText("test1@test1.com");
         editBusinessPhoneNum = (EditText) view.findViewById(R.id.editBusinessPhoneNum);
         editBusinessPhoneNum.setText("0045282728");
         editBusinessCvr = (EditText) view.findViewById(R.id.editBusinessCvr);

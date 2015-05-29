@@ -5,5 +5,4 @@
     android:propertyName="translationX"
     android:valueFrom="0"
     android:valueTo="-1040"
-    android:valueType="floatType" />
-<!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/anim/slide_out_to_left.xml -->
+    android:valueType="floatType" /><!-- From: file:/C:/Users/Amjad/Documents/GitHub/StoreApp/myApp/src/main/res/anim/slide_out_to_left.xml -->

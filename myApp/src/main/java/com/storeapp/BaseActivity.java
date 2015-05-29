@@ -5,9 +5,6 @@ import android.os.Bundle;
 
 public abstract class BaseActivity extends Activity {
 
-	//protected ActionBar actionBar;
-	//protected abstract int getActivityTitleResId();
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 
@@ -15,18 +12,6 @@ public abstract class BaseActivity extends Activity {
 
 		overridePendingTransition(R.anim.activity_open_translate,
 				R.anim.activity_close_scale);
-
-		/*actionBar = getActionBar();
-		actionBar.setTitle(Html
-				.fromHtml("<font color='#000000'>    "
-						+ getResources().getString(getActivityTitleResId())
-						+ "</font>"));
-
-		actionBar.setLogo(getActivityHomeIconResId());
-		actionBar.setBackgroundDrawable(new ColorDrawable(Color
-				.parseColor("#ADD8E6")));
-		actionBar.setHomeButtonEnabled(true);*/
-
 	}
 
 	@Override
@@ -43,11 +28,5 @@ public abstract class BaseActivity extends Activity {
 
 
     }
-
-	protected int getActivityHomeIconResId() {
-		return R.drawable.ic_arrow_left;
-	}
-
-	
 
 }

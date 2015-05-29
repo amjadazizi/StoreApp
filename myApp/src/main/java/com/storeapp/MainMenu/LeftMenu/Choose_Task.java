@@ -83,6 +83,7 @@ public class Choose_Task extends FragmentActivity {
 
                     itemHome.setIcon(R.drawable.ic_home_grey);
                     changeFragment(new HomeFragment());
+                    actionBarHometxt.setText("Home");
                     btnEditProfilePen.setVisibility(View.GONE);
                 } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
                     itemHome.setIcon(R.drawable.ic_home_white);

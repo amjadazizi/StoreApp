@@ -277,8 +277,7 @@ public class Emp_List extends BaseActivity {
                     Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri
                             .fromParts("mailto", user.getEmail(), null));
 
-                    startActivity(Intent.createChooser(emailIntent,
-                            "Choose an email client :"));
+                    startActivity(Intent.createChooser(emailIntent,null));
                 }
             });
             return view;
